@@ -7,6 +7,7 @@ export const dictionaries = {
       bestOf: "Best Of",
       deals: "Deals",
       about: "About",
+      news: "AI News",
       methodology: "Review Methodology",
       partner: "Partner With Us",
       disclosure: "Affiliate Disclosure",
@@ -15,6 +16,13 @@ export const dictionaries = {
     },
     common: {
       featured: "Featured",
+    },
+    news: {
+      title: "AI News",
+      subtitle:
+        "Real, verified stories from the AI industry — each one links to its original source.",
+      readMore: "Read at {source}",
+      relatedTools: "Related tools on Toolzi:",
     },
     home: {
       eyebrow: "Toolzi",
@@ -145,6 +153,7 @@ export const dictionaries = {
       bestOf: "Sélections",
       deals: "Bons plans",
       about: "À propos",
+      news: "Actu IA",
       methodology: "Méthodologie",
       partner: "Devenir partenaire",
       disclosure: "Divulgation affiliée",
@@ -153,6 +162,13 @@ export const dictionaries = {
     },
     common: {
       featured: "En vedette",
+    },
+    news: {
+      title: "Actu IA",
+      subtitle:
+        "Des actualités réelles et vérifiées du secteur de l'IA — chaque article renvoie à sa source originale.",
+      readMore: "Lire sur {source}",
+      relatedTools: "Outils liés sur Toolzi :",
     },
     home: {
       eyebrow: "Toolzi",
@@ -279,8 +295,9 @@ export const dictionaries = {
   },
 } as const;
 
+// es/de/it/pt aren't translated yet — fall back to English rather than crash.
 export function getDictionary(locale: Locale) {
-  return dictionaries[locale];
+  return dictionaries[locale as "en" | "fr"] ?? dictionaries.en;
 }
 
 export function t(template: string, vars: Record<string, string | number>) {

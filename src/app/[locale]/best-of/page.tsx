@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowRight, CalendarBlank } from "@phosphor-icons/react/dist/ssr";
-import { isLocale } from "@/i18n/config";
+import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups } from "@/data/roundups";
 
@@ -33,7 +33,7 @@ export default async function BestOfIndexPage({ params }: PageProps<"/[locale]/b
 
       <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2">
         {roundups.map((roundup) => {
-          const content = roundup.content[locale];
+          const content = withLocaleFallback(roundup.content, locale);
           return (
             <Link
               key={roundup.slug}

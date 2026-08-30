@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CaretLeft, Check, X as XIcon } from "@phosphor-icons/react/dist/ssr";
-import { locales, isLocale } from "@/i18n/config";
+import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { tools, getToolBySlug } from "@/data/tools";
 import { getCategoryLabel } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
@@ -27,7 +27,7 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const tool = getToolBySlug(slug);
   if (!tool) return {};
-  const content = tool.content[locale];
+  const content = withLocaleFallback(tool.content, locale);
 
   return {
     title: `${tool.name}: ${content.tagline}`,
@@ -43,7 +43,7 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
   if (!tool) notFound();
 
   const dict = getDictionary(locale);
-  const content = tool.content[locale];
+  const content = withLocaleFallback(tool.content, locale);
   const related = tools.filter((t) => t.category === tool.category && t.slug !== tool.slug).slice(0, 3);
 
   return (

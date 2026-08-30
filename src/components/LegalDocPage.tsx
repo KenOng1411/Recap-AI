@@ -2,7 +2,14 @@ import { getDictionary, t } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
 import type { LegalDoc } from "@/data/legal";
 
-const dateLocale: Record<Locale, string> = { en: "en-US", fr: "fr-FR" };
+const dateLocale: Record<Locale, string> = {
+  en: "en-US",
+  fr: "fr-FR",
+  es: "es-ES",
+  de: "de-DE",
+  it: "it-IT",
+  pt: "pt-PT",
+};
 
 export function LegalDocPage({ doc, locale }: { doc: LegalDoc; locale: Locale }) {
   const dict = getDictionary(locale);

@@ -10,13 +10,14 @@ interface RoundupContent {
 
 export interface RoundupItem {
   slug: string; // must match tools.ts
-  blurb: Record<Locale, string>; // 1-2 sentences on why this tool made the list
+  // Only en/fr translated so far; other locales fall back to English.
+  blurb: Partial<Record<Locale, string>>; // 1-2 sentences on why this tool made the list
 }
 
 export interface Roundup {
   slug: string;
   updatedAt: string; // ISO date
-  content: Record<Locale, RoundupContent>;
+  content: Partial<Record<Locale, RoundupContent>>;
   items: RoundupItem[];
 }
 

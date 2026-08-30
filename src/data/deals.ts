@@ -13,7 +13,7 @@ export interface Deal {
   code?: string;
   expiresAt?: string; // ISO date, omit if the deal has no expiry
   affiliateUrl: string;
-  content: Record<Locale, DealContent>;
+  content: Partial<Record<Locale, DealContent>>;
 }
 
 export const deals: Deal[] = [];

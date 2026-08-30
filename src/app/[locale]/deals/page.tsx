@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Tag, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
-import { isLocale } from "@/i18n/config";
+import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { deals } from "@/data/deals";
 
@@ -36,7 +36,7 @@ export default async function DealsPage({ params }: PageProps<"/[locale]/deals">
       ) : (
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
           {deals.map((deal) => {
-            const content = deal.content[locale];
+            const content = withLocaleFallback(deal.content, locale);
             return (
               <div key={deal.slug} className="rounded-2xl border border-border bg-surface p-6">
                 <p className="text-xs font-semibold uppercase tracking-wide text-accent">

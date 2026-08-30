@@ -1,12 +1,12 @@
 import type { Tool } from "@/data/tools";
-import type { Locale } from "@/i18n/config";
+import { withLocaleFallback, type Locale } from "@/i18n/config";
 import { getCategoryLabel } from "@/data/categories";
 import { siteConfig } from "@/data/site";
 
 // schema.org Review markup so Google can show a star rating in search results.
 // See https://developers.google.com/search/docs/appearance/structured-data/review-snippet
 export function ReviewSchema({ tool, locale }: { tool: Tool; locale: Locale }) {
-  const content = tool.content[locale];
+  const content = withLocaleFallback(tool.content, locale);
 
   const schema = {
     "@context": "https://schema.org",

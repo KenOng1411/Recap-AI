@@ -11,6 +11,10 @@ interface StarRatingProps {
 const ratingLabel: Record<Locale, (rating: string) => string> = {
   en: (rating) => `Rated ${rating} out of 5`,
   fr: (rating) => `Note de ${rating} sur 5`,
+  es: (rating) => `Valorado con ${rating} sobre 5`,
+  de: (rating) => `Bewertet mit ${rating} von 5`,
+  it: (rating) => `Valutato ${rating} su 5`,
+  pt: (rating) => `Avaliado com ${rating} de 5`,
 };
 
 export function StarRating({ rating, size = 18, showValue = true, locale = "en" }: StarRatingProps) {

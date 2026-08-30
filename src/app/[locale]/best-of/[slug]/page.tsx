@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CaretLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr";
-import { locales, isLocale } from "@/i18n/config";
+import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups, getRoundupBySlug } from "@/data/roundups";
 import { getToolBySlug } from "@/data/tools";
@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const roundup = getRoundupBySlug(slug);
   if (!roundup) return {};
-  const content = roundup.content[locale];
+  const content = withLocaleFallback(roundup.content, locale);
 
   return {
     title: content.title,
@@ -38,7 +38,7 @@ export default async function RoundupPage(props: PageProps<"/[locale]/best-of/[s
   if (!roundup) notFound();
 
   const dict = getDictionary(locale);
-  const content = roundup.content[locale];
+  const content = withLocaleFallback(roundup.content, locale);
 
   const items = roundup.items
     .map((item) => ({ item, tool: getToolBySlug(item.slug) }))
@@ -85,7 +85,7 @@ export default async function RoundupPage(props: PageProps<"/[locale]/best-of/[s
                   <StarRating rating={tool.rating} size={14} locale={locale} />
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  {item.blurb[locale]}
+                  {withLocaleFallback(item.blurb, locale)}
                 </p>
                 <Link
                   href={`/${locale}/tools/${tool.slug}`}

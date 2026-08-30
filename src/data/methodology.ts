@@ -21,7 +21,7 @@ interface MethodologyContent {
   disclosureBody: string;
 }
 
-export const methodology: Record<Locale, MethodologyContent> = {
+export const methodology: Partial<Record<Locale, MethodologyContent>> = {
   en: {
     intro:
       "Every tool on Toolzi is evaluated the same way, using the same criteria — whether or not there's an affiliate relationship involved. Here's exactly how.",

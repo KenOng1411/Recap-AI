@@ -22,7 +22,9 @@ export interface Tool {
   rating: number; // 0 - 5
   lastUpdated: string; // ISO date — bump this whenever the review copy changes
   featured?: boolean;
-  content: Record<Locale, ToolContent>;
+  // Only en/fr are translated so far; other locales fall back to English
+  // (see withLocaleFallback in i18n/config.ts) rather than rendering blank.
+  content: Partial<Record<Locale, ToolContent>>;
 }
 
 export const tools: Tool[] = [
@@ -1058,6 +1060,384 @@ export const tools: Tool[] = [
         pricing: "Un palier gratuit existe ; forfaits payants dès 5 $/mois",
         pros: ["Génère un site réellement modifiable, pas juste une maquette", "Publication et hébergement intégrés", "Rendu design professionnel dès le départ"],
         cons: ["Personnalisation poussée profite quand même de compétences en design", "Version gratuite limitée pour un vrai site en production"],
+      },
+    },
+  },
+  {
+    slug: "kagi",
+    name: "Kagi",
+    category: "search",
+    website: "https://kagi.com",
+    affiliateUrl: "https://kagi.com",
+    rating: 4.5,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "A paid, ad-free search engine with built-in AI answer summaries.",
+        description:
+          "Kagi charges a subscription instead of running ads, and layers AI-generated answer summaries on top of its own search index. Full review coming soon.",
+        pricing: "No permanent free plan; subscriptions start at $10/month for a capped search allowance",
+        pros: ["No ads, no tracking-driven result ranking", "AI summaries stay optional, not forced", "Lets you personally boost or block domains"],
+        cons: ["Paying for search is a hard sell for many users", "Smaller index than Google for very obscure queries"],
+      },
+      fr: {
+        tagline: "Moteur de recherche payant sans publicité, avec résumés IA intégrés.",
+        description:
+          "Kagi fait payer un abonnement plutôt que d'afficher de la publicité, et ajoute des résumés de réponse générés par IA sur son propre index. Avis complet à venir.",
+        pricing: "Pas de forfait gratuit permanent ; abonnements dès 10 $/mois pour un quota de recherches",
+        pros: ["Aucune publicité, aucun classement piloté par le tracking", "Résumés IA optionnels, jamais imposés", "Possibilité de booster ou bloquer des domaines soi-même"],
+        cons: ["Payer pour la recherche reste un frein pour beaucoup", "Index plus restreint que Google sur les requêtes très pointues"],
+      },
+    },
+  },
+  {
+    slug: "andi-search",
+    name: "Andi",
+    category: "search",
+    website: "https://andisearch.com",
+    affiliateUrl: "https://andisearch.com",
+    rating: 4.0,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "A conversational search engine that answers in a chat-like feed.",
+        description:
+          "Andi presents search results as a conversational feed rather than a list of blue links, blending traditional search with an AI-generated answer. Full review coming soon.",
+        pricing: "Free",
+        pros: ["Genuinely different, chat-like result format", "No account required to start searching", "Good for quick conversational lookups"],
+        cons: ["Less reliable than dedicated engines for niche/technical queries", "Smaller team means slower feature pace"],
+      },
+      fr: {
+        tagline: "Un moteur de recherche conversationnel qui répond façon fil de discussion.",
+        description:
+          "Andi présente les résultats de recherche comme un fil conversationnel plutôt qu'une liste de liens, en combinant recherche classique et réponse générée par IA. Avis complet à venir.",
+        pricing: "Gratuit",
+        pros: ["Format de résultats conversationnel vraiment différent", "Aucun compte requis pour commencer", "Pratique pour des recherches rapides et conversationnelles"],
+        cons: ["Moins fiable que les moteurs dédiés sur les requêtes pointues/techniques", "Petite équipe, rythme de nouvelles fonctionnalités plus lent"],
+      },
+    },
+  },
+  {
+    slug: "grammarly",
+    name: "Grammarly",
+    category: "writing",
+    website: "https://www.grammarly.com",
+    affiliateUrl: "https://www.grammarly.com",
+    rating: 4.5,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "The long-standing AI writing assistant, now with generative rewriting.",
+        description:
+          "Grammarly checks grammar, tone and clarity across the apps you already use, and has expanded into full generative rewriting and brand-voice tools. Full review coming soon.",
+        pricing: "Solid free plan; Pro from $12/month (billed annually)",
+        pros: ["Works inline across almost any app or browser", "Tone detection is genuinely useful for email/Slack", "Free plan alone covers most casual needs"],
+        cons: ["Full generative features need the paid tier", "Suggestions occasionally flatten a distinctive writing voice"],
+      },
+      fr: {
+        tagline: "L'assistant d'écriture IA historique, désormais avec réécriture générative.",
+        description:
+          "Grammarly corrige grammaire, ton et clarté dans les applications déjà utilisées au quotidien, et propose désormais de la réécriture générative et des outils de voix de marque. Avis complet à venir.",
+        pricing: "Bon plan gratuit ; Pro dès 12 $/mois (facturé annuellement)",
+        pros: ["Fonctionne directement dans presque toutes les applis/navigateurs", "Détection de ton vraiment utile pour email/Slack", "Le plan gratuit couvre déjà la plupart des besoins courants"],
+        cons: ["Fonctions génératives complètes réservées au forfait payant", "Suggestions qui peuvent parfois lisser une voix d'écriture singulière"],
+      },
+    },
+  },
+  {
+    slug: "rytr",
+    name: "Rytr",
+    category: "writing",
+    website: "https://rytr.me",
+    affiliateUrl: "https://rytr.me",
+    rating: 3.9,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "A budget-friendly AI writer covering short-form marketing copy.",
+        description:
+          "Rytr is a lighter-weight AI writing tool aimed at short-form content — ads, product descriptions, social captions — at a lower price point than most rivals. Full review coming soon.",
+        pricing: "Free plan capped at 10k characters/month; Unlimited plan around $9/month",
+        pros: ["One of the cheapest paid options in the category", "Dozens of short-form use-case templates", "Simple enough to hand to non-writers on a team"],
+        cons: ["Long-form output needs heavier editing than pricier tools", "Fewer advanced brand-voice controls"],
+      },
+      fr: {
+        tagline: "Un rédacteur IA économique, orienté textes marketing courts.",
+        description:
+          "Rytr est un outil de rédaction IA plus léger, pensé pour du contenu court — publicités, descriptions produit, légendes réseaux sociaux — à un prix plus bas que la plupart des rivaux. Avis complet à venir.",
+        pricing: "Plan gratuit plafonné à 10k caractères/mois ; plan illimité autour de 9 $/mois",
+        pros: ["Une des options payantes les moins chères de la catégorie", "Des dizaines de modèles pour du contenu court", "Assez simple pour être confié à des non-rédacteurs de l'équipe"],
+        cons: ["Contenu long nécessite plus de retouches que des outils plus chers", "Moins de contrôles avancés de voix de marque"],
+      },
+    },
+  },
+  {
+    slug: "recraft",
+    name: "Recraft",
+    category: "design",
+    website: "https://www.recraft.ai",
+    affiliateUrl: "https://www.recraft.ai",
+    rating: 4.4,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "AI design tool built around vector graphics, icons and brand assets.",
+        description:
+          "Recraft generates and edits vector illustrations, icons and mockups with strong style consistency — a favorite among product designers. Full review coming soon.",
+        pricing: "Free plan available; paid tiers from $12/month",
+        pros: ["Genuinely usable vector output, not just raster images", "Strong style consistency across a set of assets", "Good icon and mockup generation"],
+        cons: ["Steeper learning curve than simpler image generators", "Free plan generation limits fill up quickly"],
+      },
+      fr: {
+        tagline: "Outil de design IA axé vectoriel, icônes et assets de marque.",
+        description:
+          "Recraft génère et modifie des illustrations vectorielles, icônes et maquettes avec une forte cohérence de style — apprécié des designers produit. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; forfaits payants dès 12 $/mois",
+        pros: ["Sortie vectorielle réellement exploitable, pas juste des images matricielles", "Forte cohérence de style sur un ensemble d'assets", "Bonne génération d'icônes et de maquettes"],
+        cons: ["Courbe d'apprentissage plus raide que des générateurs d'images simples", "Quota du plan gratuit vite atteint"],
+      },
+    },
+  },
+  {
+    slug: "uizard",
+    name: "Uizard",
+    category: "design",
+    website: "https://uizard.io",
+    affiliateUrl: "https://uizard.io",
+    rating: 4.1,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Turn a rough sketch or prompt into an editable app/web mockup.",
+        description:
+          "Uizard uses AI to convert sketches, screenshots or text prompts into editable UI mockups for apps and websites. Full review coming soon.",
+        pricing: "Free plan available; Pro from $12/month",
+        pros: ["Sketch-to-mockup is a genuinely fast starting point", "Easy for non-designers to get something presentable", "Good for early-stage product ideation"],
+        cons: ["Output needs real design polish before shipping", "Component library is more limited than dedicated design tools"],
+      },
+      fr: {
+        tagline: "Transformez un croquis ou une consigne en maquette d'app/web modifiable.",
+        description:
+          "Uizard utilise l'IA pour convertir croquis, captures d'écran ou consignes texte en maquettes d'interface modifiables pour applis et sites web. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; Pro dès 12 $/mois",
+        pros: ["Le sketch-to-mockup est un vrai gain de temps au démarrage", "Accessible aux non-designers pour un rendu présentable", "Bien adapté à l'idéation produit en phase précoce"],
+        cons: ["Le résultat nécessite une vraie finition design avant production", "Bibliothèque de composants plus limitée que des outils de design dédiés"],
+      },
+    },
+  },
+  {
+    slug: "motion",
+    name: "Motion",
+    category: "productivity",
+    website: "https://www.usemotion.com",
+    affiliateUrl: "https://www.usemotion.com",
+    rating: 4.2,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "AI calendar that auto-schedules your tasks around your meetings.",
+        description:
+          "Motion combines a task manager, calendar and project tool, using AI to automatically slot your to-dos into open time on your calendar. Full review coming soon.",
+        pricing: "No free plan; individual plans from $19/month (billed annually)",
+        pros: ["Genuinely saves time deciding when to do what", "Automatically re-plans your day when meetings shift", "Combines tasks, calendar and projects in one place"],
+        cons: ["Pricier than a plain calendar or to-do app", "Auto-scheduling takes some trust-building at first"],
+      },
+      fr: {
+        tagline: "Calendrier IA qui planifie automatiquement vos tâches autour de vos réunions.",
+        description:
+          "Motion combine gestionnaire de tâches, calendrier et outil de projet, en utilisant l'IA pour placer automatiquement vos tâches dans les créneaux libres de votre agenda. Avis complet à venir.",
+        pricing: "Pas de plan gratuit ; forfaits individuels dès 19 $/mois (facturé annuellement)",
+        pros: ["Fait vraiment gagner du temps sur la planification", "Replanifie automatiquement la journée si une réunion bouge", "Regroupe tâches, calendrier et projets au même endroit"],
+        cons: ["Plus cher qu'un simple calendrier ou une appli de tâches", "La planification automatique demande un temps d'adaptation/confiance"],
+      },
+    },
+  },
+  {
+    slug: "reclaim-ai",
+    name: "Reclaim.ai",
+    category: "productivity",
+    website: "https://reclaim.ai",
+    affiliateUrl: "https://reclaim.ai",
+    rating: 4.3,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Smart scheduling that protects focus time and habits on your calendar.",
+        description:
+          "Reclaim.ai auto-schedules tasks, habits and focus time directly into Google Calendar, defending your priorities as new meetings come in. Full review coming soon.",
+        pricing: "Free plan available; paid tiers from $8/user/month",
+        pros: ["Free tier is genuinely usable long-term", "Defends recurring habits/focus time automatically", "Lighter weight than a full standalone task manager"],
+        cons: ["Google Calendar only — no native Outlook support at writing", "Less full-featured as a task manager than dedicated tools"],
+      },
+      fr: {
+        tagline: "Planification intelligente qui protège le temps de concentration et les habitudes.",
+        description:
+          "Reclaim.ai planifie automatiquement tâches, habitudes et temps de concentration directement dans Google Calendar, en défendant vos priorités face aux nouvelles réunions. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; forfaits payants dès 8 $/utilisateur/mois",
+        pros: ["Le plan gratuit est réellement utilisable sur le long terme", "Défend automatiquement habitudes/temps de concentration récurrents", "Plus léger qu'un gestionnaire de tâches complet"],
+        cons: ["Google Calendar uniquement — pas de support Outlook natif à ce jour", "Moins complet comme gestionnaire de tâches que des outils dédiés"],
+      },
+    },
+  },
+  {
+    slug: "tabnine",
+    name: "Tabnine",
+    category: "coding",
+    website: "https://www.tabnine.com",
+    affiliateUrl: "https://www.tabnine.com",
+    rating: 4.0,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Privacy-focused AI code completion with self-hosted options.",
+        description:
+          "Tabnine offers AI code completion with a strong emphasis on privacy, including options to run models on-premises for regulated teams. Full review coming soon.",
+        pricing: "Free plan available; paid tiers from $9/month",
+        pros: ["Self-hosted/on-prem options for strict privacy needs", "Trains on your own codebase for better relevance", "Works across a wide range of IDEs"],
+        cons: ["Suggestion quality can trail newer agentic tools", "Best privacy features are enterprise-tier only"],
+      },
+      fr: {
+        tagline: "Complétion de code IA axée confidentialité, avec options auto-hébergées.",
+        description:
+          "Tabnine propose de la complétion de code IA avec un fort accent sur la confidentialité, avec la possibilité d'héberger les modèles en interne pour les équipes soumises à réglementation. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; forfaits payants dès 9 $/mois",
+        pros: ["Options auto-hébergées/sur site pour besoins stricts de confidentialité", "S'entraîne sur votre propre codebase pour plus de pertinence", "Compatible avec un large éventail d'IDE"],
+        cons: ["Qualité des suggestions parfois en retrait face aux outils agentiques récents", "Meilleures fonctions de confidentialité réservées à l'offre entreprise"],
+      },
+    },
+  },
+  {
+    slug: "v0",
+    name: "v0 by Vercel",
+    category: "coding",
+    website: "https://v0.dev",
+    affiliateUrl: "https://v0.dev",
+    rating: 4.4,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Generate real, editable React/Next.js UI components from a prompt.",
+        description:
+          "v0 generates working React and Tailwind components (not just static mockups) from a text prompt, built by the team behind Next.js. Full review coming soon.",
+        pricing: "Free plan available; Premium from $20/month",
+        pros: ["Output is real, editable React/Tailwind code", "Fits naturally into a Next.js/Vercel workflow", "Good starting point for UI you'd otherwise build from scratch"],
+        cons: ["Best fit is specifically React/Tailwind projects", "Complex, bespoke UI still needs manual refinement"],
+      },
+      fr: {
+        tagline: "Générez de vrais composants UI React/Next.js modifiables à partir d'une consigne.",
+        description:
+          "v0 génère des composants React et Tailwind fonctionnels (pas de simples maquettes statiques) à partir d'une consigne texte, développé par l'équipe derrière Next.js. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; Premium dès 20 $/mois",
+        pros: ["Résultat en vrai code React/Tailwind modifiable", "S'intègre naturellement à un workflow Next.js/Vercel", "Bon point de départ pour une UI à construire de zéro sinon"],
+        cons: ["Adapté surtout aux projets React/Tailwind spécifiquement", "UI complexe et sur-mesure demande encore un raffinement manuel"],
+      },
+    },
+  },
+  {
+    slug: "character-ai",
+    name: "Character.AI",
+    category: "chatbot",
+    website: "https://character.ai",
+    affiliateUrl: "https://character.ai",
+    rating: 4.0,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Chat with millions of user-created AI characters and personas.",
+        description:
+          "Character.AI lets users create and chat with custom AI personas, from fictional characters to roleplay companions and practice-conversation bots. Full review coming soon.",
+        pricing: "Free; c.ai+ subscription from $9.99/month for faster responses",
+        pros: ["Massive library of user-created characters", "Genuinely fun and creative use of conversational AI", "Free tier is fully usable, not just a trial"],
+        cons: ["Not built for factual/research tasks — that's not its purpose", "Content moderation policies have shifted and frustrated some users"],
+      },
+      fr: {
+        tagline: "Discutez avec des millions de personnages IA créés par les utilisateurs.",
+        description:
+          "Character.AI permet de créer et discuter avec des personnages IA personnalisés, du personnage fictif au compagnon de jeu de rôle en passant par des bots d'entraînement à la conversation. Avis complet à venir.",
+        pricing: "Gratuit ; abonnement c.ai+ dès 9,99 $/mois pour des réponses plus rapides",
+        pros: ["Immense bibliothèque de personnages créés par les utilisateurs", "Usage créatif et vraiment ludique de l'IA conversationnelle", "Version gratuite pleinement utilisable, pas un simple essai"],
+        cons: ["Pas conçu pour des tâches factuelles/de recherche — ce n'est pas son objectif", "Politiques de modération qui ont évolué et déçu certains utilisateurs"],
+      },
+    },
+  },
+  {
+    slug: "deepseek",
+    name: "DeepSeek",
+    category: "chatbot",
+    website: "https://chat.deepseek.com",
+    affiliateUrl: "https://chat.deepseek.com",
+    rating: 4.2,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Free, open-weight reasoning chatbot that punches above its cost.",
+        description:
+          "DeepSeek offers a free chat interface on top of its open-weight reasoning models, which made waves for strong performance at a fraction of typical training cost. Full review coming soon.",
+        pricing: "Free",
+        pros: ["Free to use with strong reasoning performance", "Open-weight models usable outside their own app", "Fast-improving with frequent model updates"],
+        cons: ["Data handling/privacy concerns some users flag given its origin", "Web interface is more bare-bones than polished rivals"],
+      },
+      fr: {
+        tagline: "Chatbot de raisonnement gratuit et à poids ouverts, très performant pour son coût.",
+        description:
+          "DeepSeek propose une interface de chat gratuite basée sur ses modèles de raisonnement à poids ouverts, remarqués pour leurs performances solides à une fraction du coût d'entraînement habituel. Avis complet à venir.",
+        pricing: "Gratuit",
+        pros: ["Gratuit avec de solides performances de raisonnement", "Modèles à poids ouverts utilisables hors de leur propre appli", "Progresse vite avec des mises à jour fréquentes"],
+        cons: ["Préoccupations de certains utilisateurs sur la gestion des données vu son origine", "Interface web plus sommaire que des rivaux plus soignés"],
+      },
+    },
+  },
+  {
+    slug: "play-ht",
+    name: "Play.ht",
+    category: "audio",
+    website: "https://play.ht",
+    affiliateUrl: "https://play.ht",
+    rating: 4.1,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Realistic text-to-speech with an API built for developers.",
+        description:
+          "Play.ht offers realistic AI voices for content creators alongside a developer-friendly API for embedding voice generation into other products. Full review coming soon.",
+        pricing: "Free plan available; paid tiers from $39/month",
+        pros: ["Solid API for developers building voice into apps", "Good voice cloning quality", "Wide range of voices and languages"],
+        cons: ["Paid tiers cost more than some direct competitors", "Free tier is quite limited for regular use"],
+      },
+      fr: {
+        tagline: "Synthèse vocale réaliste avec une API pensée pour les développeurs.",
+        description:
+          "Play.ht propose des voix IA réalistes pour les créateurs de contenu, ainsi qu'une API pensée développeurs pour intégrer la génération vocale dans d'autres produits. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; forfaits payants dès 39 $/mois",
+        pros: ["API solide pour intégrer la voix dans des applications", "Bonne qualité de clonage vocal", "Large choix de voix et de langues"],
+        cons: ["Forfaits payants plus chers que certains concurrents directs", "Version gratuite assez limitée pour un usage régulier"],
+      },
+    },
+  },
+  {
+    slug: "invideo-ai",
+    name: "InVideo AI",
+    category: "video",
+    website: "https://invideo.io",
+    affiliateUrl: "https://invideo.io",
+    rating: 4.1,
+    lastUpdated: "2026-08-20",
+    content: {
+      en: {
+        tagline: "Turn a text prompt into a fully-edited video, scenes and voiceover included.",
+        description:
+          "InVideo AI generates a complete draft video — script, scenes, stock footage and voiceover — from a single prompt, which you can then edit further. Full review coming soon.",
+        pricing: "Free plan available; paid tiers from $20/month",
+        pros: ["Goes from prompt to a full draft video, not just a clip", "Large stock footage/music library included", "Useful for fast social/marketing video turnaround"],
+        cons: ["Voiceover and stock footage can feel generic without editing", "Free plan output carries a watermark"],
+      },
+      fr: {
+        tagline: "Transformez une consigne texte en vidéo entièrement montée, scènes et voix off incluses.",
+        description:
+          "InVideo AI génère un premier montage vidéo complet — script, scènes, images d'archives et voix off — à partir d'une seule consigne, modifiable ensuite. Avis complet à venir.",
+        pricing: "Version gratuite disponible ; forfaits payants dès 20 $/mois",
+        pros: ["Va d'une consigne à une vidéo complète, pas juste un clip", "Grande bibliothèque d'images d'archives/musique incluse", "Utile pour produire vite du contenu vidéo social/marketing"],
+        cons: ["Voix off et images d'archives peuvent sembler génériques sans retouche", "Filigrane sur la version gratuite"],
       },
     },
   },

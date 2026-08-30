@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CheckCircle, Flask, Star, ShieldCheck } from "@phosphor-icons/react/dist/ssr";
-import { isLocale } from "@/i18n/config";
+import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { methodology } from "@/data/methodology";
 
@@ -11,7 +11,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  const content = methodology[locale];
+  const content = withLocaleFallback(methodology, locale);
   return { title: dict.methodology.title, description: content.intro };
 }
 
@@ -22,7 +22,7 @@ export default async function MethodologyPage({
   if (!isLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
-  const content = methodology[locale];
+  const content = withLocaleFallback(methodology, locale);
 
   return (
     <div className="container-page max-w-3xl py-14">

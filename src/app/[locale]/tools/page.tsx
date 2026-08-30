@@ -8,7 +8,7 @@ import { tools } from "@/data/tools";
 import { getCategoryLabel, type CategoryKey } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
 import { getDictionary, t } from "@/i18n/dictionaries";
-import { isLocale, type Locale } from "@/i18n/config";
+import { isLocale, withLocaleFallback, type Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
 
 const categoryKeys = Array.from(new Set(tools.map((tool) => tool.category))) as CategoryKey[];
@@ -34,7 +34,7 @@ function ToolsPageInner({ locale }: { locale: Locale }) {
       const matchesQuery =
         !q ||
         tool.name.toLowerCase().includes(q) ||
-        tool.content[locale].tagline.toLowerCase().includes(q);
+        withLocaleFallback(tool.content, locale).tagline.toLowerCase().includes(q);
       return matchesCategory && matchesQuery;
     });
   }, [active, query, locale]);

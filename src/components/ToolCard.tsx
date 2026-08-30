@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Sparkle } from "@phosphor-icons/react/dist/ssr";
 import type { Tool } from "@/data/tools";
-import type { Locale } from "@/i18n/config";
+import { withLocaleFallback, type Locale } from "@/i18n/config";
 import { getCategoryLabel } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
 import { ToolIcon } from "./ToolIcon";
@@ -10,7 +10,7 @@ import { CategoryBadge } from "./CategoryBadge";
 import { getDictionary } from "@/i18n/dictionaries";
 
 export function ToolCard({ tool, locale }: { tool: Tool; locale: Locale }) {
-  const content = tool.content[locale];
+  const content = withLocaleFallback(tool.content, locale);
   const dict = getDictionary(locale);
 
   return (

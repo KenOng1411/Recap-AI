@@ -20,7 +20,7 @@ export interface LegalDoc {
 
 const LAST_UPDATED = "2026-08-30";
 
-export const privacyPolicy: Record<Locale, LegalDoc> = {
+export const privacyPolicy: Partial<Record<Locale, LegalDoc>> = {
   en: {
     title: "Privacy Policy",
     lastUpdated: LAST_UPDATED,
@@ -139,7 +139,7 @@ export const privacyPolicy: Record<Locale, LegalDoc> = {
   },
 };
 
-export const termsOfService: Record<Locale, LegalDoc> = {
+export const termsOfService: Partial<Record<Locale, LegalDoc>> = {
   en: {
     title: "Terms of Service",
     lastUpdated: LAST_UPDATED,
@@ -272,7 +272,7 @@ export const termsOfService: Record<Locale, LegalDoc> = {
   },
 };
 
-export const affiliateDisclosure: Record<Locale, LegalDoc> = {
+export const affiliateDisclosure: Partial<Record<Locale, LegalDoc>> = {
   en: {
     title: "Affiliate Disclosure",
     lastUpdated: LAST_UPDATED,

@@ -24,20 +24,33 @@ export const siteConfig = {
   tagline: {
     en: "Honest, no-nonsense AI tool reviews",
     fr: "Des avis honnêtes et sans détour sur les outils IA",
+    es: "Reseñas honestas y directas de herramientas de IA",
+    de: "Ehrliche, unkomplizierte KI-Tool-Bewertungen",
+    it: "Recensioni oneste e dirette di strumenti IA",
+    pt: "Análises honestas e diretas de ferramentas de IA",
   } satisfies Record<Locale, string>,
   description: {
     en: "Toolzi reviews and compares the hottest AI tools — chatbots, image and video generation, productivity — so you can pick the right one in 5 minutes.",
     fr: "Toolzi teste et compare les outils IA les plus en vue — chatbots, génération d'image et de vidéo, productivité — pour choisir le bon en 5 minutes.",
+    es: "Toolzi reseña y compara las herramientas de IA más populares — chatbots, generación de imagen y vídeo, productividad — para que elijas la correcta en 5 minutos.",
+    de: "Toolzi testet und vergleicht die gefragtesten KI-Tools — Chatbots, Bild- und Videogenerierung, Produktivität —, damit du in 5 Minuten das richtige findest.",
+    it: "Toolzi recensisce e confronta gli strumenti IA più popolari — chatbot, generazione di immagini e video, produttività — per scegliere quello giusto in 5 minuti.",
+    pt: "A Toolzi analisa e compara as ferramentas de IA mais populares — chatbots, geração de imagem e vídeo, produtividade — para você escolher a certa em 5 minutos.",
   } satisfies Record<Locale, string>,
   ogLocale: {
     en: "en_US",
     fr: "fr_FR",
+    es: "es_ES",
+    de: "de_DE",
+    it: "it_IT",
+    pt: "pt_PT",
   } satisfies Record<Locale, string>,
 };
 
 export const NAV_PATHS = [
   { href: "/tools", key: "tools" },
   { href: "/best-of", key: "bestOf" },
+  { href: "/ai-news", key: "news" },
   { href: "/deals", key: "deals" },
   { href: "/about", key: "about" },
 ] as const;

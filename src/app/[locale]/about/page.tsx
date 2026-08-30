@@ -63,7 +63,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
       <section className="mt-10">
         <h2 className="text-lg font-semibold text-foreground">{dict.about.experience}</h2>
         <ul className="mt-3 flex flex-col gap-2">
-          {experience[locale].map((line) => (
+          {(experience[locale] ?? experience.en).map((line) => (
             <li
               key={line}
               className="rounded-xl border border-dashed border-border bg-surface-muted px-4 py-3 text-sm text-muted-foreground"

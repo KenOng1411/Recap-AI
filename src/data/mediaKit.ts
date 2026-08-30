@@ -25,7 +25,7 @@ interface MediaKitContent {
   tiers: PartnerTier[];
 }
 
-export const mediaKit: Record<Locale, MediaKitContent> = {
+export const mediaKit: Partial<Record<Locale, MediaKitContent>> = {
   en: {
     status: "New site, actively growing",
     intro:

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SealCheck, Target, Rocket, ArrowRight } from "@phosphor-icons/react/dist/ssr";
-import { isLocale } from "@/i18n/config";
+import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { mediaKit } from "@/data/mediaKit";
 import { ContactForm } from "@/components/ContactForm";
@@ -13,7 +13,7 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  const content = mediaKit[locale];
+  const content = withLocaleFallback(mediaKit, locale);
   return { title: dict.partner.title, description: content.intro };
 }
 
@@ -22,7 +22,7 @@ export default async function PartnerPage({ params }: PageProps<"/[locale]/partn
   if (!isLocale(locale)) notFound();
 
   const dict = getDictionary(locale);
-  const content = mediaKit[locale];
+  const content = withLocaleFallback(mediaKit, locale);
 
   return (
     <div className="container-page max-w-3xl py-14">

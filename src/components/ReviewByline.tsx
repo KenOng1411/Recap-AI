@@ -4,7 +4,14 @@ import { getDictionary, t } from "@/i18n/dictionaries";
 import { siteConfig } from "@/data/site";
 import type { Locale } from "@/i18n/config";
 
-const dateLocale: Record<Locale, string> = { en: "en-US", fr: "fr-FR" };
+const dateLocale: Record<Locale, string> = {
+  en: "en-US",
+  fr: "fr-FR",
+  es: "es-ES",
+  de: "de-DE",
+  it: "it-IT",
+  pt: "pt-PT",
+};
 
 interface ReviewBylineProps {
   locale: Locale;
