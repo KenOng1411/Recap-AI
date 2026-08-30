@@ -1,9 +1,17 @@
 import Link from "next/link";
-import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowRight,
+  Flask,
+  ListChecks,
+  Star,
+  ShieldCheck,
+} from "@phosphor-icons/react/dist/ssr";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { ToolCard } from "@/components/ToolCard";
+import { Logo } from "@/components/Logo";
+import { HomeSearch } from "@/components/HomeSearch";
 import { tools, getFeaturedTools, getToolsByCategory } from "@/data/tools";
 import { siteConfig } from "@/data/site";
 import { getCategoryLabel, type CategoryKey } from "@/data/categories";
@@ -17,62 +25,80 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const featuredTools = getFeaturedTools();
   const categoryKeys = Object.keys(getToolsByCategory()) as CategoryKey[];
 
+  const trustItems = [
+    { icon: Flask, label: dict.home.trustHandsOn, href: `/${locale}/review-methodology` },
+    { icon: ListChecks, label: dict.home.trustCriteria, href: `/${locale}/review-methodology` },
+    { icon: Star, label: dict.home.trustIndependent, href: `/${locale}/review-methodology` },
+    { icon: ShieldCheck, label: dict.home.trustTransparent, href: `/${locale}/disclosure` },
+  ];
+
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-32 left-1/2 h-[420px] w-[720px] -translate-x-1/2 rounded-full bg-accent/25 blur-[110px]"
+          className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[860px] -translate-x-1/2 rounded-full bg-accent/25 blur-[120px]"
         />
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -top-10 right-0 h-[260px] w-[260px] rounded-full bg-accent/15 blur-[90px]"
         />
 
-        <div className="container-page relative flex flex-col gap-10 py-16 md:flex-row md:items-center md:py-24">
-          <div className="flex max-w-xl flex-col gap-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-accent">
-              {dict.home.eyebrow}
-            </p>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
-              {dict.home.title}
-            </h1>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              {t(dict.home.subtitle, { author: siteConfig.author.name })}
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href={`/${locale}/tools`}
-                className="inline-flex items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-colors hover:bg-accent-hover"
-              >
-                {dict.home.ctaPrimary}
-                <ArrowRight size={18} weight="bold" aria-hidden="true" />
-              </Link>
-              <Link
-                href={`/${locale}/about`}
-                className="text-sm font-semibold text-foreground hover:text-accent"
-              >
-                {dict.home.ctaSecondary}
-              </Link>
-            </div>
+        <div className="container-page relative flex flex-col items-center gap-6 py-16 text-center md:py-24">
+          <Logo size={68} />
+          <p className="text-sm font-semibold uppercase tracking-wide text-accent">
+            {dict.home.eyebrow}
+          </p>
+          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
+            {dict.home.title}
+          </h1>
+          <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
+            {t(dict.home.subtitle, { author: siteConfig.author.name })}
+          </p>
+
+          <div className="mt-2 w-full max-w-2xl rounded-3xl border border-border bg-surface p-3 shadow-[0_20px_60px_-20px_var(--color-accent-shadow)] sm:p-4">
+            <HomeSearch
+              locale={locale}
+              placeholder={t(dict.home.searchPlaceholder, { count: tools.length })}
+              searchCta={dict.home.searchCta}
+              allCategoriesLabel={dict.home.allCategories}
+              categoryKeys={categoryKeys}
+            />
           </div>
 
-          <div className="grid w-full max-w-md grid-cols-2 gap-4 md:ml-auto">
-            <div className="rounded-2xl border border-border bg-surface p-5">
-              <p className="text-3xl font-bold text-foreground">{tools.length}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{dict.home.statTools}</p>
-            </div>
-            <div className="rounded-2xl border border-border bg-surface p-5">
-              <p className="text-3xl font-bold text-foreground">{categoryKeys.length}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{dict.home.statCategories}</p>
-            </div>
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href={`/${locale}/tools`}
+              className="inline-flex items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-colors hover:bg-accent-hover"
+            >
+              {dict.home.ctaPrimary}
+              <ArrowRight size={18} weight="bold" aria-hidden="true" />
+            </Link>
+            <Link
+              href={`/${locale}/about`}
+              className="text-sm font-semibold text-foreground hover:text-accent"
+            >
+              {dict.home.ctaSecondary}
+            </Link>
+          </div>
+
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-muted-foreground">
+            <span>
+              <span className="font-bold text-foreground">{tools.length}</span>{" "}
+              {dict.home.statTools}
+            </span>
+            <span className="h-1 w-1 rounded-full bg-border" aria-hidden="true" />
+            <span>
+              <span className="font-bold text-foreground">{categoryKeys.length}</span>{" "}
+              {dict.home.statCategories}
+            </span>
           </div>
         </div>
 
         {/* Category quick-nav */}
-        <div className="container-page relative pb-16">
-          <div className="flex flex-wrap gap-2.5">
+        <div className="container-page relative pb-12">
+          <div className="flex flex-wrap justify-center gap-2.5">
             {categoryKeys.map((key) => {
               const Icon = categoryIcons[key];
               return (
@@ -86,6 +112,22 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 </Link>
               );
             })}
+          </div>
+        </div>
+
+        {/* Trust strip — real, verifiable claims only */}
+        <div className="relative border-y border-border bg-surface-muted">
+          <div className="container-page grid grid-cols-2 gap-x-6 gap-y-4 py-6 sm:grid-cols-4">
+            {trustItems.map(({ icon: Icon, label, href }) => (
+              <Link
+                key={label}
+                href={href}
+                className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
+              >
+                <Icon size={18} weight="bold" className="shrink-0 text-accent" aria-hidden="true" />
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

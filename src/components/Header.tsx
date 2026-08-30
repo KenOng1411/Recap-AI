@@ -9,6 +9,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
 import { locales } from "@/i18n/config";
 import { ThemeToggle } from "./ThemeToggle";
+import { Logo } from "./Logo";
 
 export function Header({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
@@ -23,8 +24,11 @@ export function Header({ locale }: { locale: Locale }) {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link href={`/${locale}`} className="text-lg font-bold tracking-tight text-foreground">
-          {siteConfig.name}
+        <Link href={`/${locale}`} className="flex items-center gap-2.5">
+          <Logo size={36} />
+          <span className="text-lg font-bold tracking-tight text-foreground">
+            {siteConfig.name}
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">

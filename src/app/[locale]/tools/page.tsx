@@ -25,7 +25,7 @@ function ToolsPageInner({ locale }: { locale: Locale }) {
     : null;
 
   const [active, setActive] = useState<CategoryKey | null>(initialCategory);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
