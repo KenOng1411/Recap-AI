@@ -68,7 +68,7 @@ export function HomeSearch({
 
       <button
         type="submit"
-        className="inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-accent-strong px-6 py-3.5 text-sm font-semibold text-on-accent transition-colors hover:bg-accent-hover"
+        className="inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-accent-strong px-6 py-3.5 text-sm font-semibold text-on-accent transition-all hover:scale-[1.03] hover:bg-accent-hover active:scale-[0.97]"
       >
         {searchCta}
       </button>

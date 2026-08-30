@@ -12,10 +12,16 @@ import { getDictionary, t } from "@/i18n/dictionaries";
 import { ToolCard } from "@/components/ToolCard";
 import { Logo } from "@/components/Logo";
 import { HomeSearch } from "@/components/HomeSearch";
+import { CategoryPreviewPanel } from "@/components/CategoryPreviewPanel";
+import { PlatformsStrip } from "@/components/PlatformsStrip";
+import { TechGlobe } from "@/components/TechGlobe";
 import { tools, getFeaturedTools, getToolsByCategory } from "@/data/tools";
 import { siteConfig } from "@/data/site";
+import { platforms } from "@/data/platforms";
 import { getCategoryLabel, type CategoryKey } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
+
+const PREVIEW_CATEGORIES: CategoryKey[] = ["chatbot", "image", "video", "coding"];
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -44,6 +50,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           aria-hidden="true"
           className="pointer-events-none absolute -top-10 right-0 h-[260px] w-[260px] rounded-full bg-accent/15 blur-[90px]"
         />
+        <div className="pointer-events-none absolute left-1/2 top-2 -translate-x-1/2 opacity-40 sm:opacity-60">
+          <TechGlobe size={320} />
+        </div>
 
         <div className="container-page relative flex flex-col items-center gap-6 py-16 text-center md:py-24">
           <Logo size={68} />
@@ -70,7 +79,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
             <Link
               href={`/${locale}/tools`}
-              className="inline-flex items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-colors hover:bg-accent-hover"
+              className="inline-flex items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-all hover:scale-[1.03] hover:bg-accent-hover active:scale-[0.97]"
             >
               {dict.home.ctaPrimary}
               <ArrowRight size={18} weight="bold" aria-hidden="true" />
@@ -132,6 +141,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
+      <PlatformsStrip label={dict.home.platformsTitle} platforms={platforms} />
+
       {/* Featured tools */}
       <section className="container-page py-12">
         <div className="mb-8 flex items-end justify-between gap-4">
@@ -151,6 +162,21 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {featuredTools.map((tool) => (
             <ToolCard key={tool.slug} tool={tool} locale={locale} />
+          ))}
+        </div>
+      </section>
+
+      {/* Category preview panels */}
+      <section className="container-page py-12">
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold tracking-tight text-foreground">
+            {dict.home.categoriesTitle}
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">{dict.home.categoriesSubtitle}</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {PREVIEW_CATEGORIES.map((key) => (
+            <CategoryPreviewPanel key={key} locale={locale} categoryKey={key} />
           ))}
         </div>
       </section>

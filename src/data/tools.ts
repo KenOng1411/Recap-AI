@@ -150,7 +150,7 @@ export const tools: Tool[] = [
         tagline: "AI image generator excelling at accurate text rendering.",
         description:
           "Ideogram stands out for rendering text inside images far more accurately than most competitors. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $8/month",
+        pricing: "Free plan available, with paid tiers starting at $8/month",
         pros: ["Strong at rendering text within images", "Free tier to try it out", "Simple, easy-to-use web interface"],
         cons: ["Image detail sometimes trails Midjourney", "Style library not as broad as competitors"],
       },
@@ -158,7 +158,7 @@ export const tools: Tool[] = [
         tagline: "Générateur d'images IA excellant dans le rendu de texte.",
         description:
           "Ideogram se distingue par un rendu de texte dans les images bien plus précis que la plupart des concurrents. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 8 $/mois",
+        pricing: "Version gratuite disponible, forfaits payants dès 8 $/mois",
         pros: ["Excellent rendu du texte dans les images", "Version gratuite pour tester", "Interface web simple et facile à utiliser"],
         cons: ["Détails d'image parfois en retrait face à Midjourney", "Bibliothèque de styles moins riche que les concurrents"],
       },
@@ -178,7 +178,7 @@ export const tools: Tool[] = [
         tagline: "A professional AI video generation and editing toolkit.",
         description:
           "Runway offers text/image-to-video AI models alongside an AI-powered video editing suite. Full review coming soon.",
-        pricing: "Limited free tier; paid plans from $12/month",
+        pricing: "$12/month after a limited free trial",
         pros: ["Many AI video tools in one platform", "Quality improves quickly with each release", "Great fit for filmmakers and content creators"],
         cons: ["Pricing rises quickly with heavier rendering needs", "Takes time to learn the full feature set"],
       },
@@ -186,7 +186,7 @@ export const tools: Tool[] = [
         tagline: "Une suite professionnelle de génération et montage vidéo par IA.",
         description:
           "Runway propose des modèles IA texte/image vers vidéo ainsi qu'une suite de montage vidéo assistée par IA. Avis complet à venir.",
-        pricing: "Forfait gratuit limité ; forfaits payants dès 12 $/mois",
+        pricing: "12 $/mois après un essai gratuit limité",
         pros: ["De nombreux outils IA vidéo réunis sur une plateforme", "Qualité qui progresse vite à chaque version", "Idéal pour créateurs de contenu et vidéastes"],
         cons: ["Prix qui grimpe vite avec des besoins de rendu importants", "Prend du temps à maîtriser toutes les fonctionnalités"],
       },
@@ -205,7 +205,7 @@ export const tools: Tool[] = [
         tagline: "Generate talking AI avatar videos in multiple languages.",
         description:
           "HeyGen creates videos with AI avatars speaking a script, with multilingual voiceover support — great for marketing and training videos. Full review coming soon.",
-        pricing: "Limited free tier; paid plans from $24/month",
+        pricing: "Free to try in a limited way; full plans from $24/month",
         pros: ["Natural-looking avatars, many options", "Strong multilingual support", "Great for fast marketing/training videos"],
         cons: ["AI voice can still sound slightly robotic", "Free tier limited in video minutes"],
       },
@@ -213,7 +213,7 @@ export const tools: Tool[] = [
         tagline: "Créez des vidéos avec avatar IA parlant en plusieurs langues.",
         description:
           "HeyGen génère des vidéos avec des avatars IA qui lisent un script, avec voix off multilingue — idéal pour le marketing et la formation. Avis complet à venir.",
-        pricing: "Forfait gratuit limité ; forfaits payants dès 24 $/mois",
+        pricing: "Essai gratuit limité ; forfaits complets dès 24 $/mois",
         pros: ["Avatars naturels, nombreux choix", "Bon support multilingue", "Idéal pour des vidéos marketing/formation rapides"],
         cons: ["La voix IA peut encore sembler légèrement robotique", "Forfait gratuit limité en minutes de vidéo"],
       },
@@ -233,7 +233,7 @@ export const tools: Tool[] = [
         tagline: "Leading text-to-speech with the most natural AI voices.",
         description:
           "ElevenLabs is a text-to-speech and voice-cloning tool praised for how natural its voices sound. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $5/month",
+        pricing: "Try it free; paid plans kick in at $5/month",
         pros: ["Natural voices, minimal robotic feel", "Supports custom voice cloning", "Has an API for developers"],
         cons: ["Free tier limited in monthly characters", "Price scales up fast with heavier usage"],
       },
@@ -241,7 +241,7 @@ export const tools: Tool[] = [
         tagline: "Synthèse vocale IA de référence, la plus naturelle du marché.",
         description:
           "ElevenLabs est un outil de synthèse vocale et de clonage de voix salué pour le naturel de ses voix. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 5 $/mois",
+        pricing: "Gratuit pour commencer ; les forfaits payants démarrent à 5 $/mois",
         pros: ["Voix naturelles, peu d'effet robotique", "Clonage de voix personnalisé", "API disponible pour les développeurs"],
         cons: ["Version gratuite limitée en caractères par mois", "Le prix grimpe vite avec un usage intensif"],
       },
@@ -260,7 +260,7 @@ export const tools: Tool[] = [
         tagline: "Generate full songs — music and lyrics — from one short prompt.",
         description:
           "Suno generates both the music and the lyrics from a short text prompt, no musical skills required. Full review coming soon.",
-        pricing: "Limited free tier; paid plans from $10/month",
+        pricing: "A capped free plan, then $10/month for the full version",
         pros: ["Fast song generation, quality keeps improving", "No music theory knowledge needed", "Active community sharing songs"],
         cons: ["AI music copyright remains a debated topic", "Free tier limited in songs per month"],
       },
@@ -268,7 +268,7 @@ export const tools: Tool[] = [
         tagline: "Générez des chansons complètes — musique et paroles — en une phrase.",
         description:
           "Suno génère à la fois la musique et les paroles à partir d'une courte description, sans compétences musicales requises. Avis complet à venir.",
-        pricing: "Forfait gratuit limité ; forfaits payants dès 10 $/mois",
+        pricing: "Un plan gratuit plafonné, puis 10 $/mois pour la version complète",
         pros: ["Génération rapide, qualité en progrès constant", "Aucune connaissance musicale requise", "Communauté active qui partage ses créations"],
         cons: ["Le droit d'auteur sur la musique IA reste débattu", "Forfait gratuit limité en chansons par mois"],
       },
@@ -343,7 +343,7 @@ export const tools: Tool[] = [
         tagline: "Generate polished presentation decks from a few lines of text.",
         description:
           "Gamma uses AI to quickly generate slides, docs and web pages, saving a lot of design time. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $8/month",
+        pricing: "Has a free tier — upgrade to a paid plan from $8/month for more",
         pros: ["Fast slide generation with good-looking layouts", "Easy to edit without design skills", "Exports to multiple formats"],
         cons: ["Limited AI generations on the free tier", "Deep design customization is limited"],
       },
@@ -351,7 +351,7 @@ export const tools: Tool[] = [
         tagline: "Générez des présentations soignées à partir de quelques lignes.",
         description:
           "Gamma utilise l'IA pour créer rapidement des diaporamas, documents et pages web, un vrai gain de temps en design. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 8 $/mois",
+        pricing: "Un plan gratuit existe ; passez au payant dès 8 $/mois pour plus",
         pros: ["Génération rapide avec des mises en page soignées", "Facile à modifier sans compétences en design", "Export vers plusieurs formats"],
         cons: ["Générations IA limitées en version gratuite", "Personnalisation avancée du design limitée"],
       },
@@ -480,7 +480,7 @@ export const tools: Tool[] = [
         tagline: "AI writing and workflow automation for marketing and sales.",
         description:
           "Copy.ai helps write marketing content while also offering automation workflows for sales and marketing teams. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $49/month",
+        pricing: "Free to start, $49/month unlocks the paid tier",
         pros: ["Free tier to try before you buy", "Many ready-made automation workflows", "Friendly interface, easy to start"],
         cons: ["Output usually needs further editing", "Paid pricing scales up quickly with usage"],
       },
@@ -488,7 +488,7 @@ export const tools: Tool[] = [
         tagline: "Rédaction IA et automatisation pour marketing et ventes.",
         description:
           "Copy.ai aide à rédiger du contenu marketing tout en proposant des workflows d'automatisation pour les équipes ventes et marketing. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 49 $/mois",
+        pricing: "Gratuit au départ, 49 $/mois pour débloquer le forfait payant",
         pros: ["Version gratuite pour tester", "Nombreux workflows d'automatisation prêts à l'emploi", "Interface conviviale, prise en main facile"],
         cons: ["Le résultat nécessite généralement des retouches", "Le prix grimpe vite selon l'usage"],
       },
@@ -507,7 +507,7 @@ export const tools: Tool[] = [
         tagline: "Automate your workflows with AI-assisted Zapier.",
         description:
           "Zapier bakes AI into its well-known workflow automation platform, connecting thousands of apps without any code. Full review coming soon.",
-        pricing: "Limited free tier; paid plans from $20/month",
+        pricing: "Capped free usage, $20/month once you outgrow it",
         pros: ["Connects an enormous number of apps", "No coding knowledge required", "AI speeds up building new workflows"],
         cons: ["Price rises quickly with more monthly tasks", "Complex workflows still take time to learn"],
       },
@@ -515,7 +515,7 @@ export const tools: Tool[] = [
         tagline: "Automatisez vos workflows avec l'IA intégrée à Zapier.",
         description:
           "Zapier intègre l'IA à sa célèbre plateforme d'automatisation, connectant des milliers d'applications sans code. Avis complet à venir.",
-        pricing: "Forfait gratuit limité ; forfaits payants dès 20 $/mois",
+        pricing: "Usage gratuit plafonné, 20 $/mois une fois dépassé",
         pros: ["Connecte un nombre impressionnant d'applications", "Aucune compétence en code requise", "L'IA accélère la création de workflows"],
         cons: ["Le prix grimpe vite avec plus de tâches mensuelles", "Les workflows complexes demandent du temps à maîtriser"],
       },
@@ -615,7 +615,7 @@ export const tools: Tool[] = [
         tagline: "One subscription, access to nearly every major AI chatbot model.",
         description:
           "Poe (by Quora) is an aggregator that lets you chat with ChatGPT, Claude, Gemini and many more models from a single subscription. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $19.99/month",
+        pricing: "Free plan on offer; paid tiers begin at $19.99/month",
         pros: ["One place to compare answers across models", "Frequently adds new models on day one", "Custom bot creation without code"],
         cons: ["Costs more than using one model directly", "Can be overwhelming with so many model choices"],
       },
@@ -623,7 +623,7 @@ export const tools: Tool[] = [
         tagline: "Un seul abonnement pour accéder à presque tous les grands modèles de chatbot IA.",
         description:
           "Poe (par Quora) est un agrégateur qui permet de discuter avec ChatGPT, Claude, Gemini et bien d'autres modèles via un seul abonnement. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 19,99 $/mois",
+        pricing: "Offre gratuite disponible ; forfaits payants à partir de 19,99 $/mois",
         pros: ["Un seul endroit pour comparer les réponses entre modèles", "Ajoute souvent les nouveaux modèles dès leur sortie", "Création de bots personnalisés sans code"],
         cons: ["Coûte plus cher qu'utiliser un seul modèle directement", "Le choix de modèles peut être déroutant"],
       },
@@ -642,7 +642,7 @@ export const tools: Tool[] = [
         tagline: "AI image generator popular for game assets and fine-tuned styles.",
         description:
           "Leonardo AI offers a large library of fine-tuned models and style presets, popular with game developers and designers. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $12/month",
+        pricing: "A free tier exists; paid plans start from $12/month",
         pros: ["Large library of fine-tuned style presets", "Strong for game/concept art assets", "Generous free tier to start"],
         cons: ["Interface has a learning curve with so many options", "Best presets often reserved for paid tiers"],
       },
@@ -650,7 +650,7 @@ export const tools: Tool[] = [
         tagline: "Générateur d'images IA populaire pour les assets de jeu et styles affinés.",
         description:
           "Leonardo AI propose une grande bibliothèque de modèles affinés et de préréglages de style, apprécié des développeurs de jeux et designers. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 12 $/mois",
+        pricing: "Un palier gratuit existe ; forfaits payants dès 12 $/mois",
         pros: ["Grande bibliothèque de préréglages de style", "Excellent pour les assets de jeu/concept art", "Version gratuite généreuse pour démarrer"],
         cons: ["Interface avec une courbe d'apprentissage vu le nombre d'options", "Meilleurs préréglages souvent réservés aux forfaits payants"],
       },
@@ -723,7 +723,7 @@ export const tools: Tool[] = [
         tagline: "AI video generator known for playful, easy-to-use effects.",
         description:
           "Pika generates and edits short AI videos, with a set of signature one-click effects that made it popular on social media. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $10/month",
+        pricing: "Free version available, paid plans from $10/month for heavier use",
         pros: ["Fun, one-click video effects", "Approachable for non-editors", "Fast generation times"],
         cons: ["Shorter clip lengths than some competitors", "Free tier watermarks output"],
       },
@@ -731,7 +731,7 @@ export const tools: Tool[] = [
         tagline: "Générateur de vidéo IA connu pour ses effets ludiques et faciles à utiliser.",
         description:
           "Pika génère et édite de courtes vidéos IA, avec des effets signature en un clic qui l'ont rendu populaire sur les réseaux sociaux. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 10 $/mois",
+        pricing: "Version gratuite disponible, forfaits payants dès 10 $/mois pour un usage plus intensif",
         pros: ["Effets vidéo amusants en un clic", "Accessible pour les non-monteurs", "Temps de génération rapides"],
         cons: ["Clips plus courts que certains concurrents", "Filigrane sur la version gratuite"],
       },
@@ -750,7 +750,7 @@ export const tools: Tool[] = [
         tagline: "Luma AI's text/image-to-video model, known for smooth camera motion.",
         description:
           "Dream Machine generates video from text or an image, praised for natural-looking motion and camera movement. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $9.99/month",
+        pricing: "Comes with a free plan; paid tiers start at $9.99/month",
         pros: ["Smooth, natural motion quality", "Good image-to-video results", "Simple, fast interface"],
         cons: ["Limited fine-grained control over the output", "Queue times during peak usage"],
       },
@@ -758,7 +758,7 @@ export const tools: Tool[] = [
         tagline: "Le modèle texte/image vers vidéo de Luma AI, réputé pour ses mouvements de caméra fluides.",
         description:
           "Dream Machine génère des vidéos à partir de texte ou d'une image, salué pour la fluidité naturelle du mouvement et de la caméra. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 9,99 $/mois",
+        pricing: "Un plan gratuit est proposé ; forfaits payants dès 9,99 $/mois",
         pros: ["Qualité de mouvement fluide et naturelle", "Bons résultats en image vers vidéo", "Interface simple et rapide"],
         cons: ["Contrôle fin limité sur le résultat", "Temps d'attente aux heures de pointe"],
       },
@@ -804,7 +804,7 @@ export const tools: Tool[] = [
         tagline: "Edit audio and video by editing text — plus AI voice cloning.",
         description:
           "Descript lets you edit podcasts and videos like a text document, with AI features like filler-word removal and voice cloning. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $12/month",
+        pricing: "Free plan available, with paid tiers starting at $12/month",
         pros: ["Text-based editing is a genuine workflow shift", "Overdub voice cloning works well", "Good for podcasters and video editors alike"],
         cons: ["Can feel heavy for very simple edits", "Higher tiers needed for longer transcription limits"],
       },
@@ -812,7 +812,7 @@ export const tools: Tool[] = [
         tagline: "Éditez l'audio et la vidéo en éditant du texte — avec clonage de voix IA.",
         description:
           "Descript permet d'éditer podcasts et vidéos comme un document texte, avec des fonctions IA comme la suppression des tics de langage et le clonage de voix. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 12 $/mois",
+        pricing: "Version gratuite disponible, forfaits payants dès 12 $/mois",
         pros: ["L'édition par le texte change vraiment le workflow", "Le clonage de voix Overdub fonctionne bien", "Adapté aux podcasteurs comme aux monteurs vidéo"],
         cons: ["Peut sembler lourd pour des montages très simples", "Forfaits supérieurs nécessaires pour plus de transcription"],
       },
@@ -858,7 +858,7 @@ export const tools: Tool[] = [
         tagline: "AI music generator and Suno's closest direct competitor.",
         description:
           "Udio generates full songs from a text prompt, often compared closely with Suno for output quality and style range. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $10/month",
+        pricing: "Try it free; paid plans kick in at $10/month",
         pros: ["High-quality, varied musical output", "Active community and remix features", "Free tier to try before paying"],
         cons: ["Same copyright/licensing questions facing all AI music tools", "Generation credits run out quickly on lower tiers"],
       },
@@ -866,7 +866,7 @@ export const tools: Tool[] = [
         tagline: "Générateur de musique IA, concurrent direct de Suno.",
         description:
           "Udio génère des chansons complètes à partir d'une description texte, souvent comparé de près à Suno pour la qualité et la variété de styles. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 10 $/mois",
+        pricing: "Gratuit pour commencer ; les forfaits payants démarrent à 10 $/mois",
         pros: ["Résultats musicaux variés et de qualité", "Communauté active et fonctions de remix", "Version gratuite pour tester avant de payer"],
         cons: ["Mêmes questions de droits d'auteur que tous les outils de musique IA", "Crédits de génération limités sur les forfaits d'entrée"],
       },
@@ -912,7 +912,7 @@ export const tools: Tool[] = [
         tagline: "Live meeting transcription and AI summaries for Zoom, Meet and Teams.",
         description:
           "Otter joins meetings to transcribe in real time and generate AI summaries and action items. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $10/month",
+        pricing: "Has a free tier — upgrade to a paid plan from $10/month for more",
         pros: ["Accurate real-time transcription", "Auto-generated summaries save real time", "Integrates with major video call tools"],
         cons: ["Free tier limited on monthly transcription minutes", "Accuracy dips with heavy accents or crosstalk"],
       },
@@ -920,7 +920,7 @@ export const tools: Tool[] = [
         tagline: "Transcription de réunion en direct et résumés IA pour Zoom, Meet et Teams.",
         description:
           "Otter rejoint les réunions pour transcrire en temps réel et générer des résumés IA et des actions à suivre. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 10 $/mois",
+        pricing: "Un plan gratuit existe ; passez au payant dès 10 $/mois pour plus",
         pros: ["Transcription en temps réel précise", "Résumés automatiques qui font gagner du temps", "S'intègre aux principaux outils de visioconférence"],
         cons: ["Version gratuite limitée en minutes de transcription mensuelles", "Précision qui baisse avec accents marqués ou voix qui se chevauchent"],
       },
@@ -939,7 +939,7 @@ export const tools: Tool[] = [
         tagline: "AI meeting notetaker with searchable transcripts across your team's calls.",
         description:
           "Fireflies records and transcribes meetings, then makes every call searchable and summarized across your team. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $10/seat/month",
+        pricing: "Free to start, $10/seat/month unlocks the paid tier",
         pros: ["Team-wide searchable call archive", "Solid CRM/integration ecosystem", "Useful auto-generated meeting summaries"],
         cons: ["Free tier limited in storage/transcription length", "Can feel like overkill for solo users"],
       },
@@ -947,7 +947,7 @@ export const tools: Tool[] = [
         tagline: "Preneur de notes IA pour réunions avec transcriptions recherchables pour toute l'équipe.",
         description:
           "Fireflies enregistre et transcrit les réunions, puis rend chaque appel recherchable et résumé pour toute l'équipe. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 10 $/utilisateur/mois",
+        pricing: "Gratuit au départ, 10 $/utilisateur/mois pour débloquer le forfait payant",
         pros: ["Archive d'appels recherchable pour toute l'équipe", "Bon écosystème d'intégrations CRM", "Résumés de réunion automatiques utiles"],
         cons: ["Version gratuite limitée en stockage/durée de transcription", "Peut sembler excessif pour un usage individuel"],
       },
@@ -993,7 +993,7 @@ export const tools: Tool[] = [
         tagline: "AI-native code editor (formerly Codeium) with agentic coding flows.",
         description:
           "Windsurf is an AI-first code editor built around agentic, multi-step coding workflows across a whole codebase. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $15/month",
+        pricing: "Free plan on offer; paid tiers begin at $15/month",
         pros: ["Strong agentic/multi-step task handling", "Fast-moving product with frequent updates", "Competitive free tier"],
         cons: ["Newer product with a smaller community than incumbents", "Some advanced features still maturing"],
       },
@@ -1001,7 +1001,7 @@ export const tools: Tool[] = [
         tagline: "Éditeur de code natif IA (anciennement Codeium) avec workflows agentiques.",
         description:
           "Windsurf est un éditeur de code pensé IA d'abord, construit autour de workflows de code agentiques et multi-étapes sur tout un codebase. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 15 $/mois",
+        pricing: "Offre gratuite disponible ; forfaits payants à partir de 15 $/mois",
         pros: ["Bonne gestion des tâches agentiques/multi-étapes", "Produit qui évolue vite avec des mises à jour fréquentes", "Version gratuite compétitive"],
         cons: ["Produit plus récent avec une communauté plus restreinte que les acteurs historiques", "Certaines fonctionnalités avancées encore en maturation"],
       },
@@ -1047,7 +1047,7 @@ export const tools: Tool[] = [
         tagline: "AI website builder that generates a full, editable site from a prompt.",
         description:
           "Framer's AI tools can generate an entire responsive website from a text prompt, which you can then visually edit further. Full review coming soon.",
-        pricing: "Free tier available; paid plans from $5/month",
+        pricing: "A free tier exists; paid plans start from $5/month",
         pros: ["Generates a genuinely editable site, not just a mockup", "Publishing and hosting built in", "Professional design output out of the box"],
         cons: ["Deeper customization still benefits from design skills", "Free tier is limited for a real production site"],
       },
@@ -1055,7 +1055,7 @@ export const tools: Tool[] = [
         tagline: "Créateur de site web IA qui génère un site complet et modifiable à partir d'une consigne.",
         description:
           "Les outils IA de Framer peuvent générer un site web responsive complet à partir d'une consigne texte, modifiable ensuite visuellement. Avis complet à venir.",
-        pricing: "Version gratuite disponible ; forfaits payants dès 5 $/mois",
+        pricing: "Un palier gratuit existe ; forfaits payants dès 5 $/mois",
         pros: ["Génère un site réellement modifiable, pas juste une maquette", "Publication et hébergement intégrés", "Rendu design professionnel dès le départ"],
         cons: ["Personnalisation poussée profite quand même de compétences en design", "Version gratuite limitée pour un vrai site en production"],
       },

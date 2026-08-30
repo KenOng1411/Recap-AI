@@ -16,7 +16,7 @@ export function AffiliateCta({ toolName, affiliateUrl, locale }: AffiliateCtaPro
       href={affiliateUrl}
       target="_blank"
       rel="sponsored noopener noreferrer"
-      className="inline-flex w-fit items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-colors hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      className="inline-flex w-fit items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-all hover:scale-[1.03] hover:bg-accent-hover active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       {t(dict.toolPage.visit, { name: toolName })}
       <ArrowSquareOut size={18} weight="bold" aria-hidden="true" />

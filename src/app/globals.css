@@ -74,6 +74,42 @@ body {
   padding-right: 1.25rem;
 }
 
+/* Decorative rotating wireframe globe (TechGlobe component) — pure CSS 3D, no
+   external assets or libraries. */
+.globe-scene {
+  perspective: 900px;
+}
+.globe {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: globe-spin 20s linear infinite;
+}
+.globe-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 1px solid var(--color-accent);
+}
+@keyframes globe-spin {
+  from {
+    transform: rotateY(0deg) rotateX(10deg);
+  }
+  to {
+    transform: rotateY(360deg) rotateX(10deg);
+  }
+}
+@keyframes node-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

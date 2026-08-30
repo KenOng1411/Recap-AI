@@ -93,7 +93,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
       <div className="flex flex-col items-start gap-2">
         <button
           type="submit"
-          className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-colors hover:bg-accent-hover"
+          className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-all hover:scale-[1.03] hover:bg-accent-hover active:scale-[0.97]"
         >
           {dict.contactForm.submit}
           <PaperPlaneTilt size={16} weight="bold" aria-hidden="true" />

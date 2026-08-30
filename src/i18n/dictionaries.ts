@@ -40,6 +40,9 @@ export const dictionaries = {
       trustCriteria: "Same criteria, every time",
       trustIndependent: "Independent ratings",
       trustTransparent: "Affiliate links disclosed",
+      categoriesTitle: "Browse by category",
+      categoriesSubtitle: "Top-rated tools in each category, at a glance.",
+      platformsTitle: "AI platforms we cover",
       dealsCta: "View deals",
     },
     tools: {
@@ -175,6 +178,9 @@ export const dictionaries = {
       trustCriteria: "Mêmes critères, à chaque fois",
       trustIndependent: "Notes indépendantes",
       trustTransparent: "Liens affiliés signalés",
+      categoriesTitle: "Parcourir par catégorie",
+      categoriesSubtitle: "Les outils les mieux notés de chaque catégorie, en un coup d'œil.",
+      platformsTitle: "Plateformes IA couvertes",
       dealsCta: "Voir les bons plans",
     },
     tools: {
