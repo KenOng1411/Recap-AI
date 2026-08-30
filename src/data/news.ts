@@ -11,6 +11,10 @@ export interface NewsItem {
   sourceUrl: string;
   publishedAt: string; // ISO date, matches the source's real publish date
   relatedToolSlugs?: string[]; // links to /tools/[slug] on this site, if relevant
+  // Domain of the company the story is mainly about — used to show that
+  // company's real logo on the card (same favicon technique as ToolIcon,
+  // not a copy of the source article's own photo/illustration).
+  companyDomain?: string;
 }
 
 export const newsItems: NewsItem[] = [
@@ -24,6 +28,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
     publishedAt: "2026-08-27",
     relatedToolSlugs: ["chatgpt", "claude", "gemini"],
+    companyDomain: "openai.com",
   },
   {
     slug: "sony-warner-sue-anthropic-copyright",
@@ -35,6 +40,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
     publishedAt: "2026-08-29",
     relatedToolSlugs: ["claude"],
+    companyDomain: "anthropic.com",
   },
   {
     slug: "openai-chatgpt-ads-india",
@@ -46,6 +52,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/27/openai-to-start-showing-ads-on-chatgpts-free-and-go-tiers-in-india/",
     publishedAt: "2026-08-27",
     relatedToolSlugs: ["chatgpt"],
+    companyDomain: "openai.com",
   },
   {
     slug: "anthropic-self-improving-ai-research",
@@ -57,6 +64,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
     publishedAt: "2026-08-28",
     relatedToolSlugs: ["claude"],
+    companyDomain: "anthropic.com",
   },
   {
     slug: "open-weight-ai-acquisition-targets",
@@ -67,6 +75,7 @@ export const newsItems: NewsItem[] = [
     sourceUrl:
       "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
     publishedAt: "2026-08-28",
+    companyDomain: "huggingface.co",
   },
   {
     slug: "gemini-branding-problem",
@@ -78,6 +87,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
     publishedAt: "2026-08-26",
     relatedToolSlugs: ["gemini"],
+    companyDomain: "google.com",
   },
   {
     slug: "meta-executive-leaves-for-openai",
@@ -89,6 +99,7 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
     publishedAt: "2026-08-28",
     relatedToolSlugs: ["chatgpt", "meta-ai"],
+    companyDomain: "meta.com",
   },
   {
     slug: "nvidia-hugging-face-acquisition",
@@ -98,6 +109,7 @@ export const newsItems: NewsItem[] = [
     sourceName: "TechCrunch",
     sourceUrl: "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
     publishedAt: "2026-08-26",
+    companyDomain: "nvidia.com",
   },
   {
     slug: "amazon-triples-nvidia-chip-order",
@@ -108,6 +120,7 @@ export const newsItems: NewsItem[] = [
     sourceUrl:
       "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/",
     publishedAt: "2026-08-26",
+    companyDomain: "amazon.com",
   },
   {
     slug: "openai-hugging-face-breach-report",
@@ -119,5 +132,6 @@ export const newsItems: NewsItem[] = [
       "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
     publishedAt: "2026-08-26",
     relatedToolSlugs: ["chatgpt"],
+    companyDomain: "openai.com",
   },
 ];
