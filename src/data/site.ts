@@ -1,5 +1,9 @@
 import type { Locale } from "@/i18n/config";
 
+// Set via NEXT_PUBLIC_CONTACT_EMAIL (see .env.example). Baked in at build time
+// since this is a static export — set it before running `npm run build`.
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@toolzi.example.com";
+
 export const siteConfig = {
   name: "Toolzi",
   // TODO: switch to the real domain once it's pointed at hosting.
@@ -36,4 +40,13 @@ export const NAV_PATHS = [
   { href: "/best-of", key: "bestOf" },
   { href: "/deals", key: "deals" },
   { href: "/about", key: "about" },
+] as const;
+
+// Trust/legal links — shown in the footer on every page, not in the main nav (keeps it uncluttered).
+export const TRUST_NAV_PATHS = [
+  { href: "/review-methodology", key: "methodology" },
+  { href: "/partner-with-us", key: "partner" },
+  { href: "/disclosure", key: "disclosure" },
+  { href: "/privacy-policy", key: "privacy" },
+  { href: "/terms", key: "terms" },
 ] as const;

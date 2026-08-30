@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TiktokLogo, YoutubeLogo, FacebookLogo, XLogo } from "@phosphor-icons/react/dist/ssr";
-import { siteConfig, NAV_PATHS } from "@/data/site";
+import { siteConfig, NAV_PATHS, TRUST_NAV_PATHS } from "@/data/site";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
 
@@ -25,10 +25,23 @@ export function Footer({ locale }: { locale: Locale }) {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:gap-12">
+          <div className="flex flex-col gap-8 sm:flex-row sm:gap-12">
             <div className="flex flex-col gap-2.5">
               <p className="text-sm font-semibold text-foreground">{dict.footer.navTitle}</p>
               {NAV_PATHS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={`/${locale}${link.href}`}
+                  className="text-sm text-muted-foreground hover:text-accent"
+                >
+                  {dict.nav[link.key]}
+                </Link>
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-2.5">
+              <p className="text-sm font-semibold text-foreground">{dict.footer.trustTitle}</p>
+              {TRUST_NAV_PATHS.map((link) => (
                 <Link
                   key={link.href}
                   href={`/${locale}${link.href}`}

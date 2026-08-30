@@ -21,6 +21,7 @@
   --color-on-accent: #ffffff;
 
   --color-star: #f59e0b;
+  --color-accent-shadow: rgba(124, 58, 237, 0.18);
 }
 
 .dark {
@@ -39,6 +40,7 @@
   --color-on-accent: #ffffff;
 
   --color-star: #fbbf24;
+  --color-accent-shadow: rgba(167, 139, 250, 0.22);
 }
 
 @theme inline {

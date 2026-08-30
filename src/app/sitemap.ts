@@ -21,7 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${base}/tools`, changeFrequency: "weekly", priority: 0.9, alternates: { languages: withAlternates("/tools") } },
       { url: `${base}/best-of`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/best-of") } },
       { url: `${base}/deals`, changeFrequency: "weekly", priority: 0.7, alternates: { languages: withAlternates("/deals") } },
-      { url: `${base}/about`, changeFrequency: "monthly", priority: 0.5, alternates: { languages: withAlternates("/about") } }
+      { url: `${base}/about`, changeFrequency: "monthly", priority: 0.5, alternates: { languages: withAlternates("/about") } },
+      { url: `${base}/review-methodology`, changeFrequency: "monthly", priority: 0.6, alternates: { languages: withAlternates("/review-methodology") } },
+      { url: `${base}/partner-with-us`, changeFrequency: "monthly", priority: 0.4, alternates: { languages: withAlternates("/partner-with-us") } },
+      { url: `${base}/disclosure`, changeFrequency: "yearly", priority: 0.3, alternates: { languages: withAlternates("/disclosure") } },
+      { url: `${base}/privacy-policy`, changeFrequency: "yearly", priority: 0.3, alternates: { languages: withAlternates("/privacy-policy") } },
+      { url: `${base}/terms`, changeFrequency: "yearly", priority: 0.3, alternates: { languages: withAlternates("/terms") } }
     );
 
     for (const tool of tools) {

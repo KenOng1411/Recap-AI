@@ -3,8 +3,8 @@ interface ToolLogoProps {
   size?: number;
 }
 
-// Không dùng logo thương hiệu thật (tránh vi phạm bản quyền khi chưa có asset chính thức).
-// Hiển thị monogram nhất quán bằng accent color — thay bằng logo thật khi có ảnh chính thức.
+// Generic monogram avatar — used for the author avatar, and as the fallback
+// when a real tool icon (see ToolIcon) fails to load.
 export function ToolLogo({ name, size = 48 }: ToolLogoProps) {
   const initial = name.trim().charAt(0).toUpperCase();
 

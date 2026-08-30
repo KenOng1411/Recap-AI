@@ -6,7 +6,7 @@ import { locales, isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups, getRoundupBySlug } from "@/data/roundups";
 import { getToolBySlug } from "@/data/tools";
-import { ToolLogo } from "@/components/ToolLogo";
+import { ToolIcon } from "@/components/ToolIcon";
 import { StarRating } from "@/components/StarRating";
 
 export function generateStaticParams() {
@@ -73,7 +73,7 @@ export default async function RoundupPage(props: PageProps<"/[locale]/best-of/[s
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-soft text-sm font-bold text-accent">
                 {index + 1}
               </span>
-              <ToolLogo name={tool.name} size={44} />
+              <ToolIcon name={tool.name} website={tool.website} size={44} />
               <div className="flex-1">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <Link

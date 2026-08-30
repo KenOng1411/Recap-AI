@@ -5,11 +5,15 @@ import { CaretLeft, Check, X as XIcon } from "@phosphor-icons/react/dist/ssr";
 import { locales, isLocale } from "@/i18n/config";
 import { tools, getToolBySlug } from "@/data/tools";
 import { getCategoryLabel } from "@/data/categories";
+import { categoryIcons } from "@/data/categoryIcons";
 import { getDictionary, t } from "@/i18n/dictionaries";
-import { ToolLogo } from "@/components/ToolLogo";
+import { ToolIcon } from "@/components/ToolIcon";
 import { StarRating } from "@/components/StarRating";
 import { CategoryBadge } from "@/components/CategoryBadge";
 import { AffiliateCta } from "@/components/AffiliateCta";
+import { AffiliateDisclosureLine } from "@/components/AffiliateDisclosureLine";
+import { ReviewByline } from "@/components/ReviewByline";
+import { ReviewSchema } from "@/components/ReviewSchema";
 import { ToolCard } from "@/components/ToolCard";
 
 export function generateStaticParams() {
@@ -44,6 +48,8 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
 
   return (
     <div className="container-page py-12">
+      <ReviewSchema tool={tool} locale={locale} />
+
       <Link
         href={`/${locale}/tools`}
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent"
@@ -56,15 +62,22 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
         {/* Main content */}
         <div className="flex-1">
           <div className="flex flex-wrap items-start gap-5">
-            <ToolLogo name={tool.name} size={64} />
+            <ToolIcon name={tool.name} website={tool.website} size={64} />
             <div className="flex flex-col gap-2">
               <h1 className="text-3xl font-bold tracking-tight text-foreground">{tool.name}</h1>
               <p className="text-muted-foreground">{content.tagline}</p>
               <div className="flex flex-wrap items-center gap-3">
                 <StarRating rating={tool.rating} locale={locale} />
-                <CategoryBadge label={getCategoryLabel(tool.category, locale)} />
+                <CategoryBadge
+                  label={getCategoryLabel(tool.category, locale)}
+                  icon={categoryIcons[tool.category]}
+                />
               </div>
             </div>
+          </div>
+
+          <div className="mt-6 border-y border-border py-3">
+            <ReviewByline locale={locale} lastUpdated={tool.lastUpdated} />
           </div>
 
           <section className="mt-8">
@@ -126,7 +139,10 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
               </p>
               <p className="mt-1 text-sm font-medium text-foreground">{content.pricing}</p>
             </div>
-            <AffiliateCta toolName={tool.name} affiliateUrl={tool.affiliateUrl} locale={locale} />
+            <div className="flex flex-col gap-2.5">
+              <AffiliateDisclosureLine locale={locale} />
+              <AffiliateCta toolName={tool.name} affiliateUrl={tool.affiliateUrl} locale={locale} />
+            </div>
           </div>
         </aside>
       </div>

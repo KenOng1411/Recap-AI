@@ -7,6 +7,14 @@ export const dictionaries = {
       bestOf: "Best Of",
       deals: "Deals",
       about: "About",
+      methodology: "Review Methodology",
+      partner: "Partner With Us",
+      disclosure: "Affiliate Disclosure",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service",
+    },
+    common: {
+      featured: "Featured",
     },
     home: {
       eyebrow: "Toolzi",
@@ -32,6 +40,8 @@ export const dictionaries = {
       subtitle: "{count} AI tools reviewed, filter by category below.",
       filterAll: "All",
       filterGroup: "Filter by category",
+      searchPlaceholder: "Search tools…",
+      noResults: "No tools match your search.",
     },
     toolPage: {
       back: "All AI tools",
@@ -46,6 +56,12 @@ export const dictionaries = {
     affiliate: {
       disclosure:
         "This is an affiliate link. Toolzi may earn a commission if you sign up through this link — at no extra cost to you.",
+      articleDisclosure:
+        "This article contains affiliate links. We may earn a commission if you purchase through them.",
+    },
+    review: {
+      by: "By",
+      lastUpdated: "Last updated: {date}",
     },
     bestOfIndex: {
       title: "Best Of",
@@ -75,6 +91,7 @@ export const dictionaries = {
     footer: {
       navTitle: "Navigate",
       followTitle: "Follow",
+      trustTitle: "Trust & Legal",
       disclosure:
         "Some links on {site} are affiliate links. We may earn a commission when you sign up through them, at no extra cost to you. This helps {site} stay running and keep reviewing for free.",
       rights: "All rights reserved.",
@@ -88,6 +105,28 @@ export const dictionaries = {
       toggleToLight: "Switch to light mode",
       toggleToDark: "Switch to dark mode",
     },
+    partner: {
+      title: "Partner With Us",
+      subtitle: "Media kit & partnership info for AI product teams.",
+      methodologyLinkText: "Read our full review methodology →",
+      contactTitle: "Get in touch",
+      contactIntro:
+        "Interested in partnering? Tell us a bit about your product and what you're looking for.",
+    },
+    contactForm: {
+      name: "Your name",
+      email: "Your email",
+      company: "Company (optional)",
+      message: "Message",
+      submit: "Send via email",
+      note: "This opens your email client with your message pre-filled, addressed to us — nothing is submitted to a server.",
+    },
+    legal: {
+      lastUpdated: "Last updated: {date}",
+    },
+    methodology: {
+      title: "Review Methodology",
+    },
     langSwitch: "Français",
   },
   fr: {
@@ -96,6 +135,14 @@ export const dictionaries = {
       bestOf: "Sélections",
       deals: "Bons plans",
       about: "À propos",
+      methodology: "Méthodologie",
+      partner: "Devenir partenaire",
+      disclosure: "Divulgation affiliée",
+      privacy: "Confidentialité",
+      terms: "Conditions d'utilisation",
+    },
+    common: {
+      featured: "En vedette",
     },
     home: {
       eyebrow: "Toolzi",
@@ -121,6 +168,8 @@ export const dictionaries = {
       subtitle: "{count} outils IA testés, filtrez par catégorie ci-dessous.",
       filterAll: "Tous",
       filterGroup: "Filtrer par catégorie",
+      searchPlaceholder: "Rechercher un outil…",
+      noResults: "Aucun outil ne correspond à votre recherche.",
     },
     toolPage: {
       back: "Tous les outils IA",
@@ -135,6 +184,12 @@ export const dictionaries = {
     affiliate: {
       disclosure:
         "Ceci est un lien affilié. Toolzi peut toucher une commission si vous vous inscrivez via ce lien — sans coût supplémentaire pour vous.",
+      articleDisclosure:
+        "Cet article contient des liens affiliés. Nous pouvons toucher une commission si vous achetez via ces liens.",
+    },
+    review: {
+      by: "Par",
+      lastUpdated: "Dernière mise à jour : {date}",
     },
     bestOfIndex: {
       title: "Sélections",
@@ -164,6 +219,7 @@ export const dictionaries = {
     footer: {
       navTitle: "Navigation",
       followTitle: "Suivre",
+      trustTitle: "Confiance & Mentions légales",
       disclosure:
         "Certains liens sur {site} sont des liens affiliés. Nous pouvons toucher une commission lors de votre inscription via ces liens, sans coût supplémentaire pour vous. Cela aide {site} à continuer de fonctionner et de proposer des avis gratuits.",
       rights: "Tous droits réservés.",
@@ -176,6 +232,28 @@ export const dictionaries = {
     theme: {
       toggleToLight: "Passer en mode clair",
       toggleToDark: "Passer en mode sombre",
+    },
+    partner: {
+      title: "Devenir partenaire",
+      subtitle: "Kit média & informations partenariat pour les équipes produit IA.",
+      methodologyLinkText: "Lire notre méthodologie d'évaluation complète →",
+      contactTitle: "Nous contacter",
+      contactIntro:
+        "Intéressé par un partenariat ? Parlez-nous un peu de votre produit et de ce que vous recherchez.",
+    },
+    contactForm: {
+      name: "Votre nom",
+      email: "Votre email",
+      company: "Entreprise (optionnel)",
+      message: "Message",
+      submit: "Envoyer par email",
+      note: "Ceci ouvre votre client email avec votre message pré-rempli, adressé à nous — rien n'est envoyé à un serveur.",
+    },
+    legal: {
+      lastUpdated: "Dernière mise à jour : {date}",
+    },
+    methodology: {
+      title: "Méthodologie d'évaluation",
     },
     langSwitch: "English",
   },

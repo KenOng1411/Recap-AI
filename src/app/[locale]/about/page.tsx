@@ -4,7 +4,7 @@ import { TiktokLogo, YoutubeLogo, FacebookLogo, XLogo, Envelope } from "@phospho
 import { isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { ToolLogo } from "@/components/ToolLogo";
-import { siteConfig } from "@/data/site";
+import { siteConfig, CONTACT_EMAIL } from "@/data/site";
 
 export async function generateMetadata({
   params,
@@ -90,7 +90,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
             </a>
           ))}
           <a
-            href="mailto:hello@toolzi.example.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:border-accent hover:text-accent"
           >
             <Envelope size={16} aria-hidden="true" />

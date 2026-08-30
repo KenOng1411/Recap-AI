@@ -20,6 +20,7 @@ export interface Tool {
   website: string;
   affiliateUrl: string;
   rating: number; // 0 - 5
+  lastUpdated: string; // ISO date — bump this whenever the review copy changes
   featured?: boolean;
   content: Record<Locale, ToolContent>;
 }
@@ -32,6 +33,7 @@ export const tools: Tool[] = [
     website: "https://chat.openai.com",
     affiliateUrl: "https://chat.openai.com",
     rating: 4.7,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -59,6 +61,7 @@ export const tools: Tool[] = [
     website: "https://claude.ai",
     affiliateUrl: "https://claude.ai",
     rating: 4.7,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -86,6 +89,7 @@ export const tools: Tool[] = [
     website: "https://gemini.google.com",
     affiliateUrl: "https://gemini.google.com",
     rating: 4.4,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "Google's multimodal AI assistant, deeply tied into Workspace.",
@@ -112,6 +116,7 @@ export const tools: Tool[] = [
     website: "https://www.midjourney.com",
     affiliateUrl: "https://www.midjourney.com",
     rating: 4.6,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -139,6 +144,7 @@ export const tools: Tool[] = [
     website: "https://ideogram.ai",
     affiliateUrl: "https://ideogram.ai",
     rating: 4.3,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "AI image generator excelling at accurate text rendering.",
@@ -165,6 +171,7 @@ export const tools: Tool[] = [
     website: "https://runwayml.com",
     affiliateUrl: "https://runwayml.com",
     rating: 4.4,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -192,6 +199,7 @@ export const tools: Tool[] = [
     website: "https://www.heygen.com",
     affiliateUrl: "https://www.heygen.com",
     rating: 4.3,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "Generate talking AI avatar videos in multiple languages.",
@@ -218,6 +226,7 @@ export const tools: Tool[] = [
     website: "https://elevenlabs.io",
     affiliateUrl: "https://elevenlabs.io",
     rating: 4.6,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -245,6 +254,7 @@ export const tools: Tool[] = [
     website: "https://suno.com",
     affiliateUrl: "https://suno.com",
     rating: 4.4,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "Generate full songs — music and lyrics — from one short prompt.",
@@ -271,6 +281,7 @@ export const tools: Tool[] = [
     website: "https://www.perplexity.ai",
     affiliateUrl: "https://www.perplexity.ai",
     rating: 4.5,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -298,6 +309,7 @@ export const tools: Tool[] = [
     website: "https://www.notion.so/product/ai",
     affiliateUrl: "https://www.notion.so/product/ai",
     rating: 4.3,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -325,6 +337,7 @@ export const tools: Tool[] = [
     website: "https://gamma.app",
     affiliateUrl: "https://gamma.app",
     rating: 4.4,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "Generate polished presentation decks from a few lines of text.",
@@ -351,6 +364,7 @@ export const tools: Tool[] = [
     website: "https://github.com/features/copilot",
     affiliateUrl: "https://github.com/features/copilot",
     rating: 4.5,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -378,6 +392,7 @@ export const tools: Tool[] = [
     website: "https://cursor.com",
     affiliateUrl: "https://cursor.com",
     rating: 4.6,
+    lastUpdated: "2026-08-01",
     featured: true,
     content: {
       en: {
@@ -405,6 +420,7 @@ export const tools: Tool[] = [
     website: "https://www.canva.com/ai-image-generator/",
     affiliateUrl: "https://www.canva.com/ai-image-generator/",
     rating: 4.4,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "AI design toolkit built into Canva (Magic Studio).",
@@ -431,6 +447,7 @@ export const tools: Tool[] = [
     website: "https://www.jasper.ai",
     affiliateUrl: "https://www.jasper.ai",
     rating: 4.2,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "AI content platform built for marketing teams.",
@@ -457,6 +474,7 @@ export const tools: Tool[] = [
     website: "https://www.copy.ai",
     affiliateUrl: "https://www.copy.ai",
     rating: 4.1,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "AI writing and workflow automation for marketing and sales.",
@@ -483,6 +501,7 @@ export const tools: Tool[] = [
     website: "https://zapier.com/ai",
     affiliateUrl: "https://zapier.com/ai",
     rating: 4.3,
+    lastUpdated: "2026-08-01",
     content: {
       en: {
         tagline: "Automate your workflows with AI-assisted Zapier.",
