@@ -1,6 +1,7 @@
+import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
-import { ToolIcon } from "./ToolIcon";
-import { ToolLogo } from "./ToolLogo";
+import { topicIcons, getTopicLabel } from "@/data/newsTopics";
 import type { NewsItem } from "@/data/news";
 import type { Locale } from "@/i18n/config";
 
@@ -16,35 +17,31 @@ const dateLocale: Record<Locale, string> = {
 interface NewsCardProps {
   item: NewsItem;
   locale: Locale;
-  readMoreLabel: string; // pre-formatted, e.g. "Read at TechCrunch"
+  readMoreLabel: string; // e.g. "Read article"
 }
 
 export function NewsCard({ item, locale, readMoreLabel }: NewsCardProps) {
+  const TopicIcon = topicIcons[item.topic];
+
   return (
-    <a
-      href={item.sourceUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/${locale}/ai-news/${item.slug}`}
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_8px_30px_-8px_var(--color-accent-shadow)]"
     >
-      {/* Banner — real company logo on an original gradient backdrop, not the
-          source article's own photo/illustration. */}
-      <div
-        className="relative flex h-36 items-center justify-center overflow-hidden"
-        style={{
-          background:
-            "radial-gradient(circle at 30% 20%, var(--color-accent-soft), var(--color-surface-muted) 70%)",
-        }}
-      >
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/15 blur-2xl"
+      {/* Banner — an original AI-generated illustration for this specific
+          story (see data/news.ts), not the source article's own photo. */}
+      <div className="relative aspect-video w-full overflow-hidden bg-surface-muted">
+        <Image
+          src={`/news/${item.slug}.jpg`}
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
-        {item.companyDomain ? (
-          <ToolIcon name={item.sourceName} website={`https://${item.companyDomain}`} size={64} />
-        ) : (
-          <ToolLogo name={item.sourceName} size={64} />
-        )}
+        <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-surface/90 px-2.5 py-1 text-[11px] font-semibold text-accent shadow-sm backdrop-blur">
+          <TopicIcon size={12} weight="bold" aria-hidden="true" />
+          {getTopicLabel(item.topic, locale)}
+        </span>
       </div>
 
       <div className="flex flex-1 flex-col gap-2.5 p-5">
@@ -71,7 +68,6 @@ export function NewsCard({ item, locale, readMoreLabel }: NewsCardProps) {
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
-

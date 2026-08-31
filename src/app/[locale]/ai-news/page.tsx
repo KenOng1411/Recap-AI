@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
-import { getDictionary, t } from "@/i18n/dictionaries";
+import { getDictionary } from "@/i18n/dictionaries";
 import { newsItems } from "@/data/news";
 import { NewsCard } from "@/components/NewsCard";
 
@@ -34,7 +34,7 @@ export default async function AiNewsPage({ params }: PageProps<"/[locale]/ai-new
             key={item.slug}
             item={item}
             locale={locale}
-            readMoreLabel={t(dict.news.readMore, { source: item.sourceName })}
+            readMoreLabel={dict.news.readArticle}
           />
         ))}
       </div>

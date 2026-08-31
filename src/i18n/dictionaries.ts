@@ -20,9 +20,13 @@ export const dictionaries = {
     news: {
       title: "AI News",
       subtitle:
-        "Real, verified stories from the AI industry — each one links to its original source.",
+        "Real, verified stories from the AI industry, written by the Toolzi team with the original source linked.",
       readMore: "Read at {source}",
+      readArticle: "Read article",
       relatedTools: "Related tools on Toolzi:",
+      backToNews: "AI News",
+      sourceAttribution: "Originally reported by {source}",
+      viewSource: "View original source",
     },
     home: {
       eyebrow: "Toolzi",
@@ -166,9 +170,13 @@ export const dictionaries = {
     news: {
       title: "Actu IA",
       subtitle:
-        "Des actualités réelles et vérifiées du secteur de l'IA — chaque article renvoie à sa source originale.",
+        "Des actualités réelles et vérifiées du secteur de l'IA, rédigées par l'équipe Toolzi avec la source originale en lien.",
       readMore: "Lire sur {source}",
+      readArticle: "Lire l'article",
       relatedTools: "Outils liés sur Toolzi :",
+      backToNews: "Actu IA",
+      sourceAttribution: "Rapporté à l'origine par {source}",
+      viewSource: "Voir la source originale",
     },
     home: {
       eyebrow: "Toolzi",
