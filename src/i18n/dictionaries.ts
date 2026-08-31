@@ -16,6 +16,9 @@ export const dictionaries = {
     },
     common: {
       featured: "Featured",
+      paginationPrev: "Previous page",
+      paginationNext: "Next page",
+      paginationPage: "Page",
     },
     news: {
       title: "AI News",
@@ -166,6 +169,9 @@ export const dictionaries = {
     },
     common: {
       featured: "En vedette",
+      paginationPrev: "Page précédente",
+      paginationNext: "Page suivante",
+      paginationPage: "Page",
     },
     news: {
       title: "Actu IA",

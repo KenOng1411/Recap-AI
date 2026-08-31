@@ -9,13 +9,13 @@ import {
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
-import { ToolCard } from "@/components/ToolCard";
+import { PaginatedToolsGrid } from "@/components/PaginatedToolsGrid";
 import { Logo } from "@/components/Logo";
 import { HomeSearch } from "@/components/HomeSearch";
 import { CategoryPreviewPanel } from "@/components/CategoryPreviewPanel";
 import { PlatformsStrip } from "@/components/PlatformsStrip";
 import { TechGlobe } from "@/components/TechGlobe";
-import { NewsCard } from "@/components/NewsCard";
+import { PaginatedNewsGrid } from "@/components/PaginatedNewsGrid";
 import { tools, getFeaturedTools, getToolsByCategory } from "@/data/tools";
 import { siteConfig } from "@/data/site";
 import { platforms } from "@/data/platforms";
@@ -31,11 +31,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
   const dict = getDictionary(locale);
   const featuredTools = getFeaturedTools();
+  const featuredSlugs = new Set(featuredTools.map((t) => t.slug));
+  const orderedTools = [...featuredTools, ...tools.filter((t) => !featuredSlugs.has(t.slug))];
   const categoryKeys = Object.keys(getToolsByCategory()) as CategoryKey[];
 
-  const latestNews = [...newsItems]
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, 4);
+  const sortedNews = [...newsItems].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
 
   const trustItems = [
     { icon: Flask, label: dict.home.trustHandsOn, href: `/${locale}/review-methodology` },
@@ -165,11 +167,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             {dict.home.viewAll}
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {featuredTools.map((tool) => (
-            <ToolCard key={tool.slug} tool={tool} locale={locale} />
-          ))}
-        </div>
+        <PaginatedToolsGrid
+          tools={orderedTools}
+          locale={locale}
+          prevLabel={dict.common.paginationPrev}
+          nextLabel={dict.common.paginationNext}
+          pageLabel={dict.common.paginationPage}
+        />
       </section>
 
       {/* Category preview panels */}
@@ -242,16 +246,14 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             {dict.home.viewAll}
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {latestNews.map((item) => (
-            <NewsCard
-              key={item.slug}
-              item={item}
-              locale={locale}
-              readMoreLabel={dict.news.readArticle}
-            />
-          ))}
-        </div>
+        <PaginatedNewsGrid
+          items={sortedNews}
+          locale={locale}
+          readMoreLabel={dict.news.readArticle}
+          prevLabel={dict.common.paginationPrev}
+          nextLabel={dict.common.paginationNext}
+          pageLabel={dict.common.paginationPage}
+        />
       </section>
     </>
   );
