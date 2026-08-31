@@ -2,12 +2,13 @@ import type { Locale } from "@/i18n/config";
 
 // Set via NEXT_PUBLIC_CONTACT_EMAIL (see .env.example). Baked in at build time
 // since this is a static export — set it before running `npm run build`.
-export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@recapai.example.com";
+// TODO: once you set up a real inbox at this domain, either update the
+// fallback below or set NEXT_PUBLIC_CONTACT_EMAIL in .env.local before building.
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@recapai.online";
 
 export const siteConfig = {
   name: "RecapAI",
-  // TODO: switch to the real domain once it's pointed at hosting.
-  url: "https://recapai.example.com",
+  url: "https://recapai.online",
   ogImage: "/og-image.png",
   author: {
     // TODO: fill in your real name once you have the About page content ready.
