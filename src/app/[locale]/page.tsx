@@ -15,9 +15,11 @@ import { HomeSearch } from "@/components/HomeSearch";
 import { CategoryPreviewPanel } from "@/components/CategoryPreviewPanel";
 import { PlatformsStrip } from "@/components/PlatformsStrip";
 import { TechGlobe } from "@/components/TechGlobe";
+import { NewsCard } from "@/components/NewsCard";
 import { tools, getFeaturedTools, getToolsByCategory } from "@/data/tools";
 import { siteConfig } from "@/data/site";
 import { platforms } from "@/data/platforms";
+import { newsItems } from "@/data/news";
 import { getCategoryLabel, type CategoryKey } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
 
@@ -30,6 +32,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const dict = getDictionary(locale);
   const featuredTools = getFeaturedTools();
   const categoryKeys = Object.keys(getToolsByCategory()) as CategoryKey[];
+
+  const latestNews = [...newsItems]
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .slice(0, 4);
 
   const trustItems = [
     { icon: Flask, label: dict.home.trustHandsOn, href: `/${locale}/review-methodology` },
@@ -138,6 +144,34 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* AI News */}
+      <section className="container-page py-12">
+        <div className="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-2xl font-bold tracking-tight text-foreground">
+              {dict.news.title}
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">{dict.news.subtitle}</p>
+          </div>
+          <Link
+            href={`/${locale}/ai-news`}
+            className="hidden shrink-0 text-sm font-semibold text-accent hover:text-accent-hover sm:inline-block"
+          >
+            {dict.home.viewAll}
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {latestNews.map((item) => (
+            <NewsCard
+              key={item.slug}
+              item={item}
+              locale={locale}
+              readMoreLabel={t(dict.news.readMore, { source: item.sourceName })}
+            />
+          ))}
         </div>
       </section>
 
