@@ -1441,6 +1441,33 @@ export const tools: Tool[] = [
       },
     },
   },
+  {
+    slug: "toolsaday",
+    name: "Toolsaday",
+    category: "writing",
+    website: "https://toolsaday.com",
+    affiliateUrl: "https://toolsaday.com/writing/email-generator?via=myaffhomework",
+    rating: 4.0,
+    lastUpdated: "2026-08-31",
+    content: {
+      en: {
+        tagline: "A free AI writing toolkit — paraphrasing, story generation, and an AI email writer.",
+        description:
+          "Toolsaday bundles several free AI writing tools in one place — a paraphraser, story generator, general text generator, and an AI email generator that drafts a full email from a short prompt about its purpose and recipient. Full review coming soon.",
+        pricing: "Free",
+        pros: ["Genuinely free — no paywall to try the core tools", "Email generator covers both new emails and replies", "Handy all-in-one bundle instead of separate single-purpose tools"],
+        cons: ["Output tone can need editing to sound less generic", "Fewer advanced brand-voice/team features than paid writing tools"],
+      },
+      fr: {
+        tagline: "Une boîte à outils IA d'écriture gratuite — paraphrase, génération d'histoires et rédaction d'emails.",
+        description:
+          "Toolsaday regroupe plusieurs outils IA d'écriture gratuits en un seul endroit — un outil de paraphrase, un générateur d'histoires, un générateur de texte général et un générateur d'emails IA qui rédige un email complet à partir d'une courte consigne sur son objectif et son destinataire. Avis complet à venir.",
+        pricing: "Gratuit",
+        pros: ["Réellement gratuit — pas de mur payant pour tester les outils principaux", "Le générateur d'emails couvre à la fois nouveaux emails et réponses", "Pack tout-en-un pratique plutôt que des outils séparés"],
+        cons: ["Le ton du résultat nécessite parfois des retouches pour sonner moins générique", "Moins de fonctions avancées de voix de marque/équipe que les outils payants"],
+      },
+    },
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
