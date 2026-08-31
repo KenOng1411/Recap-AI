@@ -24,7 +24,7 @@ interface MethodologyContent {
 export const methodology: Partial<Record<Locale, MethodologyContent>> = {
   en: {
     intro:
-      "Every tool on Toolzi is evaluated the same way, using the same criteria — whether or not there's an affiliate relationship involved. Here's exactly how.",
+      "Every tool on RecapAI is evaluated the same way, using the same criteria — whether or not there's an affiliate relationship involved. Here's exactly how.",
     criteriaTitle: "What we evaluate",
     criteria: [
       {
@@ -72,11 +72,11 @@ export const methodology: Partial<Record<Locale, MethodologyContent>> = {
       "The star rating on each review is our own editorial judgment based on the criteria above — it is not an average of user votes, and it's not for sale.",
     disclosureTitle: "Affiliate relationships don't change scores",
     disclosureBody:
-      "Some reviewed tools have an affiliate relationship with Toolzi (see our Affiliate Disclosure) — this never changes the rating or the content of a review. If a tool has real drawbacks, we say so, affiliate link or not.",
+      "Some reviewed tools have an affiliate relationship with RecapAI (see our Affiliate Disclosure) — this never changes the rating or the content of a review. If a tool has real drawbacks, we say so, affiliate link or not.",
   },
   fr: {
     intro:
-      "Chaque outil sur Toolzi est évalué de la même façon, avec les mêmes critères — qu'il y ait ou non une relation d'affiliation. Voici exactement comment.",
+      "Chaque outil sur RecapAI est évalué de la même façon, avec les mêmes critères — qu'il y ait ou non une relation d'affiliation. Voici exactement comment.",
     criteriaTitle: "Ce que nous évaluons",
     criteria: [
       {
@@ -124,6 +124,6 @@ export const methodology: Partial<Record<Locale, MethodologyContent>> = {
       "La note en étoiles de chaque avis est notre propre jugement éditorial basé sur les critères ci-dessus — ce n'est pas une moyenne de votes d'utilisateurs, et elle ne s'achète pas.",
     disclosureTitle: "Les partenariats affiliés ne changent pas les notes",
     disclosureBody:
-      "Certains outils évalués ont une relation d'affiliation avec Toolzi (voir notre Divulgation affiliée) — cela ne modifie jamais la note ni le contenu d'un avis. Si un outil a de vrais défauts, nous le disons, lien affilié ou non.",
+      "Certains outils évalués ont une relation d'affiliation avec RecapAI (voir notre Divulgation affiliée) — cela ne modifie jamais la note ni le contenu d'un avis. Si un outil a de vrais défauts, nous le disons, lien affilié ou non.",
   },
 };

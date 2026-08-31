@@ -1,4 +1,4 @@
-# Toolzi
+# RecapAI
 
 AI tool review directory. Built with Next.js (App Router), TypeScript, and Tailwind CSS v4, exported as a fully static site (`output: "export"`) so it can be hosted anywhere that serves plain HTML/CSS/JS — including Hostinger shared hosting, with no Node.js server required.
 
@@ -68,7 +68,7 @@ Git is already initialized locally with an initial commit. To push it to GitHub:
 ```bash
 # 1. Create a new empty repository on github.com (no README/license — this repo already has files)
 # 2. Point this local repo at it and push:
-git remote add origin https://github.com/<your-username>/toolzi.git
+git remote add origin https://github.com/<your-username>/recapai.git
 git branch -M main
 git push -u origin main
 ```

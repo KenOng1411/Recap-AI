@@ -2,16 +2,16 @@ import type { Locale } from "@/i18n/config";
 
 // Set via NEXT_PUBLIC_CONTACT_EMAIL (see .env.example). Baked in at build time
 // since this is a static export — set it before running `npm run build`.
-export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@toolzi.example.com";
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@recapai.example.com";
 
 export const siteConfig = {
-  name: "Toolzi",
+  name: "RecapAI",
   // TODO: switch to the real domain once it's pointed at hosting.
-  url: "https://toolzi.example.com",
+  url: "https://recapai.example.com",
   ogImage: "/og-image.png",
   author: {
     // TODO: fill in your real name once you have the About page content ready.
-    name: "The Toolzi Team",
+    name: "The RecapAI Team",
     role: "AI tool reviewer",
   },
   social: {
@@ -30,12 +30,12 @@ export const siteConfig = {
     pt: "Análises honestas e diretas de ferramentas de IA",
   } satisfies Record<Locale, string>,
   description: {
-    en: "Toolzi reviews and compares the hottest AI tools — chatbots, image and video generation, productivity — so you can pick the right one in 5 minutes.",
-    fr: "Toolzi teste et compare les outils IA les plus en vue — chatbots, génération d'image et de vidéo, productivité — pour choisir le bon en 5 minutes.",
-    es: "Toolzi reseña y compara las herramientas de IA más populares — chatbots, generación de imagen y vídeo, productividad — para que elijas la correcta en 5 minutos.",
-    de: "Toolzi testet und vergleicht die gefragtesten KI-Tools — Chatbots, Bild- und Videogenerierung, Produktivität —, damit du in 5 Minuten das richtige findest.",
-    it: "Toolzi recensisce e confronta gli strumenti IA più popolari — chatbot, generazione di immagini e video, produttività — per scegliere quello giusto in 5 minuti.",
-    pt: "A Toolzi analisa e compara as ferramentas de IA mais populares — chatbots, geração de imagem e vídeo, produtividade — para você escolher a certa em 5 minutos.",
+    en: "RecapAI reviews and compares the hottest AI tools — chatbots, image and video generation, productivity — so you can pick the right one in 5 minutes.",
+    fr: "RecapAI teste et compare les outils IA les plus en vue — chatbots, génération d'image et de vidéo, productivité — pour choisir le bon en 5 minutes.",
+    es: "RecapAI reseña y compara las herramientas de IA más populares — chatbots, generación de imagen y vídeo, productividad — para que elijas la correcta en 5 minutos.",
+    de: "RecapAI testet und vergleicht die gefragtesten KI-Tools — Chatbots, Bild- und Videogenerierung, Produktivität —, damit du in 5 Minuten das richtige findest.",
+    it: "RecapAI recensisce e confronta gli strumenti IA più popolari — chatbot, generazione di immagini e video, produttività — per scegliere quello giusto in 5 minuti.",
+    pt: "A RecapAI analisa e compara as ferramentas de IA mais populares — chatbots, geração de imagem e vídeo, produtividade — para você escolher a certa em 5 minutos.",
   } satisfies Record<Locale, string>,
   ogLocale: {
     en: "en_US",

@@ -20,16 +20,16 @@ export const dictionaries = {
     news: {
       title: "AI News",
       subtitle:
-        "Real, verified stories from the AI industry, written by the Toolzi team with the original source linked.",
+        "Real, verified stories from the AI industry, written by the RecapAI team with the original source linked.",
       readMore: "Read at {source}",
       readArticle: "Read article",
-      relatedTools: "Related tools on Toolzi:",
+      relatedTools: "Related tools on RecapAI:",
       backToNews: "AI News",
       sourceAttribution: "Originally reported by {source}",
       viewSource: "View original source",
     },
     home: {
-      eyebrow: "Toolzi",
+      eyebrow: "RecapAI",
       title: "Find the right AI tool in 5 minutes, no fluff",
       subtitle:
         "{author} reviews AI tools honestly, focused on real hands-on experience — clear pros, clear cons, no hype.",
@@ -77,7 +77,7 @@ export const dictionaries = {
     },
     affiliate: {
       disclosure:
-        "This is an affiliate link. Toolzi may earn a commission if you sign up through this link — at no extra cost to you.",
+        "This is an affiliate link. RecapAI may earn a commission if you sign up through this link — at no extra cost to you.",
       articleDisclosure:
         "This article contains affiliate links. We may earn a commission if you purchase through them.",
     },
@@ -170,16 +170,16 @@ export const dictionaries = {
     news: {
       title: "Actu IA",
       subtitle:
-        "Des actualités réelles et vérifiées du secteur de l'IA, rédigées par l'équipe Toolzi avec la source originale en lien.",
+        "Des actualités réelles et vérifiées du secteur de l'IA, rédigées par l'équipe RecapAI avec la source originale en lien.",
       readMore: "Lire sur {source}",
       readArticle: "Lire l'article",
-      relatedTools: "Outils liés sur Toolzi :",
+      relatedTools: "Outils liés sur RecapAI :",
       backToNews: "Actu IA",
       sourceAttribution: "Rapporté à l'origine par {source}",
       viewSource: "Voir la source originale",
     },
     home: {
-      eyebrow: "Toolzi",
+      eyebrow: "RecapAI",
       title: "Trouvez le bon outil IA en 5 minutes, sans blabla",
       subtitle:
         "{author} teste les outils IA en toute honnêteté, avec une vraie utilisation concrète — avantages et inconvénients clairs, sans battage.",
@@ -227,7 +227,7 @@ export const dictionaries = {
     },
     affiliate: {
       disclosure:
-        "Ceci est un lien affilié. Toolzi peut toucher une commission si vous vous inscrivez via ce lien — sans coût supplémentaire pour vous.",
+        "Ceci est un lien affilié. RecapAI peut toucher une commission si vous vous inscrivez via ce lien — sans coût supplémentaire pour vous.",
       articleDisclosure:
         "Cet article contient des liens affiliés. Nous pouvons toucher une commission si vous achetez via ces liens.",
     },
