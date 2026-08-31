@@ -5089,6 +5089,260 @@ export const tools: Tool[] = [
       },
     },
   },
+  {
+    slug: "skool",
+    name: "Skool",
+    category: "productivity",
+    website: "https://www.skool.com",
+    affiliateUrl: "https://www.skool.com/signup?ref=267439080c5647c4af5e13dcdfc722fc",
+    rating: 4.3,
+    lastUpdated: "2026-08-31",
+    image: "/tools-images/skool.png",
+    content: {
+      en: {
+        tagline: "All-in-one community and course platform for creators and coaches.",
+        description:
+          "Skool combines online communities, courses, and gamified engagement into one simple platform — no plugins, no complicated setup.",
+        whatItSolves:
+          "Skool solves the problem of running a paid community or course across five disconnected tools (Discord for chat, Teachable for courses, a separate payment processor, a calendar app for events). It bundles a discussion feed, course delivery, member management, live events, and payments into one product, so creators can launch and monetize a community in a day instead of stitching together a stack.",
+        useCases: [
+          "Running a paid membership community with discussions and a leaderboard",
+          "Hosting and selling online courses alongside a community",
+          "Scheduling and running live group calls/events in members' local time zones",
+          "Building a free community to nurture leads before a paid offer",
+          "Replacing a Discord + course platform + payment stack with one tool",
+        ],
+        whoItsFor:
+          "Best for coaches, course creators, and community builders who want to launch fast without managing separate tools. No technical setup is required — creating a group and adding content takes minutes. It's not built for course creators who need certificates, quizzes, or drip content, so check the feature list first if those matter to you.",
+        tips: [
+          "Use the free 14-day trial to test whether your audience prefers Skool's simpler feed over a Discord-style chat before committing.",
+          "The Pro plan's lower 2.9% transaction fee (vs 10% on Hobby) pays for itself quickly once you're selling more than a few memberships a month — do the math on your expected volume.",
+          "Use gamification (points/levels) deliberately — it drives engagement but can also reward noise over quality if left unmoderated.",
+          "Each additional paid community costs a full separate plan — plan your community structure before splitting into multiple groups.",
+        ],
+        howToUse: [
+          "Sign up and create your group at skool.com.",
+          "Set up your community feed, add a course (optional), and configure membership pricing.",
+          "Invite members or share your public group link to start growing your audience.",
+          "Use the calendar to schedule live calls, and the leaderboard to encourage participation.",
+          "Upgrade to Pro once transaction volume makes the lower fee worthwhile.",
+        ],
+        freeTier: "No permanent free tier — Hobby starts at $9/month, but there's a 14-day free trial to test the platform.",
+        paidPlans: [
+          { name: "Hobby", price: "$9/month", details: "1 admin seat, 10% transaction fee on paid memberships, unlimited members/courses." },
+          { name: "Pro", price: "$99/month", details: "Unlimited admin seats, lower 2.9% transaction fee — pays off once you have meaningful sales volume." },
+        ],
+        pricing: "From $9/month (14-day free trial), Pro at $99/month for lower fees",
+        pros: ["Combines community + courses + payments in one simple tool", "Fast to launch, minimal setup", "Gamification genuinely drives engagement"],
+        cons: ["No certificates, quizzes, or drip content", "10% transaction fee on the cheaper Hobby plan is steep at scale", "Each extra community is a full separate paid plan"],
+      },
+      fr: {
+        tagline: "Plateforme tout-en-un de communauté et cours en ligne pour créateurs et coachs.",
+        description:
+          "Skool réunit communautés en ligne, cours et engagement gamifié dans une seule plateforme simple — sans plugin, sans configuration compliquée.",
+        whatItSolves:
+          "Skool répond au problème de gérer une communauté ou des cours payants avec cinq outils déconnectés (Discord pour le chat, Teachable pour les cours, un processeur de paiement séparé, une appli de calendrier pour les événements). Il regroupe fil de discussion, diffusion de cours, gestion des membres, événements en direct et paiements dans un seul produit, pour lancer et monétiser une communauté en une journée plutôt qu'en assemblant une pile d'outils.",
+        useCases: [
+          "Animer une communauté payante avec discussions et classement",
+          "Héberger et vendre des cours en ligne aux côtés d'une communauté",
+          "Planifier et animer des appels de groupe en direct selon le fuseau horaire des membres",
+          "Construire une communauté gratuite pour qualifier des prospects avant une offre payante",
+          "Remplacer une pile Discord + plateforme de cours + paiement par un seul outil",
+        ],
+        whoItsFor:
+          "Idéal pour les coachs, créateurs de cours et animateurs de communauté qui veulent lancer vite sans gérer des outils séparés. Aucune configuration technique n'est nécessaire — créer un groupe et ajouter du contenu prend quelques minutes. Ce n'est pas adapté aux créateurs de cours qui ont besoin de certificats, quiz ou contenu au goutte-à-goutte — vérifiez la liste des fonctionnalités si c'est important pour vous.",
+        tips: [
+          "Profitez de l'essai gratuit de 14 jours pour tester si votre audience préfère le fil simplifié de Skool à un chat façon Discord avant de vous engager.",
+          "Les frais de transaction plus bas du forfait Pro (2,9 % contre 10 % en Hobby) s'amortissent vite dès que vous vendez plus de quelques adhésions par mois — calculez selon votre volume attendu.",
+          "Utilisez la gamification (points/niveaux) avec intention — elle stimule l'engagement mais peut aussi récompenser le bruit plutôt que la qualité si elle n'est pas modérée.",
+          "Chaque communauté supplémentaire coûte un forfait complet séparé — planifiez la structure de votre communauté avant de la diviser en plusieurs groupes.",
+        ],
+        howToUse: [
+          "Inscrivez-vous et créez votre groupe sur skool.com.",
+          "Configurez votre fil de communauté, ajoutez un cours (optionnel) et définissez le prix d'adhésion.",
+          "Invitez des membres ou partagez le lien public de votre groupe pour développer votre audience.",
+          "Utilisez le calendrier pour planifier des appels en direct, et le classement pour encourager la participation.",
+          "Passez à Pro une fois que votre volume de transactions justifie les frais réduits.",
+        ],
+        freeTier: "Pas de version gratuite permanente — Hobby démarre à 9 $/mois, mais un essai gratuit de 14 jours permet de tester la plateforme.",
+        paidPlans: [
+          { name: "Hobby", price: "9 $/mois", details: "1 poste admin, 10 % de frais de transaction sur les adhésions payantes, membres/cours illimités." },
+          { name: "Pro", price: "99 $/mois", details: "Postes admin illimités, frais de transaction réduits à 2,9 % — rentable dès un volume de ventes significatif." },
+        ],
+        pricing: "Dès 9 $/mois (essai gratuit 14 jours), Pro à 99 $/mois pour des frais réduits",
+        pros: ["Réunit communauté + cours + paiements dans un seul outil simple", "Lancement rapide, configuration minimale", "La gamification stimule vraiment l'engagement"],
+        cons: ["Pas de certificats, quiz ou contenu au goutte-à-goutte", "10 % de frais de transaction sur le forfait Hobby, élevé à grande échelle", "Chaque communauté supplémentaire est un forfait payant complet séparé"],
+      },
+    },
+  },
+  {
+    slug: "runpod",
+    name: "RunPod",
+    category: "coding",
+    website: "https://www.runpod.io",
+    affiliateUrl: "https://runpod.io?ref=uug9hfc5",
+    rating: 4.5,
+    lastUpdated: "2026-08-31",
+    image: "/tools-images/runpod.png",
+    content: {
+      en: {
+        tagline: "On-demand GPU cloud for training, fine-tuning, and running AI models.",
+        description:
+          "RunPod gives developers and AI teams per-second-billed GPU instances and serverless endpoints, so you can train or deploy AI models without owning hardware or committing to a long-term cloud contract.",
+        whatItSolves:
+          "RunPod solves the problem of needing serious GPU power for AI work — training a model, running Stable Diffusion or an LLM, fine-tuning — without buying a GPU or getting locked into a big cloud provider's minimum spend. You spin up a pod from a pre-built template (PyTorch, ComfyUI, Ollama, and 100+ others) in minutes and only pay for the seconds you actually use.",
+        useCases: [
+          "Training or fine-tuning machine learning models on rented GPUs",
+          "Running image/video generation workloads (Stable Diffusion, ComfyUI, FLUX)",
+          "Hosting a self-managed LLM or inference endpoint",
+          "Auto-scaling AI inference with Serverless (scale-to-zero when idle)",
+          "Prototyping AI projects without local GPU hardware",
+        ],
+        whoItsFor:
+          "Built for developers, ML engineers, and AI builders comfortable with basic command-line/Docker workflows — it's not a no-code tool. Beginners can start from a pre-built template, but getting real value requires some familiarity with how AI models are deployed and run.",
+        tips: [
+          "Use Serverless instead of a Pod for anything with unpredictable/bursty traffic — you only pay for active execution time instead of a running instance.",
+          "Pick the smallest GPU that fits your model's VRAM requirement — jumping straight to an H100 when a 4090 would do wastes money fast.",
+          "Network Volume storage is cheaper per GB than Container/Volume Disk — use it for anything you need to persist across pod restarts.",
+          "Watch idle volume-disk costs — they roughly double when a pod is stopped but the disk isn't released, so shut pods down fully when you're done.",
+        ],
+        howToUse: [
+          "Create a free RunPod account at runpod.io.",
+          "Choose Pods (a dedicated instance) or Serverless (an auto-scaling endpoint) depending on your workload.",
+          "Pick a template (PyTorch, ComfyUI, Ollama, vLLM, Stable Diffusion, etc.) or bring your own Docker image.",
+          "Select a GPU type based on your model's VRAM needs and launch.",
+          "Monitor usage and cost in the dashboard; stop or delete pods when you're done to avoid idle charges.",
+        ],
+        freeTier: "No free compute tier, but new accounts can start immediately with pay-as-you-go pricing — no minimum spend or long-term commitment.",
+        paidPlans: [
+          { name: "Pods (pay-per-second)", price: "From $0.27/hr", details: "Dedicated GPU instances; price varies by GPU — RTX A5000 from $0.27/hr up to B300 at $7.89/hr." },
+          { name: "Serverless", price: "From $0.58/hr equivalent", details: "Auto-scaling, pay only for active execution; scales to zero when idle, roughly a 65% premium over the equivalent Pod rate." },
+        ],
+        pricing: "Pay-as-you-go, GPUs from ~$0.27/hr — no subscription required",
+        pros: ["Wide GPU selection at competitive per-second pricing", "100+ ready-made templates for common AI workloads", "Serverless scale-to-zero avoids paying for idle time"],
+        cons: ["Not beginner-friendly — assumes comfort with Docker/CLI workflows", "GPU availability and pricing fluctuate with demand", "Storage costs can add up if you don't clean up idle volumes"],
+      },
+      fr: {
+        tagline: "Cloud GPU à la demande pour entraîner, affiner et exécuter des modèles IA.",
+        description:
+          "RunPod propose aux développeurs et équipes IA des instances GPU facturées à la seconde et des endpoints serverless, pour entraîner ou déployer des modèles IA sans posséder de matériel ni s'engager sur un contrat cloud à long terme.",
+        whatItSolves:
+          "RunPod répond au besoin de puissance GPU sérieuse pour l'IA — entraîner un modèle, faire tourner Stable Diffusion ou un LLM, du fine-tuning — sans acheter de GPU ni s'enfermer dans la dépense minimale d'un grand fournisseur cloud. Vous lancez un pod à partir d'un modèle prêt à l'emploi (PyTorch, ComfyUI, Ollama, et 100+ autres) en quelques minutes et ne payez que les secondes réellement utilisées.",
+        useCases: [
+          "Entraîner ou affiner des modèles de machine learning sur des GPU loués",
+          "Exécuter des charges de génération d'image/vidéo (Stable Diffusion, ComfyUI, FLUX)",
+          "Héberger un LLM auto-géré ou un endpoint d'inférence",
+          "Mettre à l'échelle automatiquement l'inférence IA avec Serverless (scale-to-zero à l'arrêt)",
+          "Prototyper des projets IA sans GPU local",
+        ],
+        whoItsFor:
+          "Conçu pour les développeurs, ingénieurs ML et bâtisseurs IA à l'aise avec des workflows Docker/ligne de commande basiques — ce n'est pas un outil no-code. Les débutants peuvent démarrer depuis un modèle prêt à l'emploi, mais en tirer une vraie valeur demande de connaître un minimum le déploiement de modèles IA.",
+        tips: [
+          "Utilisez Serverless plutôt qu'un Pod pour tout trafic imprévisible/en pics — vous ne payez que le temps d'exécution actif au lieu d'une instance qui tourne en continu.",
+          "Choisissez le plus petit GPU qui couvre les besoins en VRAM de votre modèle — passer directement à un H100 quand un 4090 suffirait coûte cher rapidement.",
+          "Le stockage Network Volume coûte moins cher au Go que Container/Volume Disk — utilisez-le pour tout ce qui doit persister entre les redémarrages de pod.",
+          "Surveillez les coûts de disque inactif — ils doublent quasiment quand un pod est arrêté sans libérer le disque, donc arrêtez complètement les pods une fois le travail terminé.",
+        ],
+        howToUse: [
+          "Créez un compte gratuit sur runpod.io.",
+          "Choisissez Pods (instance dédiée) ou Serverless (endpoint auto-scalable) selon votre charge de travail.",
+          "Sélectionnez un modèle (PyTorch, ComfyUI, Ollama, vLLM, Stable Diffusion, etc.) ou apportez votre propre image Docker.",
+          "Choisissez un type de GPU selon les besoins en VRAM de votre modèle et lancez.",
+          "Suivez l'usage et le coût dans le tableau de bord ; arrêtez ou supprimez les pods une fois terminé pour éviter les frais d'inactivité.",
+        ],
+        freeTier: "Pas de quota de calcul gratuit, mais les nouveaux comptes démarrent immédiatement en paiement à l'usage — sans dépense minimale ni engagement long terme.",
+        paidPlans: [
+          { name: "Pods (paiement à la seconde)", price: "Dès 0,27 $/h", details: "Instances GPU dédiées ; le prix varie selon le GPU — de 0,27 $/h pour une RTX A5000 jusqu'à 7,89 $/h pour une B300." },
+          { name: "Serverless", price: "Équivalent dès 0,58 $/h", details: "Mise à l'échelle automatique, paiement uniquement du temps d'exécution actif ; scale-to-zero à l'arrêt, environ 65 % plus cher que le tarif Pod équivalent." },
+        ],
+        pricing: "Paiement à l'usage, GPU dès ~0,27 $/h — sans abonnement",
+        pros: ["Large choix de GPU à prix compétitif à la seconde", "Plus de 100 modèles prêts à l'emploi pour les charges IA courantes", "Serverless scale-to-zero évite de payer le temps inactif"],
+        cons: ["Pas adapté aux débutants — suppose une aisance avec Docker/ligne de commande", "Disponibilité et prix des GPU fluctuent selon la demande", "Les coûts de stockage peuvent s'accumuler sans nettoyage des volumes inactifs"],
+      },
+    },
+  },
+  {
+    slug: "vid-ai",
+    name: "Vid.AI",
+    category: "video",
+    website: "https://vid.ai",
+    affiliateUrl: "https://tolt.link/recapai",
+    rating: 4.0,
+    lastUpdated: "2026-08-31",
+    image: "/tools-images/vid-ai.png",
+    content: {
+      en: {
+        tagline: "Fast AI shorts generator for TikTok, Reels, and YouTube Shorts.",
+        description:
+          "Vid.AI turns a prompt or template into a ready-to-post short-form video — motivational stories, facts, life hacks — built for creators who need viral-style content fast.",
+        whatItSolves:
+          "Vid.AI solves the time problem of short-form content: instead of scripting, filming, and editing a video by hand, you pick a template or write a short prompt and it generates a complete video with narration and visuals in minutes. It's built specifically around content formats known to perform well on TikTok, Reels, and YouTube Shorts.",
+        useCases: [
+          "Generating daily short-form videos for TikTok, Reels, or YouTube Shorts",
+          "Producing motivational, story, or 'facts' style content at volume",
+          "Testing multiple video hooks/topics quickly without filming anything",
+          "Building a faceless content channel with minimal production time",
+        ],
+        whoItsFor:
+          "Best for content creators, social media marketers, and small businesses who want to publish short-form video consistently without a production team. No video editing skill is needed — picking a template or prompt is enough — but it's less suited to anyone needing precise creative control over every frame.",
+        tips: [
+          "Use the pre-made prompt templates first to learn what output quality/style to expect before writing fully custom prompts.",
+          "Since there's no free trial, review sample outputs (via reviews or the site's demo) before subscribing to confirm the style fits your niche.",
+          "Batch-generate several videos in one sitting to build a content backlog rather than generating one at a time right before posting.",
+          "Lean on the 30-day money-back guarantee to test it risk-free on your actual content workflow before committing long-term.",
+        ],
+        howToUse: [
+          "Sign up at vid.ai and choose a content template or write a custom prompt.",
+          "Select a topic/style (motivational, story, facts, life hacks, or custom).",
+          "Generate the video and review the narration, visuals, and pacing.",
+          "Export and publish directly to TikTok, Reels, or YouTube Shorts.",
+          "Repeat with new prompts to keep a consistent posting schedule.",
+        ],
+        freeTier: "No free tier or free trial, but purchases are covered by a 30-day money-back guarantee.",
+        paidPlans: [
+          { name: "Standard", price: "$67/month ($58/month billed annually)", details: "Full access to prompt-to-video generation and templates — Vid.AI runs a single-tier plan rather than multiple pricing levels." },
+        ],
+        pricing: "$67/month ($58/month billed annually), no free trial",
+        pros: ["Very fast — turns a prompt into a finished short video in minutes", "Templates tuned for formats that perform well on social platforms", "30-day money-back guarantee lowers the risk of trying it"],
+        cons: ["No free trial to test before paying", "Single pricing tier is relatively expensive for casual/occasional use", "Less creative control than manual editing for precise, on-brand content"],
+      },
+      fr: {
+        tagline: "Générateur rapide de vidéos courtes IA pour TikTok, Reels et YouTube Shorts.",
+        description:
+          "Vid.AI transforme un prompt ou un modèle en vidéo courte prête à publier — histoires motivantes, faits, astuces de vie — pensé pour les créateurs qui ont besoin de contenu viral rapidement.",
+        whatItSolves:
+          "Vid.AI répond au problème de temps du contenu court : plutôt que d'écrire, filmer et monter une vidéo à la main, vous choisissez un modèle ou rédigez un court prompt, et il génère une vidéo complète avec narration et visuels en quelques minutes. Il est pensé spécifiquement autour des formats de contenu qui performent bien sur TikTok, Reels et YouTube Shorts.",
+        useCases: [
+          "Générer des vidéos courtes quotidiennes pour TikTok, Reels ou YouTube Shorts",
+          "Produire en volume du contenu motivant, narratif ou de type « anecdotes »",
+          "Tester rapidement plusieurs accroches/sujets sans rien filmer",
+          "Construire une chaîne de contenu « sans visage » avec un temps de production minimal",
+        ],
+        whoItsFor:
+          "Idéal pour les créateurs de contenu, marketeurs réseaux sociaux et petites entreprises qui veulent publier du contenu court régulièrement sans équipe de production. Aucune compétence en montage vidéo n'est nécessaire — choisir un modèle ou un prompt suffit — mais moins adapté à qui a besoin d'un contrôle créatif précis sur chaque image.",
+        tips: [
+          "Utilisez d'abord les modèles de prompts prédéfinis pour comprendre la qualité/le style attendu avant d'écrire des prompts entièrement personnalisés.",
+          "Comme il n'y a pas d'essai gratuit, consultez des exemples de résultats (via des avis ou la démo du site) avant de vous abonner pour vérifier que le style correspond à votre niche.",
+          "Générez plusieurs vidéos en une session pour constituer une réserve de contenu plutôt qu'une à la fois juste avant de publier.",
+          "Profitez de la garantie de remboursement de 30 jours pour le tester sans risque sur votre vrai flux de contenu avant de vous engager durablement.",
+        ],
+        howToUse: [
+          "Inscrivez-vous sur vid.ai et choisissez un modèle de contenu ou rédigez un prompt personnalisé.",
+          "Sélectionnez un sujet/style (motivant, histoire, anecdotes, astuces de vie, ou personnalisé).",
+          "Générez la vidéo et vérifiez narration, visuels et rythme.",
+          "Exportez et publiez directement sur TikTok, Reels ou YouTube Shorts.",
+          "Répétez avec de nouveaux prompts pour garder un rythme de publication régulier.",
+        ],
+        freeTier: "Pas de version gratuite ni d'essai gratuit, mais les achats sont couverts par une garantie de remboursement de 30 jours.",
+        paidPlans: [
+          { name: "Standard", price: "67 $/mois (58 $/mois en facturation annuelle)", details: "Accès complet à la génération prompt-vers-vidéo et aux modèles — Vid.AI propose un seul niveau de forfait plutôt que plusieurs paliers." },
+        ],
+        pricing: "67 $/mois (58 $/mois en facturation annuelle), pas d'essai gratuit",
+        pros: ["Très rapide — transforme un prompt en vidéo courte finie en quelques minutes", "Modèles calibrés pour les formats qui performent bien sur les réseaux sociaux", "Garantie de remboursement de 30 jours réduit le risque d'essayer"],
+        cons: ["Pas d'essai gratuit avant de payer", "Un seul palier de prix, relativement cher pour un usage occasionnel", "Moins de contrôle créatif que le montage manuel pour un contenu précis et sur-mesure"],
+      },
+    },
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
