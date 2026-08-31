@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { List, X, Translate, Check } from "@phosphor-icons/react";
-import { siteConfig, NAV_PATHS } from "@/data/site";
+import { NAV_PATHS } from "@/data/site";
 import { getDictionary } from "@/i18n/dictionaries";
 import { locales, localeNames, type Locale } from "@/i18n/config";
 import { ThemeToggle } from "./ThemeToggle";
@@ -36,11 +36,8 @@ export function Header({ locale }: { locale: Locale }) {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link href={`/${locale}`} className="flex items-center gap-2.5">
+        <Link href={`/${locale}`} className="flex items-center">
           <Logo size={36} />
-          <span className="text-lg font-bold tracking-tight text-foreground">
-            {siteConfig.name}
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
