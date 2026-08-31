@@ -77,6 +77,13 @@ export const dictionaries = {
       price: "Price",
       visit: "Visit {name}",
       fullReview: "Read full review",
+      whatItSolves: "What it does & solves",
+      useCases: "Use cases",
+      whoItsFor: "Who it's for",
+      howToUse: "Getting started",
+      tips: "Tips for using it well",
+      pricingDetail: "Plans & pricing",
+      freeTier: "Free plan",
     },
     affiliate: {
       disclosure:
@@ -230,6 +237,13 @@ export const dictionaries = {
       price: "Prix",
       visit: "Découvrir {name}",
       fullReview: "Lire l'avis complet",
+      whatItSolves: "Ce qu'il fait et résout",
+      useCases: "Cas d'usage",
+      whoItsFor: "Pour qui",
+      howToUse: "Prise en main",
+      tips: "Astuces pour bien l'utiliser",
+      pricingDetail: "Forfaits et tarifs",
+      freeTier: "Forfait gratuit",
     },
     affiliate: {
       disclosure:

@@ -8,7 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,5 +43,5 @@ jobs:
             set net:max-retries 3;
             set net:reconnect-interval-base 5;
             open -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" \"$FTP_SERVER\";
-            mirror -R --verbose --parallel=2 --no-perms ./out/ \"$FTP_SERVER_DIR\";
+            mirror -R --verbose --parallel=6 --no-perms ./out/ \"$FTP_SERVER_DIR\";
           "
