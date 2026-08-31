@@ -38,9 +38,10 @@ jobs:
           lftp -c "
             set ftp:ssl-allow no;
             set ftp:passive-mode true;
+            set ftp:use-site-chmod no;
             set net:timeout 15;
             set net:max-retries 3;
             set net:reconnect-interval-base 5;
             open -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" \"$FTP_SERVER\";
-            mirror -R --verbose --parallel=10 --only-newer ./out/ \"$FTP_SERVER_DIR\";
+            mirror -R --verbose --parallel=10 --no-perms ./out/ \"$FTP_SERVER_DIR\";
           "
