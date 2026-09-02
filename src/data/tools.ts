@@ -5090,6 +5090,185 @@ export const tools: Tool[] = [
     },
   },
   {
+    slug: "fliki",
+    name: "Fliki",
+    category: "video",
+    website: "https://fliki.ai",
+    affiliateUrl: "https://fliki.ai/?via=recapai",
+    rating: 4.4,
+    lastUpdated: "2026-09-02",
+    image: "/tools-images/fliki.png",
+    content: {
+      en: {
+        tagline: "Turn text, scripts, or blog URLs into narrated videos with 2,000+ AI voices in 80+ languages.",
+        description:
+          "Fliki converts a script, a topic idea, or even an existing blog post URL into a fully narrated video — picking stock or AI visuals, adding one of over 2,000 AI voices across 80+ languages, auto-generating captions, and formatting it for YouTube, TikTok, Instagram Reels, or landscape long-form.",
+        whatItSolves:
+          "Fliki removes the two most time-consuming parts of video content — writing/recording a voiceover and finding matching visuals — by generating both from text. Instead of hiring a voice actor or recording yourself, you get a natural-sounding AI voice in the language and accent you need, paired with stock footage or AI-generated scenes, so a single writer can publish narrated video without a camera, mic, or editor.",
+        useCases: [
+          "Turning a blog post URL directly into a narrated video for YouTube or social",
+          "Producing vertical Shorts/Reels/TikToks from a short script in minutes",
+          "Localizing the same video into 80+ languages without re-recording voiceover",
+          "Cloning your own voice (Premium) for consistent narration across a whole channel",
+          "Drafting explainer or product-demo videos from bullet points instead of a full script",
+          "Adding auto-captions and background music to an existing script-driven video",
+        ],
+        whoItsFor:
+          "Best for solo creators, marketers, and small teams who need to publish video regularly but don't have the time or equipment for traditional filming. No video-editing background is required — the workflow is closer to writing than editing — though the free plan's 5-minute monthly cap and watermark mean it's really a trial tier rather than something to build a channel on.",
+        tips: [
+          "Paste a blog post URL instead of writing a script from scratch — Fliki will draft narration from the page content that you can then edit.",
+          "Preview a few voices before committing, since non-English voices vary more in naturalness than the English catalog.",
+          "Use the Premium voice-cloning feature if brand consistency across many videos matters more than the extra cost.",
+          "Swap in your own visuals or B-roll on key scenes if the default stock footage feels generic for a product-specific message.",
+          "Export scripts in short scene chunks — it's easier to fix pacing on individual scenes than to re-time a single long block.",
+        ],
+        howToUse: [
+          "Start a new project from a script, a topic prompt, or a blog post URL.",
+          "Choose an AI voice and language, then let Fliki draft matching visuals per scene.",
+          "Edit scene text, swap stock visuals, and adjust pacing as needed.",
+          "Add captions, music, and pick the aspect ratio for your target platform.",
+          "Export or publish directly, watermark-free on paid plans.",
+        ],
+        freeTier:
+          "5 minutes of video generation per month at 720p, with a Fliki watermark and a limited voice selection — enough to test the workflow, not to run a channel on.",
+        paidPlans: [
+          { name: "Standard", price: "$21–28/month", details: "120 minutes/month, 1080p export, no watermark, 900+ voices." },
+          { name: "Premium", price: "$66–88/month", details: "600 minutes/month, custom AI voice cloning, commercial usage rights." },
+          { name: "Enterprise", price: "Custom", details: "Higher volume and team-level needs, priced on request." },
+        ],
+        pricing: "Free (limited, watermarked); paid plans from $21–28/month, up to $66–88/month for voice cloning",
+        pros: ["Goes straight from text/URL to a finished narrated video, not just a voiceover", "2,000+ voices across 80+ languages makes localization genuinely fast", "Voice cloning on Premium is a real differentiator at this price"],
+        cons: ["Relies on stock footage rather than AI-generated scenes, which can look generic", "Non-English voices are less consistent in quality than the English catalog"],
+      },
+      fr: {
+        tagline: "Transformez un texte, un script ou une URL de blog en vidéo narrée avec plus de 2 000 voix IA en 80+ langues.",
+        description:
+          "Fliki convertit un script, une idée de sujet ou même l'URL d'un article de blog existant en vidéo entièrement narrée — en choisissant des visuels d'archives ou générés par IA, en ajoutant l'une des 2 000+ voix IA disponibles en plus de 80 langues, en générant automatiquement des sous-titres, et en la formatant pour YouTube, TikTok, Instagram Reels ou le format paysage long.",
+        whatItSolves:
+          "Fliki élimine les deux étapes les plus chronophages de la création vidéo — écrire/enregistrer une voix off et trouver des visuels adaptés — en générant les deux à partir d'un texte. Plutôt que d'engager un comédien voix ou de s'enregistrer soi-même, on obtient une voix IA naturelle dans la langue et l'accent voulus, associée à des images d'archives ou générées par IA.",
+        useCases: [
+          "Transformer directement l'URL d'un article de blog en vidéo narrée pour YouTube ou les réseaux sociaux",
+          "Produire des Shorts/Reels/TikToks verticaux à partir d'un court script en quelques minutes",
+          "Localiser la même vidéo en 80+ langues sans réenregistrer la voix off",
+          "Cloner sa propre voix (Premium) pour une narration cohérente sur toute une chaîne",
+          "Ébaucher des vidéos explicatives ou de démo produit à partir de points clés plutôt que d'un script complet",
+        ],
+        whoItsFor:
+          "Idéal pour les créateurs solos, marketeurs et petites équipes qui doivent publier des vidéos régulièrement sans le temps ni le matériel de tournage traditionnel. Aucune expérience en montage vidéo n'est nécessaire, mais le plafond gratuit de 5 minutes/mois avec filigrane en fait surtout un palier d'essai.",
+        tips: [
+          "Collez l'URL d'un article de blog plutôt que d'écrire un script depuis zéro — Fliki rédige une narration à partir du contenu de la page.",
+          "Prévisualisez plusieurs voix avant de choisir, les voix non anglaises étant plus inégales que le catalogue anglais.",
+          "Utilisez le clonage vocal Premium si la cohérence de marque sur de nombreuses vidéos compte plus que le coût supplémentaire.",
+        ],
+        howToUse: [
+          "Démarrez un projet à partir d'un script, d'un sujet ou d'une URL de blog.",
+          "Choisissez une voix IA et une langue, puis laissez Fliki proposer des visuels par scène.",
+          "Modifiez le texte des scènes, changez les visuels et ajustez le rythme.",
+          "Ajoutez sous-titres et musique, puis choisissez le format pour votre plateforme cible.",
+          "Exportez ou publiez directement, sans filigrane sur les forfaits payants.",
+        ],
+        freeTier:
+          "5 minutes de génération vidéo par mois en 720p, avec filigrane Fliki et un choix de voix limité — suffisant pour tester, pas pour gérer une chaîne.",
+        paidPlans: [
+          { name: "Standard", price: "21–28 $/mois", details: "120 minutes/mois, export 1080p, sans filigrane, 900+ voix." },
+          { name: "Premium", price: "66–88 $/mois", details: "600 minutes/mois, clonage de voix IA personnalisé, droits d'usage commercial." },
+          { name: "Enterprise", price: "Sur devis", details: "Besoins de volume ou d'équipe plus importants, tarifé sur demande." },
+        ],
+        pricing: "Gratuit (limité, avec filigrane) ; forfaits payants dès 21–28 $/mois, jusqu'à 66–88 $/mois pour le clonage vocal",
+        pros: ["Passe directement d'un texte/URL à une vidéo narrée finie, pas juste une voix off", "2 000+ voix en 80+ langues rend la localisation vraiment rapide", "Le clonage vocal Premium est un vrai différenciateur à ce prix"],
+        cons: ["S'appuie sur des images d'archives plutôt que des scènes générées par IA, ce qui peut sembler générique", "Les voix non anglaises sont moins régulières en qualité que le catalogue anglais"],
+      },
+    },
+  },
+  {
+    slug: "popai",
+    name: "PopAI",
+    category: "productivity",
+    website: "https://www.popai.pro",
+    affiliateUrl: "https://popai.saaslink.net/recapai",
+    rating: 4.2,
+    lastUpdated: "2026-09-02",
+    image: "/tools-images/popai.png",
+    content: {
+      en: {
+        tagline: "An AI workspace that turns documents, PDFs, or a prompt into editable presentations, chat, and images.",
+        description:
+          "PopAI is an all-in-one AI workspace where making a slide deck sits next to document chat, image generation, and writing. It can build an editable presentation from a prompt, a PDF, a Word file, an existing PPTX, or even a webpage, then export to PPTX or PDF.",
+        whatItSolves:
+          "PopAI solves the 'blank slide' problem and the 'I have a document, I need a deck' problem in one tool — instead of manually restructuring a report or PDF into slides, you upload it and PopAI drafts a structured, editable presentation from it, including turning raw data into charts automatically. It bundles that with document Q&A chat and image generation so the same workspace covers most of a typical presentation-prep workflow.",
+        useCases: [
+          "Turning an existing PDF, Word doc, or report into a first-draft slide deck",
+          "Generating a presentation from a short prompt or outline with no source document",
+          "Chatting with an uploaded PDF to pull out key points before building slides",
+          "Auto-converting raw data or numbers into charts and visualizations for a deck",
+          "Real-time collaborative editing of a deck with a team",
+          "Quickly localizing a presentation's content into another language",
+        ],
+        whoItsFor:
+          "Best for students, marketers, consultants, and small teams who regularly need to turn source material into a presentation fast, and who don't need pixel-perfect custom design. It's approachable for non-designers since the AI handles layout, but the free daily credit allowance is tight enough that regular use pushes most people toward a paid plan quickly.",
+        tips: [
+          "Upload the source PDF or doc directly rather than retyping an outline — PopAI's document parsing is the main time-saver, not the blank-prompt generator.",
+          "Use the chat-with-document feature first to sanity-check key points before generating slides, especially for longer reports.",
+          "Budget your daily free credits across tools — slide generation, chat, and image generation all draw from the same allowance.",
+          "Refine one section at a time after the first draft rather than regenerating the whole deck, to avoid losing edits you liked.",
+        ],
+        howToUse: [
+          "Start a new presentation from a prompt, an uploaded PDF/Word file, an existing PPTX, or a webpage link.",
+          "Let PopAI generate a structured first-draft deck, including auto-charts from any data.",
+          "Pick a template and refine slide content, layout, or wording section by section.",
+          "Invite teammates for real-time collaborative editing if needed.",
+          "Export the finished deck to PPTX or PDF.",
+        ],
+        freeTier:
+          "A daily allowance of AI credits (400 to start) shared across slide generation, document chat, and image generation — workable for occasional use, tight for daily work.",
+        paidPlans: [
+          { name: "Pro", price: "$5.99–9.99/month", details: "Higher daily credit allowance across all tools; inexpensive step up from Free." },
+          { name: "Unlimited", price: "~$40/month", details: "Removes daily credit limits for heavy, regular presentation work." },
+        ],
+        pricing: "Free (daily credit limit); Pro from $5.99–9.99/month; Unlimited around $40/month",
+        pros: ["Genuinely useful document-to-deck workflow, not just a blank-prompt generator", "Real-time collaboration built in for team decks", "Paid upgrade is inexpensive relative to dedicated presentation-AI tools"],
+        cons: ["Free daily credit limits are tight if you use slides, chat, and images on the same day", "Design output still benefits from manual polish for anything client-facing"],
+      },
+      fr: {
+        tagline: "Un espace de travail IA qui transforme documents, PDF ou une consigne en présentations éditables, chat et images.",
+        description:
+          "PopAI est un espace de travail IA tout-en-un où la création de diaporamas côtoie le chat avec des documents, la génération d'images et la rédaction. Il peut créer une présentation éditable à partir d'une consigne, d'un PDF, d'un fichier Word, d'un PPTX existant ou même d'une page web, puis exporter en PPTX ou PDF.",
+        whatItSolves:
+          "PopAI résout le problème de la « page blanche » et celui du « j'ai un document, il me faut un diaporama » en un seul outil — au lieu de restructurer manuellement un rapport en slides, on l'importe et PopAI en tire une présentation structurée et éditable, y compris en transformant automatiquement des données brutes en graphiques.",
+        useCases: [
+          "Transformer un PDF, document Word ou rapport existant en premier jet de diaporama",
+          "Générer une présentation à partir d'une simple consigne ou d'un plan, sans document source",
+          "Discuter avec un PDF importé pour en extraire les points clés avant de créer les slides",
+          "Convertir automatiquement des données brutes en graphiques pour un diaporama",
+          "Édition collaborative en temps réel d'un diaporama en équipe",
+        ],
+        whoItsFor:
+          "Idéal pour étudiants, marketeurs, consultants et petites équipes qui doivent régulièrement transformer un document source en présentation rapidement, sans besoin d'un design sur mesure au pixel près. Le quota gratuit quotidien est cependant assez limité pour pousser rapidement vers un forfait payant en cas d'usage régulier.",
+        tips: [
+          "Importez directement le PDF ou document source plutôt que de retaper un plan — c'est l'analyse de document qui fait gagner le plus de temps.",
+          "Utilisez d'abord le chat avec le document pour vérifier les points clés avant de générer les slides, surtout pour les longs rapports.",
+          "Répartissez vos crédits gratuits quotidiens entre les outils — génération de slides, chat et images partagent le même quota.",
+        ],
+        howToUse: [
+          "Démarrez une présentation à partir d'une consigne, d'un PDF/Word importé, d'un PPTX existant ou d'un lien web.",
+          "Laissez PopAI générer un premier jet structuré, avec graphiques automatiques si besoin.",
+          "Choisissez un modèle et affinez le contenu section par section.",
+          "Invitez des collègues pour une édition collaborative en temps réel si nécessaire.",
+          "Exportez le diaporama final en PPTX ou PDF.",
+        ],
+        freeTier:
+          "Un quota quotidien de crédits IA (400 au départ) partagé entre génération de slides, chat de document et génération d'images — correct pour un usage occasionnel, juste pour un usage quotidien.",
+        paidPlans: [
+          { name: "Pro", price: "5,99–9,99 $/mois", details: "Quota quotidien plus élevé sur tous les outils ; montée en gamme peu coûteuse depuis le gratuit." },
+          { name: "Unlimited", price: "~40 $/mois", details: "Supprime les limites de crédits quotidiens pour un usage intensif et régulier." },
+        ],
+        pricing: "Gratuit (quota quotidien) ; Pro dès 5,99–9,99 $/mois ; Unlimited environ 40 $/mois",
+        pros: ["Workflow document-vers-diaporama vraiment utile, pas seulement un générateur sur consigne", "Collaboration en temps réel intégrée pour les diaporamas d'équipe", "Montée en gamme peu coûteuse comparée aux outils IA de présentation dédiés"],
+        cons: ["Les quotas gratuits quotidiens sont serrés si slides, chat et images sont utilisés le même jour", "Le rendu graphique bénéficie encore d'une retouche manuelle pour un usage client"],
+      },
+    },
+  },
+  {
     slug: "skool",
     name: "Skool",
     category: "productivity",

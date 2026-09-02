@@ -160,6 +160,137 @@ export const roundups: Roundup[] = [
       },
     ],
   },
+  {
+    slug: "best-ai-text-to-video-generators",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "Best AI text-to-video generators",
+        description:
+          "Comparing the top tools for turning a script, topic, or blog post into a fully narrated, ready-to-publish video.",
+      },
+      fr: {
+        title: "Meilleurs générateurs IA texte-vers-vidéo",
+        description:
+          "Comparatif des meilleurs outils pour transformer un script, un sujet ou un article de blog en vidéo narrée prête à publier.",
+      },
+    },
+    items: [
+      {
+        slug: "fliki",
+        blurb: {
+          en: "The fastest path from a script or blog URL to a fully narrated video, with 2,000+ voices in 80+ languages.",
+          fr: "Le chemin le plus rapide d'un script ou d'une URL de blog à une vidéo narrée, avec 2 000+ voix en 80+ langues.",
+        },
+      },
+      {
+        slug: "heygen",
+        blurb: {
+          en: "Best when you need a talking AI avatar on screen rather than voiceover-over-visuals.",
+          fr: "Idéal quand il faut un avatar IA qui parle à l'écran plutôt qu'une voix off sur des visuels.",
+        },
+      },
+      {
+        slug: "invideo-ai",
+        blurb: {
+          en: "Template-driven, good fit for marketing and social clips built from a script.",
+          fr: "Piloté par modèles, bien adapté aux clips marketing et réseaux sociaux à partir d'un script.",
+        },
+      },
+      {
+        slug: "synthesia",
+        blurb: {
+          en: "Strong for corporate training and L&D videos with a consistent presenter avatar.",
+          fr: "Solide pour les vidéos de formation d'entreprise avec un avatar présentateur cohérent.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "best-ai-presentation-tools",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "Best AI presentation tools",
+        description:
+          "Comparing AI tools that turn a prompt, PDF, or existing document into an editable slide deck.",
+      },
+      fr: {
+        title: "Meilleurs outils IA de présentation",
+        description:
+          "Comparatif des outils IA qui transforment une consigne, un PDF ou un document existant en diaporama éditable.",
+      },
+    },
+    items: [
+      {
+        slug: "popai",
+        blurb: {
+          en: "Best when you're starting from a document — uploads a PDF/Word file and drafts a structured deck from it, with document chat and image generation in the same workspace.",
+          fr: "Idéal en partant d'un document — importe un PDF/Word et en tire un diaporama structuré, avec chat de document et génération d'images dans le même espace.",
+        },
+      },
+      {
+        slug: "gamma",
+        blurb: {
+          en: "Polished default designs, good fit for prompt-first decks with no source document.",
+          fr: "Designs par défaut soignés, bien adapté aux diaporamas créés directement depuis une consigne.",
+        },
+      },
+      {
+        slug: "canva-ai",
+        blurb: {
+          en: "Best if you want deep manual design control after the AI draft, inside a familiar editor.",
+          fr: "Idéal pour garder un contrôle de design manuel poussé après le brouillon IA, dans un éditeur familier.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "best-free-ai-writing-tools",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "Best free AI writing tools",
+        description:
+          "AI writing tools worth using without paying anything first — for quick emails, paraphrasing, and everyday drafts.",
+      },
+      fr: {
+        title: "Meilleurs outils IA de rédaction gratuits",
+        description:
+          "Des outils IA de rédaction utilisables gratuitement — pour emails rapides, paraphrases et brouillons du quotidien.",
+      },
+    },
+    items: [
+      {
+        slug: "toolsaday",
+        blurb: {
+          en: "Genuinely free with no paywall — an email generator, paraphraser, and story generator bundled in one free site.",
+          fr: "Réellement gratuit, sans mur payant — générateur d'emails, paraphraseur et générateur d'histoires réunis sur un seul site gratuit.",
+        },
+      },
+      {
+        slug: "copy-ai",
+        blurb: {
+          en: "Has a real free tier, a good starting point for freelancers and solo marketers.",
+          fr: "Dispose d'une vraie version gratuite, bon point de départ pour freelances et marketeurs solo.",
+        },
+      },
+      {
+        slug: "grammarly",
+        blurb: {
+          en: "Free tier for grammar and clarity checks on writing you've already drafted elsewhere.",
+          fr: "Version gratuite pour vérifier grammaire et clarté sur un texte déjà rédigé ailleurs.",
+        },
+      },
+      {
+        slug: "notion-ai",
+        blurb: {
+          en: "Convenient free option if you already write and take notes inside Notion.",
+          fr: "Option gratuite pratique si vous rédigez déjà et prenez des notes dans Notion.",
+        },
+      },
+    ],
+  },
 ];
 
 export function getRoundupBySlug(slug: string): Roundup | undefined {
