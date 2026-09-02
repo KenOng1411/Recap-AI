@@ -103,6 +103,16 @@ export const dictionaries = {
     },
     bestOfPost: {
       back: "Best Of",
+      jumpTo: "Jump to a pick",
+      comparisonTitle: "Quick comparison",
+      rankLabel: "Rank",
+      toolLabel: "Tool",
+      bestForLabel: "Best for",
+      startingPrice: "Starting price",
+      methodologyTitle: "How we evaluate",
+      methodologyBody:
+        "Every pick on RecapAI is scored the same way — hands-on use, pricing pulled from the tool's own pricing page, and honest pros and cons. Nobody pays for a better ranking.",
+      methodologyLink: "See our full review methodology",
     },
     deals: {
       title: "Deals & Discounts",
@@ -122,7 +132,7 @@ export const dictionaries = {
     },
     footer: {
       navTitle: "Navigate",
-      followTitle: "Follow",
+      followTitle: "Partnerships",
       trustTitle: "Trust & Legal",
       disclosure:
         "Some links on {site} are affiliate links. We may earn a commission when you sign up through them, at no extra cost to you. This helps {site} stay running and keep reviewing for free.",
@@ -263,6 +273,16 @@ export const dictionaries = {
     },
     bestOfPost: {
       back: "Sélections",
+      jumpTo: "Aller à un choix",
+      comparisonTitle: "Comparatif rapide",
+      rankLabel: "Rang",
+      toolLabel: "Outil",
+      bestForLabel: "Idéal pour",
+      startingPrice: "Prix de départ",
+      methodologyTitle: "Comment nous évaluons",
+      methodologyBody:
+        "Chaque sélection sur RecapAI est notée de la même façon — usage pratique, tarifs relevés sur la page officielle de l'outil, avantages et inconvénients honnêtes. Personne ne paie pour être mieux classé.",
+      methodologyLink: "Voir notre méthodologie complète",
     },
     deals: {
       title: "Bons plans & Réductions",
@@ -282,7 +302,7 @@ export const dictionaries = {
     },
     footer: {
       navTitle: "Navigation",
-      followTitle: "Suivre",
+      followTitle: "Partenariats",
       trustTitle: "Confiance & Mentions légales",
       disclosure:
         "Certains liens sur {site} sont des liens affiliés. Nous pouvons toucher une commission lors de votre inscription via ces liens, sans coût supplémentaire pour vous. Cela aide {site} à continuer de fonctionner et de proposer des avis gratuits.",

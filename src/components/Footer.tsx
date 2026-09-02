@@ -1,15 +1,8 @@
 import Link from "next/link";
-import { TiktokLogo, YoutubeLogo, FacebookLogo, XLogo } from "@phosphor-icons/react/dist/ssr";
-import { siteConfig, NAV_PATHS, TRUST_NAV_PATHS } from "@/data/site";
+import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
+import { siteConfig, NAV_PATHS, TRUST_NAV_PATHS, PARTNERSHIPS_EMAIL } from "@/data/site";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import type { Locale } from "@/i18n/config";
-
-const socialLinks = [
-  { href: siteConfig.social.twitter, label: "X (Twitter)", icon: XLogo },
-  { href: siteConfig.social.youtube, label: "YouTube", icon: YoutubeLogo },
-  { href: siteConfig.social.tiktok, label: "TikTok", icon: TiktokLogo },
-  { href: siteConfig.social.facebook, label: "Facebook", icon: FacebookLogo },
-];
 
 export function Footer({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -54,20 +47,13 @@ export function Footer({ locale }: { locale: Locale }) {
 
             <div className="flex flex-col gap-2.5">
               <p className="text-sm font-semibold text-foreground">{dict.footer.followTitle}</p>
-              <div className="flex items-center gap-3">
-                {socialLinks.map(({ href, label, icon: Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-accent hover:text-accent"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ))}
-              </div>
+              <a
+                href={`mailto:${PARTNERSHIPS_EMAIL}`}
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent"
+              >
+                <EnvelopeSimple size={16} />
+                {PARTNERSHIPS_EMAIL}
+              </a>
             </div>
           </div>
         </div>

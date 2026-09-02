@@ -6,6 +6,10 @@ import type { Locale } from "@/i18n/config";
 // fallback below or set NEXT_PUBLIC_CONTACT_EMAIL in .env.local before building.
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@recapai.online";
 
+// Footer contact point for affiliate/brand partnership inquiries. Social channels
+// aren't live yet — this is the single contact shown until they're built out.
+export const PARTNERSHIPS_EMAIL = "partnerships@recapai.online";
+
 export const siteConfig = {
   name: "RecapAI",
   url: "https://recapai.online",
