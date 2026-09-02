@@ -291,6 +291,102 @@ export const roundups: Roundup[] = [
       },
     ],
   },
+  {
+    slug: "fliki-vs-heygen",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "Fliki vs HeyGen: which AI video tool should you use in 2026?",
+        description:
+          "Both turn text into video fast, but they solve different problems — here's how to pick between Fliki and HeyGen.",
+      },
+      fr: {
+        title: "Fliki vs HeyGen : quel outil vidéo IA choisir en 2026 ?",
+        description:
+          "Les deux transforment du texte en vidéo rapidement, mais résolvent des problèmes différents — comment choisir entre Fliki et HeyGen.",
+      },
+    },
+    items: [
+      {
+        slug: "fliki",
+        blurb: {
+          en: "Pick Fliki if your video is voiceover-driven — narrating a script or blog post over visuals, in one of 2,000+ voices and 80+ languages, without an on-screen presenter.",
+          fr: "Choisissez Fliki si votre vidéo repose sur la voix off — narrer un script ou un article sur des visuels, en 80+ langues, sans présentateur à l'écran.",
+        },
+      },
+      {
+        slug: "heygen",
+        blurb: {
+          en: "Pick HeyGen if you specifically need a talking AI avatar on screen — for training videos, product demos, or a consistent 'face' for your brand.",
+          fr: "Choisissez HeyGen si vous avez besoin d'un avatar IA qui parle à l'écran — pour des vidéos de formation, démos produit ou un « visage » de marque cohérent.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "popai-vs-gamma",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "PopAI vs Gamma: which AI presentation tool is worth it?",
+        description:
+          "Both build slide decks with AI, but they start from different places — here's how PopAI and Gamma actually compare.",
+      },
+      fr: {
+        title: "PopAI vs Gamma : quel outil IA de présentation vaut le coup ?",
+        description:
+          "Les deux créent des diaporamas avec l'IA, mais ne partent pas du même point de départ — comparaison réelle entre PopAI et Gamma.",
+      },
+    },
+    items: [
+      {
+        slug: "popai",
+        blurb: {
+          en: "Pick PopAI if you're starting from an existing document — it turns an uploaded PDF, Word file, or report into a structured deck, plus document chat and image generation in one workspace.",
+          fr: "Choisissez PopAI si vous partez d'un document existant — il transforme un PDF, Word ou rapport importé en diaporama structuré, avec chat de document et génération d'images.",
+        },
+      },
+      {
+        slug: "gamma",
+        blurb: {
+          en: "Pick Gamma if you're starting from a blank prompt with no source document — its default designs are more polished out of the box for prompt-first decks.",
+          fr: "Choisissez Gamma si vous partez d'une simple consigne sans document source — ses designs par défaut sont plus soignés pour des diaporamas créés directement.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "toolsaday-vs-copy-ai",
+    updatedAt: "2026-09-02",
+    content: {
+      en: {
+        title: "Toolsaday vs Copy.ai: best free AI writing tool?",
+        description:
+          "One is fully free with no paywall, the other has a limited free tier backed by a bigger paid platform — here's the real difference.",
+      },
+      fr: {
+        title: "Toolsaday vs Copy.ai : meilleur outil IA de rédaction gratuit ?",
+        description:
+          "L'un est entièrement gratuit sans mur payant, l'autre a une version gratuite limitée adossée à une plateforme payante plus large — la vraie différence.",
+      },
+    },
+    items: [
+      {
+        slug: "toolsaday",
+        blurb: {
+          en: "Pick Toolsaday if you want a genuinely free bundle — paraphraser, story generator, and email generator — with no account or paywall to hit a wall on.",
+          fr: "Choisissez Toolsaday pour un pack réellement gratuit — paraphraseur, générateur d'histoires et d'emails — sans compte ni mur payant.",
+        },
+      },
+      {
+        slug: "copy-ai",
+        blurb: {
+          en: "Pick Copy.ai if you'll eventually want to grow into paid team/marketing-copy features and don't mind starting on a more limited free tier to get there.",
+          fr: "Choisissez Copy.ai si vous prévoyez d'évoluer vers des fonctions payantes marketing/équipe, quitte à démarrer sur une version gratuite plus limitée.",
+        },
+      },
+    ],
+  },
 ];
 
 export function getRoundupBySlug(slug: string): Roundup | undefined {
