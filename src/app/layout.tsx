@@ -30,6 +30,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        {/* Impact.com affiliate network site-ownership verification — requires the
+            "value" attribute specifically, not "content", per Impact's own snippet. */}
+        <meta
+          {...({
+            name: "impact-site-verification",
+            value: "a795dc66-3149-4844-9d97-477683809aff",
+          } as React.DetailedHTMLProps<React.MetaHTMLAttributes<HTMLMetaElement>, HTMLMetaElement>)}
+        />
+      </head>
       <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
         <Script id="theme-init" strategy="beforeInteractive">
           {noFlashThemeScript}
