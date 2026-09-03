@@ -5522,6 +5522,188 @@ export const tools: Tool[] = [
       },
     },
   },
+  {
+    slug: "snov-io",
+    name: "Snov.io",
+    category: "productivity",
+    website: "https://snov.io",
+    affiliateUrl: "https://snov.io",
+    rating: 4.3,
+    lastUpdated: "2026-09-04",
+    image: "/tools-images/snov-io.png",
+    content: {
+      en: {
+        tagline: "A B2B sales toolkit that bundles email finding, verification, outreach sequences, and a CRM in one platform.",
+        description:
+          "Snov.io combines an email finder searching over 50 million company profiles, email verification, multichannel outreach sequences, LinkedIn automation, inbox warm-up, and a built-in sales CRM into one workspace built for B2B prospecting and cold outreach.",
+        whatItSolves:
+          "Snov.io solves the 'five different tools stitched together' problem common in cold outreach — instead of paying separately for an email finder, a verifier, a sequencing tool, and a CRM, it bundles all of them into one subscription. That matters most for smaller sales teams and solo founders who need a full outbound workflow without the per-tool cost, or the per-tool learning curve, of piecing one together from specialist products.",
+        useCases: [
+          "Finding verified email addresses for a list of target companies using 15+ search filters",
+          "Extracting contact details directly from LinkedIn profiles via the Chrome extension",
+          "Bulk-uploading a CSV of company domains to find matching contacts at scale",
+          "Running multi-step outreach sequences with conditional follow-ups and open/click tracking",
+          "Warming up a sending inbox before a cold email campaign to protect deliverability",
+          "Managing outbound deals and pipeline in the built-in CRM without a separate tool",
+        ],
+        whoItsFor:
+          "Best for SMB sales teams, agencies, and solo founders doing B2B prospecting who want one subscription covering email finding through to CRM, rather than stitching together specialist tools. It's approachable without a dedicated sales-ops background, though teams that need the highest possible email-accuracy rate for high-stakes outreach may still want to cross-check results against a verification-focused tool.",
+        tips: [
+          "Use the Chrome extension directly on LinkedIn profiles rather than bulk CSV search when you only need a handful of contacts — it's faster and burns fewer credits.",
+          "Run new lists through the built-in verifier before sending — found emails aren't guaranteed deliverable on their own.",
+          "Turn on inbox warm-up at least a couple of weeks before a large sending campaign, not the same week you plan to launch it.",
+          "LinkedIn automation is a paid add-on on top of any plan — factor that into your budget if outreach depends on it.",
+        ],
+        howToUse: [
+          "Connect your sending inbox and set up domain/DKIM authentication for deliverability.",
+          "Search for contacts by company domain, name, or LinkedIn profile using the email finder.",
+          "Verify the found addresses before adding them to an outreach list.",
+          "Build a multi-step drip sequence with follow-up conditions and timing.",
+          "Track opens, clicks, and replies, and move responded leads into the CRM pipeline.",
+        ],
+        freeTier:
+          "A free tier with a limited monthly credit allowance is available to test email finding and verification before committing to a paid plan.",
+        paidPlans: [
+          { name: "Starter", price: "$30–39/month", details: "1,000 credits/month for email finding, verification, and sending." },
+          { name: "Pro", price: "$74–99/month", details: "5,000 credits/month, adds team and automation features." },
+          { name: "Custom Ultra", price: "Custom", details: "200,000+ credits for high-volume outbound teams, priced on request." },
+        ],
+        pricing: "Free (limited credits); paid plans from $30–39/month, up to $74–99/month; LinkedIn automation is a separate add-on",
+        pros: ["Bundles finder, verifier, sequences, and CRM in one subscription instead of several tools", "Noticeably cheaper entry point than single-purpose specialist tools", "Inbox warm-up and deliverability tools included, not a separate purchase"],
+        cons: ["Email-finding accuracy trails dedicated specialist tools like Hunter.io", "LinkedIn automation costs extra on top of every plan"],
+      },
+      fr: {
+        tagline: "Une boîte à outils B2B qui regroupe recherche d'emails, vérification, séquences de prospection et CRM en une seule plateforme.",
+        description:
+          "Snov.io combine un outil de recherche d'emails couvrant plus de 50 millions de profils d'entreprises, la vérification d'emails, des séquences de prospection multicanal, l'automatisation LinkedIn, le préchauffage de boîte mail et un CRM commercial intégré, dans un seul espace de travail pensé pour la prospection B2B.",
+        whatItSolves:
+          "Snov.io résout le problème du « cinq outils différents assemblés entre eux », courant en prospection à froid — au lieu de payer séparément un outil de recherche d'emails, un vérificateur, un outil de séquences et un CRM, il regroupe tout cela dans un seul abonnement. C'est surtout utile pour les petites équipes commerciales et fondateurs solos qui ont besoin d'un flux de prospection complet sans le coût, ni la courbe d'apprentissage, d'assembler des outils spécialisés séparés.",
+        useCases: [
+          "Trouver des adresses email vérifiées pour une liste d'entreprises cibles avec 15+ filtres de recherche",
+          "Extraire des coordonnées directement depuis des profils LinkedIn via l'extension Chrome",
+          "Importer un CSV de domaines d'entreprises pour trouver des contacts correspondants à grande échelle",
+          "Lancer des séquences de prospection à plusieurs étapes avec relances conditionnelles et suivi des ouvertures/clics",
+          "Préchauffer une boîte d'envoi avant une campagne d'emails à froid pour protéger la délivrabilité",
+          "Gérer les opportunités et le pipeline commercial dans le CRM intégré sans outil séparé",
+        ],
+        whoItsFor:
+          "Idéal pour les petites équipes commerciales, agences et fondateurs solos faisant de la prospection B2B qui veulent un seul abonnement couvrant la recherche d'emails jusqu'au CRM, plutôt que d'assembler des outils spécialisés. Accessible sans background sales-ops dédié, même si les équipes ayant besoin du taux de précision email le plus élevé pour une prospection à fort enjeu voudront peut-être recouper les résultats avec un outil dédié à la vérification.",
+        tips: [
+          "Utilisez l'extension Chrome directement sur les profils LinkedIn plutôt que la recherche CSV en masse quand vous n'avez besoin que de quelques contacts — plus rapide et moins de crédits consommés.",
+          "Passez les nouvelles listes dans le vérificateur intégré avant l'envoi — les emails trouvés ne sont pas garantis délivrables en soi.",
+          "Activez le préchauffage de boîte mail au moins deux semaines avant une grosse campagne, pas la semaine du lancement.",
+          "L'automatisation LinkedIn est une option payante en plus de chaque forfait — à prévoir dans votre budget si votre prospection en dépend.",
+        ],
+        howToUse: [
+          "Connectez votre boîte d'envoi et configurez l'authentification domaine/DKIM pour la délivrabilité.",
+          "Recherchez des contacts par domaine d'entreprise, nom, ou profil LinkedIn avec l'outil de recherche.",
+          "Vérifiez les adresses trouvées avant de les ajouter à une liste de prospection.",
+          "Construisez une séquence en plusieurs étapes avec conditions de relance et minutage.",
+          "Suivez ouvertures, clics et réponses, et déplacez les leads répondus dans le pipeline CRM.",
+        ],
+        freeTier:
+          "Une offre gratuite avec un quota mensuel de crédits limité est disponible pour tester la recherche et la vérification d'emails avant de s'engager sur un forfait payant.",
+        paidPlans: [
+          { name: "Starter", price: "30–39 $/mois", details: "1 000 crédits/mois pour la recherche, la vérification et l'envoi d'emails." },
+          { name: "Pro", price: "74–99 $/mois", details: "5 000 crédits/mois, ajoute des fonctions d'équipe et d'automatisation." },
+          { name: "Custom Ultra", price: "Sur devis", details: "200 000+ crédits pour les équipes à fort volume, tarifé sur demande." },
+        ],
+        pricing: "Gratuit (crédits limités) ; forfaits payants dès 30–39 $/mois, jusqu'à 74–99 $/mois ; l'automatisation LinkedIn est une option séparée",
+        pros: ["Regroupe recherche, vérification, séquences et CRM en un seul abonnement plutôt que plusieurs outils", "Point d'entrée nettement moins cher que les outils spécialisés à fonction unique", "Préchauffage de boîte mail et outils de délivrabilité inclus, pas un achat séparé"],
+        cons: ["La précision de recherche d'emails reste derrière des outils spécialisés dédiés comme Hunter.io", "L'automatisation LinkedIn coûte plus cher en plus de chaque forfait"],
+      },
+    },
+  },
+  {
+    slug: "hunter-io",
+    name: "Hunter.io",
+    category: "productivity",
+    website: "https://hunter.io",
+    affiliateUrl: "https://hunter.io",
+    rating: 4.4,
+    lastUpdated: "2026-09-04",
+    image: "/tools-images/hunter-io.png",
+    content: {
+      en: {
+        tagline: "A focused email-finding and verification tool built around domain search and confidence scoring.",
+        description:
+          "Hunter.io specializes in finding and verifying professional email addresses — domain search, individual email lookups, and pattern-based verification with a confidence score — rather than bundling in a full outbound sales toolkit.",
+        whatItSolves:
+          "Hunter.io solves the 'is this email actually real' problem at the center of any cold outreach campaign. Rather than spreading itself across sequencing, CRM, and warm-up features, it stays focused on the two things that most affect deliverability and reply rates: finding the right address and verifying it's actually valid before you send.",
+        useCases: [
+          "Searching a company domain to pull every publicly associated email address, filterable by department or title",
+          "Looking up the most likely email address for a specific person at a specific company",
+          "Verifying a list of existing email addresses in bulk before a sending campaign",
+          "Checking a single email's deliverability confidence score before a one-off outreach message",
+          "Using the Chrome extension to find a contact's email while browsing their company site or LinkedIn",
+        ],
+        whoItsFor:
+          "Best for sales reps, recruiters, and marketers who mainly need accurate email finding and verification with a simple, focused workflow — not a full outbound platform. Teams that also want built-in sequencing, a CRM, or LinkedIn automation will need to pair Hunter with another tool or choose a more bundled alternative.",
+        tips: [
+          "Use domain search first to see the pattern a company uses for email addresses — it often lets you predict addresses for people not yet in Hunter's database.",
+          "Always check the confidence score before sending to a found address, not just whether an email was returned at all.",
+          "Bulk-verify an existing list before a big campaign rather than verifying one at a time.",
+          "Connect Hunter to your CRM or sequencing tool via its integrations rather than trying to manage outreach inside Hunter itself.",
+        ],
+        howToUse: [
+          "Enter a company domain to run a domain search and see available email addresses.",
+          "Filter results by department or seniority to narrow down the right contact.",
+          "Verify individual or bulk-uploaded email lists for deliverability confidence.",
+          "Export verified contacts to your CRM or outreach tool of choice.",
+          "Use the Chrome extension for one-off lookups while browsing LinkedIn or a company site.",
+        ],
+        freeTier:
+          "50 free credits per month with 1 connected email account — enough for occasional, low-volume lookups.",
+        paidPlans: [
+          { name: "Starter", price: "$34–49/month", details: "More monthly credits and up to 3 connected accounts." },
+          { name: "Growth", price: "$104–149/month", details: "Higher credit volume, up to 10 connected accounts." },
+          { name: "Scale", price: "$209–299/month", details: "Highest credit volume, up to 20 connected accounts, unlimited users on every plan." },
+        ],
+        pricing: "Free (50 credits/month); paid plans from $34–49/month up to $209–299/month for high-volume teams",
+        pros: ["Meaningfully higher email-finding accuracy than bundled all-in-one alternatives", "Simple, focused workflow that's fast to learn", "Unlimited users on every paid plan, not priced per seat"],
+        cons: ["No built-in CRM, sequencing, or LinkedIn automation — you'll need separate tools for those", "More expensive per credit than broader bundled platforms at the entry tier"],
+      },
+      fr: {
+        tagline: "Un outil ciblé de recherche et vérification d'emails, centré sur la recherche par domaine et un score de confiance.",
+        description:
+          "Hunter.io se spécialise dans la recherche et la vérification d'adresses email professionnelles — recherche par domaine, recherche individuelle et vérification basée sur des schémas avec un score de confiance — plutôt que d'intégrer une boîte à outils commerciale complète.",
+        whatItSolves:
+          "Hunter.io résout le problème du « cet email est-il vraiment réel », central dans toute campagne de prospection à froid. Plutôt que de se disperser entre séquences, CRM et préchauffage, il reste concentré sur les deux éléments qui affectent le plus la délivrabilité et le taux de réponse : trouver la bonne adresse et vérifier qu'elle est valide avant l'envoi.",
+        useCases: [
+          "Rechercher un domaine d'entreprise pour extraire toutes les adresses email publiquement associées, filtrables par service ou poste",
+          "Rechercher l'adresse email la plus probable pour une personne précise dans une entreprise précise",
+          "Vérifier en masse une liste d'adresses email existantes avant une campagne d'envoi",
+          "Vérifier le score de confiance de délivrabilité d'un seul email avant un message ponctuel",
+          "Utiliser l'extension Chrome pour trouver l'email d'un contact en parcourant son site d'entreprise ou LinkedIn",
+        ],
+        whoItsFor:
+          "Idéal pour les commerciaux, recruteurs et marketeurs qui ont surtout besoin d'une recherche et vérification d'emails précise avec un flux simple et ciblé — pas d'une plateforme de prospection complète. Les équipes voulant aussi des séquences intégrées, un CRM ou l'automatisation LinkedIn devront associer Hunter à un autre outil ou choisir une alternative plus complète.",
+        tips: [
+          "Utilisez d'abord la recherche par domaine pour voir le schéma d'adresses email d'une entreprise — cela permet souvent de prédire des adresses pour des personnes pas encore dans la base de Hunter.",
+          "Vérifiez toujours le score de confiance avant d'envoyer à une adresse trouvée, pas seulement si un email a été renvoyé.",
+          "Vérifiez en masse une liste existante avant une grosse campagne plutôt qu'une par une.",
+          "Connectez Hunter à votre CRM ou outil de séquences via ses intégrations plutôt que de gérer la prospection directement dans Hunter.",
+        ],
+        howToUse: [
+          "Entrez un domaine d'entreprise pour lancer une recherche et voir les adresses email disponibles.",
+          "Filtrez les résultats par service ou ancienneté pour cibler le bon contact.",
+          "Vérifiez des listes d'emails individuelles ou importées en masse pour leur confiance de délivrabilité.",
+          "Exportez les contacts vérifiés vers votre CRM ou outil de prospection.",
+          "Utilisez l'extension Chrome pour des recherches ponctuelles en parcourant LinkedIn ou un site d'entreprise.",
+        ],
+        freeTier:
+          "50 crédits gratuits par mois avec 1 compte email connecté — suffisant pour des recherches occasionnelles à faible volume.",
+        paidPlans: [
+          { name: "Starter", price: "34–49 $/mois", details: "Plus de crédits mensuels et jusqu'à 3 comptes connectés." },
+          { name: "Growth", price: "104–149 $/mois", details: "Volume de crédits plus élevé, jusqu'à 10 comptes connectés." },
+          { name: "Scale", price: "209–299 $/mois", details: "Volume de crédits maximal, jusqu'à 20 comptes connectés, utilisateurs illimités sur chaque forfait." },
+        ],
+        pricing: "Gratuit (50 crédits/mois) ; forfaits payants de 34–49 $/mois à 209–299 $/mois pour les équipes à fort volume",
+        pros: ["Précision de recherche d'emails nettement supérieure aux alternatives tout-en-un groupées", "Flux simple et ciblé, rapide à prendre en main", "Utilisateurs illimités sur chaque forfait payant, pas de tarification par siège"],
+        cons: ["Pas de CRM, séquences ou automatisation LinkedIn intégrés — nécessite des outils séparés", "Plus cher par crédit que les plateformes groupées plus larges sur le palier d'entrée"],
+      },
+    },
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
