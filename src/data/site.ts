@@ -55,6 +55,7 @@ export const siteConfig = {
 export const NAV_PATHS = [
   { href: "/tools", key: "tools" },
   { href: "/best-of", key: "bestOf" },
+  { href: "/guides", key: "guides" },
   { href: "/ai-news", key: "news" },
   { href: "/deals", key: "deals" },
   { href: "/about", key: "about" },

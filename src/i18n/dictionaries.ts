@@ -8,6 +8,7 @@ export const dictionaries = {
       deals: "Deals",
       about: "About",
       news: "AI News",
+      guides: "Guides",
       methodology: "Review Methodology",
       partner: "Partner With Us",
       disclosure: "Affiliate Disclosure",
@@ -114,6 +115,18 @@ export const dictionaries = {
         "Every pick on RecapAI is scored the same way — hands-on use, pricing pulled from the tool's own pricing page, and honest pros and cons. Nobody pays for a better ranking.",
       methodologyLink: "See our full review methodology",
     },
+    guidesIndex: {
+      title: "Guides",
+      subtitle: "In-depth, honest \"is it worth it\" verdicts on individual AI tools.",
+      readGuide: "Read guide",
+    },
+    guidesPost: {
+      back: "Guides",
+      strongForTitle: "Strong for",
+      drawbacksTitle: "Key drawbacks",
+      notForYouTitle: "Not for you if…",
+      verdictTitle: "The verdict",
+    },
     deals: {
       title: "Deals & Discounts",
       subtitle: "Coupon codes and lifetime deals for notable AI tools, updated regularly.",
@@ -178,6 +191,7 @@ export const dictionaries = {
       deals: "Bons plans",
       about: "À propos",
       news: "Actu IA",
+      guides: "Guides",
       methodology: "Méthodologie",
       partner: "Devenir partenaire",
       disclosure: "Divulgation affiliée",
@@ -283,6 +297,18 @@ export const dictionaries = {
       methodologyBody:
         "Chaque sélection sur RecapAI est notée de la même façon — usage pratique, tarifs relevés sur la page officielle de l'outil, avantages et inconvénients honnêtes. Personne ne paie pour être mieux classé.",
       methodologyLink: "Voir notre méthodologie complète",
+    },
+    guidesIndex: {
+      title: "Guides",
+      subtitle: "Des verdicts détaillés et honnêtes « ça vaut le coup ou pas » sur chaque outil IA.",
+      readGuide: "Lire le guide",
+    },
+    guidesPost: {
+      back: "Guides",
+      strongForTitle: "Points forts",
+      drawbacksTitle: "Inconvénients principaux",
+      notForYouTitle: "Pas pour vous si…",
+      verdictTitle: "Le verdict",
     },
     deals: {
       title: "Bons plans & Réductions",
