@@ -191,9 +191,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
-      {/* Best-of / Deals CTA */}
+      {/* Best-of / Guides / Deals CTA */}
       <section className="container-page py-12">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           <Link
             href={`/${locale}/best-of`}
             className="group flex flex-col justify-between gap-6 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent"
@@ -208,6 +208,23 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </div>
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
               {dict.home.bestOfCta} <ArrowRight size={16} weight="bold" aria-hidden="true" />
+            </span>
+          </Link>
+
+          <Link
+            href={`/${locale}/guides`}
+            className="group flex flex-col justify-between gap-6 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent"
+          >
+            <div>
+              <h3 className="text-xl font-bold text-foreground group-hover:text-accent">
+                {dict.home.guidesTitle}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {dict.home.guidesDesc}
+              </p>
+            </div>
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
+              {dict.home.guidesCta} <ArrowRight size={16} weight="bold" aria-hidden="true" />
             </span>
           </Link>
 

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { tools } from "@/data/tools";
 import { roundups } from "@/data/roundups";
+import { guides } from "@/data/guides";
 import { newsItems } from "@/data/news";
 import { siteConfig } from "@/data/site";
 import { locales } from "@/i18n/config";
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${base}/`, changeFrequency: "weekly", priority: 1, alternates: { languages: withAlternates("/") } },
       { url: `${base}/tools`, changeFrequency: "weekly", priority: 0.9, alternates: { languages: withAlternates("/tools") } },
       { url: `${base}/best-of`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/best-of") } },
+      { url: `${base}/guides`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/guides") } },
       { url: `${base}/deals`, changeFrequency: "weekly", priority: 0.7, alternates: { languages: withAlternates("/deals") } },
       { url: `${base}/about`, changeFrequency: "monthly", priority: 0.5, alternates: { languages: withAlternates("/about") } },
       { url: `${base}/ai-news`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/ai-news") } },
@@ -47,6 +49,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: { languages: withAlternates(`/best-of/${roundup.slug}`) },
+      });
+    }
+
+    for (const guide of guides) {
+      entries.push({
+        url: `${base}/guides/${guide.slug}`,
+        lastModified: guide.updatedAt,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: { languages: withAlternates(`/guides/${guide.slug}`) },
       });
     }
 
