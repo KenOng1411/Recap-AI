@@ -200,4 +200,92 @@ export const newsItems: NewsItem[] = [
     relatedToolSlugs: ["chatgpt"],
     companyDomain: "openai.com",
   },
+  {
+    slug: "nvidia-hugging-face-deal-confirmed-13-billion",
+    topic: "business",
+    title: "Nvidia's Hugging Face acquisition is official: a $13 billion deal",
+    summary:
+      "Nvidia has confirmed its acquisition of Hugging Face at a price of nearly $13 billion, turning the deal reported in late August into an official agreement — Nvidia's second-largest acquisition on record.",
+    body: [
+      "Nvidia has confirmed its acquisition of Hugging Face, the open-source hub used to publish and download AI models, in a deal valued at close to $13 billion. This finalizes the deal RecapAI covered as a rumor last week — it's now official, with Nvidia's own regulatory filing setting the price and an expected close in the first half of 2027 pending regulatory approval. It's Nvidia's second-largest acquisition on record, trailing only its $20 billion purchase of Groq's assets late last year.",
+      "Hugging Face's scale explains the price tag: more than 18 million developers and researchers use the platform, hosting over 3 million models and serving roughly 200,000 enterprise customers. For Nvidia, this isn't primarily about owning the models themselves — it's about owning the distribution layer that shapes which hardware those models get trained and run on. Nvidia has said it will keep Hugging Face's platform open, consistent with the startup's existing practices, which matters for a developer community that has historically been wary of what happens to open infrastructure once a large company owns it.",
+      "If you rely on open-weight models — including tools built on openly-licensed foundations — this is worth tracking loosely. Nvidia's stated commitment to keeping Hugging Face open is a good early signal, but the real test will be how the platform evolves once it sits inside a company whose core business is selling the GPUs those models run on.",
+    ],
+    sourceName: "Bloomberg",
+    sourceUrl:
+      "https://www.bloomberg.com/news/articles/2026-09-03/nvidia-agrees-to-13-billion-deal-for-ai-platform-hugging-face",
+    publishedAt: "2026-09-03",
+    companyDomain: "huggingface.co",
+  },
+  {
+    slug: "anthropic-ipo-prospectus-post-labor-day",
+    topic: "business",
+    title: "Anthropic set to unveil its IPO prospectus after Labor Day, targeting a $2 trillion-plus valuation",
+    summary:
+      "Anthropic is preparing to publicly release its IPO prospectus after the Labor Day holiday, with a first trade targeted for late September or early October and reports suggesting the raise could value the Claude maker north of $2 trillion.",
+    body: [
+      "Anthropic is preparing to publicly unveil its IPO prospectus after the Labor Day holiday (September 7), according to multiple reports, with a first trade targeted for late September or early October. The company is reportedly aiming to raise at least $130 billion, which would put its overall valuation north of $2 trillion — Goldman Sachs, JPMorgan, and Morgan Stanley are said to be leading the underwriting.",
+      "The scale of the numbers reflects how fast Anthropic's business has grown: its annual run rate reportedly topped $65 billion at the end of July, up from roughly $9 billion at the end of 2025. That growth is also what's funding the enormous compute commitments Anthropic has been signing this year — including a separate $35 billion cloud deal for Texas data center capacity just days before this IPO news broke. A listing this size would be one of the largest tech IPOs on record, and reporting suggests it's already pushing competing AI labs to rethink the timing of their own listing plans.",
+      "For Claude users, an IPO doesn't change the product directly, but it's a signal of the financial pressure and investor expectations Anthropic will be operating under going forward — public companies answer to quarterly earnings in a way private ones don't, which can eventually show up in pricing, feature prioritization, or how aggressively new capabilities ship.",
+    ],
+    sourceName: "The Motley Fool",
+    sourceUrl:
+      "https://www.fool.com/investing/2026/09/03/anthropic-planning-unveil-ipo-details-labor-day/",
+    publishedAt: "2026-09-03",
+    relatedToolSlugs: ["claude"],
+    companyDomain: "anthropic.com",
+  },
+  {
+    slug: "anthropic-35-billion-lambda-compute-deal",
+    topic: "infrastructure",
+    title: "Anthropic signs $35 billion compute deal with Nvidia-backed Lambda for a Texas data center",
+    summary:
+      "Anthropic has locked in a $35 billion cloud computing deal with Nvidia-backed Lambda, securing roughly 350 megawatts of GPU capacity at a new Texas data center to fuel AI training and inference.",
+    body: [
+      "Anthropic signed a $35 billion cloud computing deal with Lambda, a cloud provider backed by Nvidia, to secure GPU capacity at a new data center in Nueces County, Texas. The agreement, signed August 31, covers roughly 350 megawatts of computing capacity that Anthropic will use for AI training and inference — the two most compute-hungry parts of running and improving a model like Claude.",
+      "The deal structure is more layered than a typical cloud contract: Hut 8, a company that pivoted from cryptocurrency mining into AI data center infrastructure, is developing the physical site; Nvidia holds the lease and supplies the chips; Lambda provides the compute service on top; and Anthropic is the end customer paying for capacity. It follows a separate $45 billion commitment Anthropic made days earlier for compute from an Nscale data center campus in West Virginia — together, tens of billions of dollars in compute commitments signed within the same week.",
+      "Deals like this are a useful way to gauge how seriously a lab is scaling, independent of any single model release — this is Anthropic locking in the raw compute it expects to need for years of future training runs, not a one-off purchase. It's also a reminder of just how much of the AI industry's spending now flows through Nvidia in one form or another, even in deals where Nvidia isn't the company you're technically paying.",
+    ],
+    sourceName: "Bloomberg",
+    sourceUrl:
+      "https://www.bloomberg.com/news/articles/2026-08-31/anthropic-seals-35-billion-cloud-deal-with-nvidia-backed-lambda",
+    publishedAt: "2026-08-31",
+    relatedToolSlugs: ["claude"],
+    companyDomain: "anthropic.com",
+  },
+  {
+    slug: "eu-classifies-chatgpt-search-engine",
+    topic: "legal",
+    title: "The EU officially classifies ChatGPT as a 'Very Large Online Search Engine'",
+    summary:
+      "The European Commission has designated ChatGPT as a Very Large Online Search Engine under the Digital Services Act, placing it in the same regulatory category as Google Search and subjecting OpenAI to stricter compliance rules by January 2027.",
+    body: [
+      "The European Commission has classified ChatGPT as a 'Very Large Online Search Engine' (VLOSE) under the EU's Digital Services Act — the same regulatory category that already covers Google Search and Bing. The designation follows an OpenAI disclosure showing ChatGPT's search feature reached roughly 159.1 million average monthly active users in the EU over the six months ending March 31, 2026, well above the 45 million threshold the EU uses to identify its largest platforms.",
+      "The Commission's reasoning centers on ChatGPT's hybrid nature: it can generate answers directly from its models, but it can also search the live web when answering a prompt, and that web-search capability is what triggers the search-engine classification. OpenAI now has until January 2027 to comply with VLOSE-specific obligations — including a formal risk assessment, a more extensive complaints and appeals process, and other Digital Services Act requirements. Non-compliance can carry penalties of up to 6% of a company's global annual turnover.",
+      "This is a meaningful regulatory milestone, not a product change you'll notice tomorrow — but it does put ChatGPT under a level of ongoing EU scrutiny that Google and Bing have operated under for years, and it's a sign of how thoroughly AI chatbots with web-search features are now being treated as search infrastructure by regulators, not just as a new category of app.",
+    ],
+    sourceName: "Euronews",
+    sourceUrl:
+      "https://www.euronews.com/next/2026/08/31/eu-places-chatgpt-reddit-and-roblox-under-strictest-digital-safety-rules",
+    publishedAt: "2026-08-31",
+    relatedToolSlugs: ["chatgpt"],
+    companyDomain: "openai.com",
+  },
+  {
+    slug: "openai-astra-critical-cybersecurity-threshold",
+    topic: "security",
+    title: "OpenAI says its Astra model is the first to cross a 'Critical' cybersecurity risk threshold",
+    summary:
+      "OpenAI disclosed that its Astra model is the first to reach the 'Critical' cybersecurity capability threshold under its Preparedness Framework, after internal testing showed it could independently discover and chain together working exploits against hardened systems.",
+    body: [
+      "OpenAI says its Astra model is the first in the company's lineup to cross the 'Critical' cybersecurity risk threshold defined in its own Preparedness Framework — the internal system OpenAI uses to gate how much access to give a model based on its most dangerous capabilities. In expert-led testing against a hardened browser and operating system, Astra reportedly discovered previously unknown vulnerabilities on its own and chained them into working exploit chains, including a full browser-compromise chain that escaped the sandbox and executed commands on the host machine.",
+      "Under OpenAI's framework, 'Critical' is the threshold reserved for a model that can identify and build functional zero-day exploits against hardened real-world systems without human help, or independently devise and execute a full cyberattack strategy from just a high-level goal. Rather than shipping Astra broadly, OpenAI temporarily paused its development to add stronger safeguards — chain-of-thought monitoring, jailbreak detection, and containment-escape evaluations — before resuming, and says the model's strongest cyber capabilities will only be available to a vetted group of organizations in a cybersecurity coalition called Daybreak.",
+      "This isn't a ChatGPT feature update, but it matters for how you think about AI capability generally: it's a concrete example of a model demonstrably crossing from 'good at security research' into territory the lab that built it considers dangerous enough to gate deliberately, rather than ship by default. Whichever side of the AI-safety debate you land on, it's a useful real-world data point rather than a hypothetical one.",
+    ],
+    sourceName: "CNBC",
+    sourceUrl: "https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html",
+    publishedAt: "2026-09-01",
+    relatedToolSlugs: ["chatgpt"],
+    companyDomain: "openai.com",
+  },
 ];
