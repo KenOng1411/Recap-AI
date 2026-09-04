@@ -288,4 +288,54 @@ export const newsItems: NewsItem[] = [
     relatedToolSlugs: ["chatgpt"],
     companyDomain: "openai.com",
   },
+  {
+    slug: "google-gemini-3-8-flash-launch",
+    topic: "product",
+    title: "Google launches Gemini 3.8 Flash, its third Flash update in six weeks",
+    summary:
+      "Google introduced Gemini 3.8 Flash alongside a restricted cybersecurity variant, Gemini 3.8 Flash Cyber — its third update to the Flash tier in just six weeks, continuing an unusually fast release cadence.",
+    body: [
+      "Google introduced Gemini 3.8 Flash on September 2, calling it its most intelligent workhorse model yet, with gains over Gemini 3.7 Flash in software engineering, agentic tasks, and multi-step reasoning. It processes text, images, audio, and video, and is priced at an introductory $0.75 per million input tokens and $3.75 per million output tokens through the end of 2026. Alongside it, Google shipped Gemini 3.8 Flash Cyber, a restricted variant built specifically to find software vulnerabilities and write patches for them on its own.",
+      "What stands out here isn't any single capability — it's the pace. This is Google's third Flash-tier update in six weeks, arriving just three weeks after Gemini 3.7 Flash. That's a noticeably faster cadence than the industry's usual months-between-releases rhythm, and it's already live across the Gemini app, AI Mode, Google Sheets, Google Antigravity, AI Studio, and the Gemini API — not a staged rollout. The Cyber variant is being distributed even more selectively, through a new 'Fairwind Program' that prioritizes access for governments and critical-infrastructure operators.",
+      "If you use Gemini day to day, the practical upshot is that the 'default' model under the hood keeps shifting faster than most people are tracking — worth knowing if you've ever compared Gemini's output to a review or benchmark that's more than a few weeks old, since it may already be testing a materially different model.",
+    ],
+    sourceName: "9to5Google",
+    sourceUrl: "https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/",
+    publishedAt: "2026-09-02",
+    relatedToolSlugs: ["gemini"],
+    companyDomain: "google.com",
+  },
+  {
+    slug: "deepseek-7-4-billion-funding-round",
+    topic: "business",
+    title: "DeepSeek nears $7.4 billion funding round at a $74 billion valuation ahead of a 2027 IPO",
+    summary:
+      "Chinese AI lab DeepSeek is closing in on a $7.4 billion funding round that would value the company at roughly $74 billion, up sharply from its $50 billion valuation in June, as it prepares for a possible IPO in 2027.",
+    body: [
+      "DeepSeek, the Chinese AI lab known for its low-cost open-weight models, is nearing a funding round of about $7.4 billion (50 billion yuan) at a $74 billion pre-money valuation — a sharp jump from the more than $50 billion it was valued at in June. Existing backers including Monolith Management, Shixiang, and battery giant Contemporary Amperex Technology are expected to participate, alongside several China-government-backed funds.",
+      "The raise is earmarked for R&D and, notably, for buying its way into more computing infrastructure — the same resource-scarcity problem every AI lab is racing to solve, made harder for DeepSeek by export restrictions on advanced chips to China. The company has reportedly reached around $500 million in annual recurring revenue, and the funding is explicitly framed as preparation for a possible IPO as soon as late 2026, with a public debut targeted for 2027.",
+      "DeepSeek matters beyond its home market because its open-weight models have repeatedly forced Western labs to defend their pricing — a $74 billion valuation suggests investors think that pressure is durable, not a one-off. If you rely on any open-weight model for cost reasons, a better-funded DeepSeek pushing the price/performance bar further is generally good news for you, even indirectly.",
+    ],
+    sourceName: "China Money Network",
+    sourceUrl:
+      "https://www.chinamoneynetwork.com/2026/08/29/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo",
+    publishedAt: "2026-08-29",
+    companyDomain: "deepseek.com",
+  },
+  {
+    slug: "adobe-for-slack-launch",
+    topic: "product",
+    title: "Adobe brings Photoshop, Firefly, and 70+ creative tools into Slack",
+    summary:
+      "Adobe launched an MCP-based Slack app that puts over 70 creative tools — including Firefly, Photoshop, Premiere, Illustrator, and Acrobat — directly inside Slack conversations, letting Slackbot call them using context pulled from messages and files.",
+    body: [
+      "Adobe launched 'Adobe for Slack,' an app built on MCP (Model Context Protocol) that wires more than 70 of its creative tools — Firefly, Photoshop, Express, Premiere, Acrobat, InDesign, Illustrator, Stock, and Lightroom among them — directly into Slack. It works through Slackbot, Slack's built-in assistant, which can pull context from messages, files, channels, and Canvases before calling the right Adobe tool automatically.",
+      "The practical examples Adobe gave are a good sense of the intent: ask Slackbot to summarize a project brief and turn it into a PDF, image, or video; resize approved campaign creative for different social platforms; or batch-edit a set of photos — removing backgrounds, adjusting lighting, producing variations — without anyone leaving the Slack conversation to open Photoshop. It's available now to Slack Business+ and Enterprise+ customers, and you can start using it without an Adobe account, though signing in unlocks more tools and your actual Creative Cloud files.",
+      "This is part of a broader pattern worth noting: Adobe already supports ChatGPT, Claude, and Copilot, with Gemini integration coming soon. Rather than betting on one AI assistant, Adobe is making its tools reachable from inside whichever one you already use for work — a sign that for established software companies, 'be available inside every major AI interface' is becoming the strategy, not a bet on any single chatbot winning.",
+    ],
+    sourceName: "9to5Mac",
+    sourceUrl: "https://9to5mac.com/2026/09/02/adobe-brings-photoshop-firefly-and-70-creative-tools-to-slack-with-mcp-app/",
+    publishedAt: "2026-09-02",
+    companyDomain: "adobe.com",
+  },
 ];
