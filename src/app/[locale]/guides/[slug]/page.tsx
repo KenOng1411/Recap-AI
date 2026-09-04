@@ -60,7 +60,7 @@ export default async function GuideDetailPage({
         <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-2xl bg-surface-muted">
           <Image
             src={tool.image}
-            alt=""
+            alt={content.title}
             fill
             priority
             sizes="(min-width: 1024px) 768px, 100vw"

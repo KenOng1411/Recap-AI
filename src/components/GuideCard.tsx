@@ -34,7 +34,7 @@ export function GuideCard({ guide, locale, readMoreLabel }: GuideCardProps) {
         <div className="relative aspect-video w-full overflow-hidden bg-surface-muted">
           <Image
             src={tool.image}
-            alt=""
+            alt={content.title}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-300 group-hover:scale-105"
