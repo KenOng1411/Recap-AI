@@ -17,6 +17,7 @@ import { tools, getToolBySlug } from "@/data/tools";
 import { getCategoryLabel } from "@/data/categories";
 import { categoryIcons } from "@/data/categoryIcons";
 import { getDictionary, t } from "@/i18n/dictionaries";
+import { buildAlternates } from "@/lib/seo";
 import { ToolIcon } from "@/components/ToolIcon";
 import { StarRating } from "@/components/StarRating";
 import { CategoryBadge } from "@/components/CategoryBadge";
@@ -42,6 +43,7 @@ export async function generateMetadata({
   return {
     title: `${tool.name}: ${content.tagline}`,
     description: content.description,
+    alternates: buildAlternates(locale, `/tools/${slug}`),
     openGraph: { title: tool.name, description: content.description },
   };
 }

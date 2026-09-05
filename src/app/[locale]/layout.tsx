@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { locales, isLocale } from "@/i18n/config";
 import { siteConfig } from "@/data/site";
+import { buildAlternates } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SyncHtmlLang } from "@/components/SyncHtmlLang";
@@ -23,10 +24,7 @@ export async function generateMetadata({
       template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description[locale],
-    alternates: {
-      canonical: `/${locale}/`,
-      languages: { en: "/en/", fr: "/fr/" },
-    },
+    alternates: buildAlternates(locale, ""),
     openGraph: {
       type: "website",
       locale: siteConfig.ogLocale[locale],

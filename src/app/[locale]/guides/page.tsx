@@ -4,6 +4,7 @@ import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { guides } from "@/data/guides";
 import { GuideCard } from "@/components/GuideCard";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,7 +12,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  return { title: dict.guidesIndex.title, description: dict.guidesIndex.subtitle };
+  return {
+    title: dict.guidesIndex.title,
+    description: dict.guidesIndex.subtitle,
+    alternates: buildAlternates(locale, "/guides"),
+  };
 }
 
 export default async function GuidesPage({ params }: PageProps<"/[locale]/guides">) {

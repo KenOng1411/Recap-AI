@@ -4,6 +4,7 @@ import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { newsItems } from "@/data/news";
 import { NewsCard } from "@/components/NewsCard";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -11,7 +12,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  return { title: dict.news.title, description: dict.news.subtitle };
+  return {
+    title: dict.news.title,
+    description: dict.news.subtitle,
+    alternates: buildAlternates(locale, "/ai-news"),
+  };
 }
 
 export default async function AiNewsPage({ params }: PageProps<"/[locale]/ai-news">) {

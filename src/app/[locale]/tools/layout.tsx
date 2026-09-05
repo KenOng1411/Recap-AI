@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { tools } from "@/data/tools";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,6 +13,7 @@ export async function generateMetadata({
   return {
     title: dict.tools.title,
     description: t(dict.tools.subtitle, { count: tools.length }),
+    alternates: buildAlternates(locale, "/tools"),
   };
 }
 

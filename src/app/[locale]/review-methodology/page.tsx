@@ -4,6 +4,7 @@ import { CheckCircle, Flask, Star, ShieldCheck } from "@phosphor-icons/react/dis
 import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { methodology } from "@/data/methodology";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,11 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
   const content = withLocaleFallback(methodology, locale);
-  return { title: dict.methodology.title, description: content.intro };
+  return {
+    title: dict.methodology.title,
+    description: content.intro,
+    alternates: buildAlternates(locale, "/review-methodology"),
+  };
 }
 
 export default async function MethodologyPage({

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { privacyPolicy } from "@/data/legal";
 import { LegalDocPage } from "@/components/LegalDocPage";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -10,7 +11,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const doc = withLocaleFallback(privacyPolicy, locale);
-  return { title: doc.title, description: doc.intro };
+  return {
+    title: doc.title,
+    description: doc.intro,
+    alternates: buildAlternates(locale, "/privacy-policy"),
+  };
 }
 
 export default async function PrivacyPolicyPage({

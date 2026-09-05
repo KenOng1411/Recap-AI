@@ -5,6 +5,7 @@ import { ArrowRight, CalendarBlank } from "@phosphor-icons/react/dist/ssr";
 import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups } from "@/data/roundups";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  return { title: dict.bestOfIndex.title, description: dict.bestOfIndex.subtitle };
+  return {
+    title: dict.bestOfIndex.title,
+    description: dict.bestOfIndex.subtitle,
+    alternates: buildAlternates(locale, "/best-of"),
+  };
 }
 
 const dateLocale: Record<string, string> = { en: "en-US", fr: "fr-FR" };

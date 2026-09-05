@@ -6,6 +6,7 @@ import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { mediaKit } from "@/data/mediaKit";
 import { ContactForm } from "@/components/ContactForm";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,7 +15,11 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
   const content = withLocaleFallback(mediaKit, locale);
-  return { title: dict.partner.title, description: content.intro };
+  return {
+    title: dict.partner.title,
+    description: content.intro,
+    alternates: buildAlternates(locale, "/partner-with-us"),
+  };
 }
 
 export default async function PartnerPage({ params }: PageProps<"/[locale]/partner-with-us">) {

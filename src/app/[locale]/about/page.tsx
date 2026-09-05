@@ -5,6 +5,7 @@ import { isLocale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { ToolLogo } from "@/components/ToolLogo";
 import { siteConfig, CONTACT_EMAIL } from "@/data/site";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  return { title: dict.about.title, description: t(dict.about.introBody, { site: siteConfig.name }) };
+  return {
+    title: dict.about.title,
+    description: t(dict.about.introBody, { site: siteConfig.name }),
+    alternates: buildAlternates(locale, "/about"),
+  };
 }
 
 // TODO: replace all placeholder copy below with your real bio, experience, and links.

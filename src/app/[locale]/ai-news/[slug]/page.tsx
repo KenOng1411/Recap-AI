@@ -7,6 +7,7 @@ import { locales, isLocale, type Locale } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { newsItems } from "@/data/news";
 import { getToolBySlug } from "@/data/tools";
+import { buildAlternates } from "@/lib/seo";
 import { topicIcons, getTopicLabel } from "@/data/newsTopics";
 import { ToolIcon } from "@/components/ToolIcon";
 import { ToolLogo } from "@/components/ToolLogo";
@@ -26,6 +27,7 @@ export async function generateMetadata({
   return {
     title: item.title,
     description: item.summary,
+    alternates: buildAlternates(locale, `/ai-news/${slug}`),
     openGraph: { title: item.title, description: item.summary },
   };
 }

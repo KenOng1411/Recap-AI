@@ -5,6 +5,7 @@ import { Tag, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
 import { isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { deals } from "@/data/deals";
+import { buildAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,11 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
-  return { title: dict.deals.title, description: dict.deals.subtitle };
+  return {
+    title: dict.deals.title,
+    description: dict.deals.subtitle,
+    alternates: buildAlternates(locale, "/deals"),
+  };
 }
 
 export default async function DealsPage({ params }: PageProps<"/[locale]/deals">) {

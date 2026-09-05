@@ -6,6 +6,7 @@ import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups, getRoundupBySlug } from "@/data/roundups";
 import { getToolBySlug } from "@/data/tools";
+import { buildAlternates } from "@/lib/seo";
 import { ToolIcon } from "@/components/ToolIcon";
 import { StarRating } from "@/components/StarRating";
 import { ReviewByline } from "@/components/ReviewByline";
@@ -28,6 +29,7 @@ export async function generateMetadata({
   return {
     title: content.title,
     description: content.description,
+    alternates: buildAlternates(locale, `/best-of/${slug}`),
     openGraph: { title: content.title, description: content.description },
   };
 }
