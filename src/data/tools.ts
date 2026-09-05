@@ -5042,7 +5042,7 @@ export const tools: Tool[] = [
     website: "https://toolsaday.com",
     affiliateUrl: "https://toolsaday.com/writing/email-generator?via=myaffhomework",
     rating: 4.0,
-    lastUpdated: "2026-08-31",
+    lastUpdated: "2026-09-05",
     image: "/tools-images/toolsaday.png",
     content: {
       en: {
@@ -5059,6 +5059,13 @@ export const tools: Tool[] = [
           "Producing general-purpose text for a task that doesn't fit a dedicated template elsewhere",
           "Quickly rewording a message before sending it in a professional context",
           "Testing AI writing tools without creating a paid account anywhere",
+        ],
+        features: [
+          {
+            title: "Structured email generator, not just a text box",
+            description:
+              "The email generator asks for the actual variables that shape a good email — whether you're composing new or replying, the purpose, subject line, recipient, sender, desired length, tone, and even output format (plain text or HTML) — before generating, rather than relying on one vague prompt field. That structure is what makes the free version usable for real correspondence instead of a generic demo.",
+          },
         ],
         whoItsFor:
           "Best for casual users, students, and anyone who needs occasional help with an email, a paraphrase, or a short piece of writing without signing up for a paid subscription. No technical or writing background is needed — each tool takes a short prompt and produces a ready-to-edit draft, though output tone often benefits from a manual pass before sending anything important.",
@@ -5082,6 +5089,24 @@ export const tools: Tool[] = [
         pricing: "Free",
         pros: ["Genuinely free — no paywall to try the core tools", "Email generator covers both new emails and replies", "Handy all-in-one bundle instead of separate single-purpose tools"],
         cons: ["Output tone can need editing to sound less generic", "Fewer advanced brand-voice/team features than paid writing tools"],
+        faq: [
+          {
+            question: "Is Toolsaday really free, with no hidden paywall?",
+            answer: "Yes — every core tool (paraphraser, story generator, text generator, email generator) works without an account or payment. There's no trial period that later locks the main features behind a paywall.",
+          },
+          {
+            question: "Does Toolsaday's email generator handle replies, not just new emails?",
+            answer: "Yes, you can choose 'Reply to Email' as the type, and it also lets you set the tone, length, and output format (plain text or HTML) before generating.",
+          },
+          {
+            question: "Do I need to sign up to use Toolsaday?",
+            answer: "No account is required to use the core writing tools — you can generate an email, paraphrase text, or write a story without logging in.",
+          },
+          {
+            question: "How is Toolsaday different from Copy.ai?",
+            answer: "Toolsaday is a fully free bundle with no paywall, aimed at occasional writing tasks; Copy.ai has a more limited free tier but grows into paid team and marketing-copy features Toolsaday doesn't offer.",
+          },
+        ],
       },
       fr: {
         tagline: "Une boîte à outils IA d'écriture gratuite — paraphrase, génération d'histoires et rédaction d'emails.",
@@ -5097,6 +5122,13 @@ export const tools: Tool[] = [
           "Produire du texte à usage général pour une tâche qui ne correspond à aucun modèle dédié ailleurs",
           "Reformuler rapidement un message avant de l'envoyer dans un contexte professionnel",
           "Tester des outils de rédaction IA sans créer de compte payant nulle part",
+        ],
+        features: [
+          {
+            title: "Un générateur d'emails structuré, pas juste une zone de texte",
+            description:
+              "Le générateur d'emails demande les vraies variables qui font un bon email — nouvel email ou réponse, objectif, objet, destinataire, expéditeur, longueur souhaitée, ton, et même le format de sortie (texte brut ou HTML) — avant de générer, plutôt que de dépendre d'une seule consigne vague. Cette structure est ce qui rend la version gratuite utilisable pour une vraie correspondance plutôt qu'une démo générique.",
+          },
         ],
         whoItsFor:
           "Idéal pour les utilisateurs occasionnels, étudiants et toute personne ayant besoin d'une aide ponctuelle pour un email, une paraphrase ou un court texte, sans s'abonner à un service payant. Aucune compétence technique ou rédactionnelle n'est nécessaire — chaque outil part d'une courte consigne et produit un brouillon prêt à modifier, même si le ton du résultat gagne souvent à être retravaillé avant d'envoyer quelque chose d'important.",
@@ -5120,6 +5152,24 @@ export const tools: Tool[] = [
         pricing: "Gratuit",
         pros: ["Réellement gratuit — pas de mur payant pour tester les outils principaux", "Le générateur d'emails couvre à la fois nouveaux emails et réponses", "Pack tout-en-un pratique plutôt que des outils séparés"],
         cons: ["Le ton du résultat nécessite parfois des retouches pour sonner moins générique", "Moins de fonctions avancées de voix de marque/équipe que les outils payants"],
+        faq: [
+          {
+            question: "Toolsaday est-il vraiment gratuit, sans mur payant caché ?",
+            answer: "Oui — chaque outil principal (paraphraseur, générateur d'histoires, générateur de texte, générateur d'emails) fonctionne sans compte ni paiement. Il n'y a pas de période d'essai qui verrouille ensuite les fonctions principales.",
+          },
+          {
+            question: "Le générateur d'emails de Toolsaday gère-t-il les réponses, pas seulement les nouveaux emails ?",
+            answer: "Oui, vous pouvez choisir « Répondre à un email » comme type, et il permet aussi de régler le ton, la longueur et le format de sortie (texte brut ou HTML) avant de générer.",
+          },
+          {
+            question: "Faut-il s'inscrire pour utiliser Toolsaday ?",
+            answer: "Aucun compte n'est requis pour utiliser les outils de rédaction principaux — vous pouvez générer un email, paraphraser un texte ou écrire une histoire sans vous connecter.",
+          },
+          {
+            question: "En quoi Toolsaday diffère-t-il de Copy.ai ?",
+            answer: "Toolsaday est un pack entièrement gratuit sans mur payant, pensé pour des tâches de rédaction occasionnelles ; Copy.ai a une version gratuite plus limitée mais évolue vers des fonctions payantes d'équipe et de copywriting marketing que Toolsaday n'offre pas.",
+          },
+        ],
       },
     },
   },
@@ -5130,7 +5180,7 @@ export const tools: Tool[] = [
     website: "https://fliki.ai",
     affiliateUrl: "https://fliki.ai/?via=recapai",
     rating: 4.4,
-    lastUpdated: "2026-09-02",
+    lastUpdated: "2026-09-05",
     image: "/tools-images/fliki.png",
     content: {
       en: {
@@ -5146,6 +5196,15 @@ export const tools: Tool[] = [
           "Cloning your own voice (Premium) for consistent narration across a whole channel",
           "Drafting explainer or product-demo videos from bullet points instead of a full script",
           "Adding auto-captions and background music to an existing script-driven video",
+        ],
+        features: [
+          {
+            title: "Idea to publish-ready video in one flow",
+            description:
+              "Paste a script, blog post, or one-line prompt and Fliki writes the script, picks visuals, adds AI voiceover, music, and subtitles — producing a publish-ready vertical video formatted for TikTok/Reels/Shorts without opening a separate editor.",
+            image: "/tools-images/fliki-real/fliki-creators-workspace-preview.webp",
+            imageAlt: "Fliki's idea-to-video workflow showing a text prompt turned into a finished vertical Shorts-style video with captions and trending sound",
+          },
         ],
         whoItsFor:
           "Best for solo creators, marketers, and small teams who need to publish video regularly but don't have the time or equipment for traditional filming. No video-editing background is required — the workflow is closer to writing than editing — though the free plan's 5-minute monthly cap and watermark mean it's really a trial tier rather than something to build a channel on.",
@@ -5173,6 +5232,24 @@ export const tools: Tool[] = [
         pricing: "Free (limited, watermarked); paid plans from $21–28/month, up to $66–88/month for voice cloning",
         pros: ["Goes straight from text/URL to a finished narrated video, not just a voiceover", "2,000+ voices across 80+ languages makes localization genuinely fast", "Voice cloning on Premium is a real differentiator at this price"],
         cons: ["Relies on stock footage rather than AI-generated scenes, which can look generic", "Non-English voices are less consistent in quality than the English catalog"],
+        faq: [
+          {
+            question: "Is Fliki free to use?",
+            answer: "Yes, the free plan includes 5 minutes of video generation per month at 720p with a watermark and a limited voice selection — enough to test the workflow before upgrading.",
+          },
+          {
+            question: "Does Fliki remove the watermark?",
+            answer: "Yes, watermark removal starts on the Standard plan ($21–28/month), which also unlocks 1080p export and the full 900+ voice library.",
+          },
+          {
+            question: "Can Fliki clone my own voice?",
+            answer: "Yes, voice cloning from a short sample is available on the Premium plan ($66–88/month), which also includes commercial usage rights.",
+          },
+          {
+            question: "What's the difference between Fliki and HeyGen?",
+            answer: "Fliki narrates a script over stock or AI-generated visuals with no on-screen presenter, while HeyGen puts a talking AI avatar on screen — pick based on whether your video needs a 'face' presenting it.",
+          },
+        ],
       },
       fr: {
         tagline: "Transformez un texte, un script ou une URL de blog en vidéo narrée avec plus de 2 000 voix IA en 80+ langues.",
@@ -5186,6 +5263,15 @@ export const tools: Tool[] = [
           "Localiser la même vidéo en 80+ langues sans réenregistrer la voix off",
           "Cloner sa propre voix (Premium) pour une narration cohérente sur toute une chaîne",
           "Ébaucher des vidéos explicatives ou de démo produit à partir de points clés plutôt que d'un script complet",
+        ],
+        features: [
+          {
+            title: "D'une idée à une vidéo prête à publier en un seul flux",
+            description:
+              "Collez un script, un article de blog ou une consigne en une ligne, et Fliki rédige le script, choisit les visuels, ajoute voix off, musique et sous-titres — produisant une vidéo verticale prête à publier au format TikTok/Reels/Shorts sans ouvrir d'éditeur séparé.",
+            image: "/tools-images/fliki-real/fliki-creators-workspace-preview.webp",
+            imageAlt: "Le flux idée-vers-vidéo de Fliki montrant une consigne texte transformée en vidéo verticale finie façon Shorts avec sous-titres et son tendance",
+          },
         ],
         whoItsFor:
           "Idéal pour les créateurs solos, marketeurs et petites équipes qui doivent publier des vidéos régulièrement sans le temps ni le matériel de tournage traditionnel. Aucune expérience en montage vidéo n'est nécessaire, mais le plafond gratuit de 5 minutes/mois avec filigrane en fait surtout un palier d'essai.",
@@ -5211,6 +5297,24 @@ export const tools: Tool[] = [
         pricing: "Gratuit (limité, avec filigrane) ; forfaits payants dès 21–28 $/mois, jusqu'à 66–88 $/mois pour le clonage vocal",
         pros: ["Passe directement d'un texte/URL à une vidéo narrée finie, pas juste une voix off", "2 000+ voix en 80+ langues rend la localisation vraiment rapide", "Le clonage vocal Premium est un vrai différenciateur à ce prix"],
         cons: ["S'appuie sur des images d'archives plutôt que des scènes générées par IA, ce qui peut sembler générique", "Les voix non anglaises sont moins régulières en qualité que le catalogue anglais"],
+        faq: [
+          {
+            question: "Fliki est-il gratuit ?",
+            answer: "Oui, l'offre gratuite inclut 5 minutes de génération vidéo par mois en 720p avec filigrane et un choix de voix limité — suffisant pour tester avant de passer à un forfait payant.",
+          },
+          {
+            question: "Fliki retire-t-il le filigrane ?",
+            answer: "Oui, le retrait du filigrane commence avec le forfait Standard (21–28 $/mois), qui débloque aussi l'export 1080p et la bibliothèque complète de 900+ voix.",
+          },
+          {
+            question: "Fliki peut-il cloner ma propre voix ?",
+            answer: "Oui, le clonage vocal à partir d'un court échantillon est disponible avec le forfait Premium (66–88 $/mois), qui inclut aussi les droits d'usage commercial.",
+          },
+          {
+            question: "Quelle est la différence entre Fliki et HeyGen ?",
+            answer: "Fliki narre un script par-dessus des visuels d'archives ou générés par IA sans présentateur à l'écran, tandis que HeyGen place un avatar IA qui parle à l'écran — choisissez selon si votre vidéo a besoin d'un « visage » pour la présenter.",
+          },
+        ],
       },
     },
   },
@@ -5221,7 +5325,7 @@ export const tools: Tool[] = [
     website: "https://www.popai.pro",
     affiliateUrl: "https://popai.saaslink.net/recapai",
     rating: 4.2,
-    lastUpdated: "2026-09-02",
+    lastUpdated: "2026-09-05",
     image: "/tools-images/popai.png",
     content: {
       en: {
@@ -5237,6 +5341,22 @@ export const tools: Tool[] = [
           "Auto-converting raw data or numbers into charts and visualizations for a deck",
           "Real-time collaborative editing of a deck with a team",
           "Quickly localizing a presentation's content into another language",
+        ],
+        features: [
+          {
+            title: "Prompt-to-deck editor with a real template gallery",
+            description:
+              "Describe what you want in plain language and PopAI generates a full deck, styled from a gallery of ready-made themes — the screenshot below is the actual editor, not a mockup, showing the prompt box and template picker side by side.",
+            image: "/tools-images/popai-real/popai-editor-interface-preview.jpg",
+            imageAlt: "PopAI's actual editor interface showing the prompt box for describing a presentation and a gallery of ready-made slide deck templates",
+          },
+          {
+            title: "Upload a document instead of starting from a prompt",
+            description:
+              "The same input box lets you upload a file, pull one from your existing files, or connect Google Drive directly — this is the document-to-deck workflow that's PopAI's real differentiator over prompt-only tools.",
+            image: "/tools-images/popai-real/popai-prompt-or-upload-document.jpg",
+            imageAlt: "PopAI's upload menu showing options to upload a file, add from existing files, or connect Google Drive to generate a presentation",
+          },
         ],
         whoItsFor:
           "Best for students, marketers, consultants, and small teams who regularly need to turn source material into a presentation fast, and who don't need pixel-perfect custom design. It's approachable for non-designers since the AI handles layout, but the free daily credit allowance is tight enough that regular use pushes most people toward a paid plan quickly.",
@@ -5262,6 +5382,24 @@ export const tools: Tool[] = [
         pricing: "Free (daily credit limit); Pro from $5.99–9.99/month; Unlimited around $40/month",
         pros: ["Genuinely useful document-to-deck workflow, not just a blank-prompt generator", "Real-time collaboration built in for team decks", "Paid upgrade is inexpensive relative to dedicated presentation-AI tools"],
         cons: ["Free daily credit limits are tight if you use slides, chat, and images on the same day", "Design output still benefits from manual polish for anything client-facing"],
+        faq: [
+          {
+            question: "Is PopAI free to use?",
+            answer: "Yes, PopAI gives a daily allowance of AI credits (400 to start) shared across slide generation, document chat, and image generation — enough for occasional use, tight for daily work.",
+          },
+          {
+            question: "Can PopAI turn a PDF into a presentation?",
+            answer: "Yes — uploading a PDF, Word file, or connecting Google Drive is PopAI's core differentiator, turning an existing document into a structured, editable deck rather than starting from a blank prompt.",
+          },
+          {
+            question: "How much does PopAI cost?",
+            answer: "Pro starts at $5.99–9.99/month for a higher daily credit allowance; Unlimited is around $40/month and removes the daily credit limits entirely.",
+          },
+          {
+            question: "Is PopAI better than Gamma?",
+            answer: "PopAI is stronger when you're starting from an existing document (PDF, Word, PPTX); Gamma's default designs are more polished when starting from a blank prompt with no source material.",
+          },
+        ],
       },
       fr: {
         tagline: "Un espace de travail IA qui transforme documents, PDF ou une consigne en présentations éditables, chat et images.",
@@ -5275,6 +5413,22 @@ export const tools: Tool[] = [
           "Discuter avec un PDF importé pour en extraire les points clés avant de créer les slides",
           "Convertir automatiquement des données brutes en graphiques pour un diaporama",
           "Édition collaborative en temps réel d'un diaporama en équipe",
+        ],
+        features: [
+          {
+            title: "Éditeur consigne-vers-diaporama avec une vraie galerie de modèles",
+            description:
+              "Décrivez ce que vous voulez en langage courant et PopAI génère un diaporama complet, mis en forme depuis une galerie de thèmes prêts à l'emploi — la capture ci-dessous est le vrai éditeur, pas une maquette, montrant la zone de consigne et le sélecteur de modèles côte à côte.",
+            image: "/tools-images/popai-real/popai-editor-interface-preview.jpg",
+            imageAlt: "L'interface réelle de l'éditeur PopAI montrant la zone de consigne pour décrire une présentation et une galerie de modèles de diaporama prêts à l'emploi",
+          },
+          {
+            title: "Importer un document plutôt que partir d'une consigne",
+            description:
+              "La même zone de saisie permet d'importer un fichier, d'en choisir un déjà présent, ou de connecter directement Google Drive — c'est ce flux document-vers-diaporama qui différencie vraiment PopAI des outils à consigne seule.",
+            image: "/tools-images/popai-real/popai-prompt-or-upload-document.jpg",
+            imageAlt: "Le menu d'import de PopAI montrant les options pour importer un fichier, en ajouter un existant, ou connecter Google Drive pour générer une présentation",
+          },
         ],
         whoItsFor:
           "Idéal pour étudiants, marketeurs, consultants et petites équipes qui doivent régulièrement transformer un document source en présentation rapidement, sans besoin d'un design sur mesure au pixel près. Le quota gratuit quotidien est cependant assez limité pour pousser rapidement vers un forfait payant en cas d'usage régulier.",
@@ -5299,6 +5453,24 @@ export const tools: Tool[] = [
         pricing: "Gratuit (quota quotidien) ; Pro dès 5,99–9,99 $/mois ; Unlimited environ 40 $/mois",
         pros: ["Workflow document-vers-diaporama vraiment utile, pas seulement un générateur sur consigne", "Collaboration en temps réel intégrée pour les diaporamas d'équipe", "Montée en gamme peu coûteuse comparée aux outils IA de présentation dédiés"],
         cons: ["Les quotas gratuits quotidiens sont serrés si slides, chat et images sont utilisés le même jour", "Le rendu graphique bénéficie encore d'une retouche manuelle pour un usage client"],
+        faq: [
+          {
+            question: "PopAI est-il gratuit ?",
+            answer: "Oui, PopAI offre un quota quotidien de crédits IA (400 au départ) partagé entre génération de slides, chat de document et génération d'images — correct pour un usage occasionnel, juste pour un usage quotidien.",
+          },
+          {
+            question: "PopAI peut-il transformer un PDF en présentation ?",
+            answer: "Oui — importer un PDF, un fichier Word, ou connecter Google Drive est la vraie différenciation de PopAI, transformant un document existant en diaporama structuré et éditable plutôt que de partir d'une consigne vide.",
+          },
+          {
+            question: "Combien coûte PopAI ?",
+            answer: "Pro démarre à 5,99–9,99 $/mois pour un quota quotidien plus élevé ; Unlimited coûte environ 40 $/mois et supprime totalement les limites de crédits quotidiens.",
+          },
+          {
+            question: "PopAI est-il meilleur que Gamma ?",
+            answer: "PopAI est plus fort quand on part d'un document existant (PDF, Word, PPTX) ; les designs par défaut de Gamma sont plus soignés en partant d'une consigne vide sans source.",
+          },
+        ],
       },
     },
   },
@@ -5563,7 +5735,7 @@ export const tools: Tool[] = [
     website: "https://snov.io",
     affiliateUrl: "https://snov.io",
     rating: 4.3,
-    lastUpdated: "2026-09-04",
+    lastUpdated: "2026-09-05",
     image: "/tools-images/snov-io.png",
     content: {
       en: {
@@ -5579,6 +5751,15 @@ export const tools: Tool[] = [
           "Running multi-step outreach sequences with conditional follow-ups and open/click tracking",
           "Warming up a sending inbox before a cold email campaign to protect deliverability",
           "Managing outbound deals and pipeline in the built-in CRM without a separate tool",
+        ],
+        features: [
+          {
+            title: "Visual sequence builder with an AI prospect finder side by side",
+            description:
+              "The sequence builder lets you branch outreach on real triggers — opened an email, viewed a LinkedIn profile, connected — into different follow-up paths, while the AI prospect finder returns a list of matching contacts (company, name, email) from a plain-language description like 'heads of sales at B2B SaaS companies in Germany with teams of 11-50 employees.'",
+            image: "/tools-images/snov-real/snov-io-sequence-and-prospect-finder.jpg",
+            imageAlt: "Snov.io's actual interface showing a branching outreach sequence builder next to an AI prospect finder returning a list of matching contacts",
+          },
         ],
         whoItsFor:
           "Best for SMB sales teams, agencies, and solo founders doing B2B prospecting who want one subscription covering email finding through to CRM, rather than stitching together specialist tools. It's approachable without a dedicated sales-ops background, though teams that need the highest possible email-accuracy rate for high-stakes outreach may still want to cross-check results against a verification-focused tool.",
@@ -5605,6 +5786,24 @@ export const tools: Tool[] = [
         pricing: "Free (limited credits); paid plans from $30–39/month, up to $74–99/month; LinkedIn automation is a separate add-on",
         pros: ["Bundles finder, verifier, sequences, and CRM in one subscription instead of several tools", "Noticeably cheaper entry point than single-purpose specialist tools", "Inbox warm-up and deliverability tools included, not a separate purchase"],
         cons: ["Email-finding accuracy trails dedicated specialist tools like Hunter.io", "LinkedIn automation costs extra on top of every plan"],
+        faq: [
+          {
+            question: "Is Snov.io free to use?",
+            answer: "Yes, a free tier with a limited monthly credit allowance is available to test email finding and verification before committing to a paid plan.",
+          },
+          {
+            question: "Can Snov.io find leads from a plain-language description?",
+            answer: "Yes, the AI prospect finder returns matching contacts — company, name, and email — from a description like 'heads of sales at B2B SaaS companies in Germany with teams of 11-50 employees.'",
+          },
+          {
+            question: "Does Snov.io include LinkedIn automation?",
+            answer: "LinkedIn automation is available but priced as a separate add-on on top of any plan, not bundled into the base subscription cost.",
+          },
+          {
+            question: "Is Snov.io more accurate than Hunter.io?",
+            answer: "No — Hunter.io has meaningfully higher email-finding accuracy (~87% vs ~75–81%). Snov.io's advantage is bundling sequences, a CRM, and inbox warm-up at a lower entry price, not raw accuracy.",
+          },
+        ],
       },
       fr: {
         tagline: "Une boîte à outils B2B qui regroupe recherche d'emails, vérification, séquences de prospection et CRM en une seule plateforme.",
@@ -5619,6 +5818,15 @@ export const tools: Tool[] = [
           "Lancer des séquences de prospection à plusieurs étapes avec relances conditionnelles et suivi des ouvertures/clics",
           "Préchauffer une boîte d'envoi avant une campagne d'emails à froid pour protéger la délivrabilité",
           "Gérer les opportunités et le pipeline commercial dans le CRM intégré sans outil séparé",
+        ],
+        features: [
+          {
+            title: "Générateur de séquences visuel avec recherche de prospects IA intégrée",
+            description:
+              "Le générateur de séquences permet de brancher la prospection sur de vrais déclencheurs — email ouvert, profil LinkedIn consulté, connexion établie — vers différents chemins de relance, pendant que la recherche de prospects IA renvoie une liste de contacts correspondants (entreprise, nom, email) à partir d'une description en langage courant comme « responsables commerciaux dans des entreprises B2B SaaS en Allemagne avec des équipes de 11 à 50 employés ».",
+            image: "/tools-images/snov-real/snov-io-sequence-and-prospect-finder.jpg",
+            imageAlt: "L'interface réelle de Snov.io montrant un générateur de séquences de prospection à embranchements à côté d'un chercheur de prospects IA renvoyant une liste de contacts correspondants",
+          },
         ],
         whoItsFor:
           "Idéal pour les petites équipes commerciales, agences et fondateurs solos faisant de la prospection B2B qui veulent un seul abonnement couvrant la recherche d'emails jusqu'au CRM, plutôt que d'assembler des outils spécialisés. Accessible sans background sales-ops dédié, même si les équipes ayant besoin du taux de précision email le plus élevé pour une prospection à fort enjeu voudront peut-être recouper les résultats avec un outil dédié à la vérification.",
@@ -5645,6 +5853,24 @@ export const tools: Tool[] = [
         pricing: "Gratuit (crédits limités) ; forfaits payants dès 30–39 $/mois, jusqu'à 74–99 $/mois ; l'automatisation LinkedIn est une option séparée",
         pros: ["Regroupe recherche, vérification, séquences et CRM en un seul abonnement plutôt que plusieurs outils", "Point d'entrée nettement moins cher que les outils spécialisés à fonction unique", "Préchauffage de boîte mail et outils de délivrabilité inclus, pas un achat séparé"],
         cons: ["La précision de recherche d'emails reste derrière des outils spécialisés dédiés comme Hunter.io", "L'automatisation LinkedIn coûte plus cher en plus de chaque forfait"],
+        faq: [
+          {
+            question: "Snov.io est-il gratuit ?",
+            answer: "Oui, une offre gratuite avec un quota mensuel de crédits limité est disponible pour tester la recherche et la vérification d'emails avant de s'engager sur un forfait payant.",
+          },
+          {
+            question: "Snov.io peut-il trouver des prospects à partir d'une description en langage courant ?",
+            answer: "Oui, la recherche de prospects IA renvoie des contacts correspondants — entreprise, nom et email — à partir d'une description comme « responsables commerciaux dans des entreprises B2B SaaS en Allemagne avec des équipes de 11 à 50 employés ».",
+          },
+          {
+            question: "Snov.io inclut-il l'automatisation LinkedIn ?",
+            answer: "L'automatisation LinkedIn est disponible mais facturée en option séparée en plus de chaque forfait, pas incluse dans le coût de l'abonnement de base.",
+          },
+          {
+            question: "Snov.io est-il plus précis que Hunter.io ?",
+            answer: "Non — Hunter.io a une précision de recherche d'emails nettement supérieure (~87 % contre ~75-81 %). L'avantage de Snov.io est de regrouper séquences, CRM et préchauffage de boîte mail à un prix d'entrée plus bas, pas la précision brute.",
+          },
+        ],
       },
     },
   },
