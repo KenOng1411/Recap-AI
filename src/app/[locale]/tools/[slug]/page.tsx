@@ -11,6 +11,8 @@ import {
   Lightbulb,
   ListNumbers,
   CreditCard,
+  Sparkle,
+  Question,
 } from "@phosphor-icons/react/dist/ssr";
 import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { tools, getToolBySlug } from "@/data/tools";
@@ -25,6 +27,7 @@ import { AffiliateCta } from "@/components/AffiliateCta";
 import { AffiliateDisclosureLine } from "@/components/AffiliateDisclosureLine";
 import { ReviewByline } from "@/components/ReviewByline";
 import { ReviewSchema } from "@/components/ReviewSchema";
+import { FaqSchema } from "@/components/FaqSchema";
 import { ToolCard } from "@/components/ToolCard";
 
 export function generateStaticParams() {
@@ -61,6 +64,7 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
   return (
     <div className="container-page py-12">
       <ReviewSchema tool={tool} locale={locale} />
+      {content.faq && content.faq.length > 0 && <FaqSchema items={content.faq} />}
 
       <Link
         href={`/${locale}/tools`}
@@ -168,6 +172,34 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
             </section>
           )}
 
+          {content.features && content.features.length > 0 && (
+            <section className="mt-10">
+              <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
+                <Sparkle size={20} weight="bold" className="text-accent" aria-hidden="true" />
+                {dict.toolPage.features}
+              </h2>
+              <div className="mt-4 flex flex-col gap-8">
+                {content.features.map((feature) => (
+                  <div key={feature.title}>
+                    <h3 className="font-semibold text-foreground">{feature.title}</h3>
+                    {feature.image && (
+                      <div className="mt-3 overflow-hidden rounded-2xl border border-border">
+                        <Image
+                          src={feature.image}
+                          alt={feature.imageAlt ?? feature.title}
+                          width={1280}
+                          height={720}
+                          className="h-auto w-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <p className="mt-3 leading-relaxed text-muted-foreground">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {content.whoItsFor && (
             <section className="mt-10">
               <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
@@ -241,6 +273,28 @@ export default async function ToolPage(props: PageProps<"/[locale]/tools/[slug]"
                   ))}
                 </div>
               )}
+            </section>
+          )}
+
+          {content.faq && content.faq.length > 0 && (
+            <section className="mt-10">
+              <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
+                <Question size={20} weight="bold" className="text-accent" aria-hidden="true" />
+                {dict.toolPage.faq}
+              </h2>
+              <div className="mt-4 flex flex-col gap-3">
+                {content.faq.map((item) => (
+                  <details
+                    key={item.question}
+                    className="group rounded-xl border border-border bg-surface p-4 open:bg-surface-muted"
+                  >
+                    <summary className="cursor-pointer list-none font-medium text-foreground marker:content-none">
+                      {item.question}
+                    </summary>
+                    <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{item.answer}</p>
+                  </details>
+                ))}
+              </div>
             </section>
           )}
 

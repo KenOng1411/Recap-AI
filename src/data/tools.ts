@@ -11,6 +11,20 @@ interface PricingPlan {
   details: string;
 }
 
+// A named feature/capability with proof — a real screenshot of it working,
+// not a decorative stock image. See ReviewMethodology's image-sourcing rules.
+interface FeatureHighlight {
+  title: string;
+  description: string;
+  image?: string; // real screenshot demonstrating this specific feature
+  imageAlt?: string;
+}
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 interface ToolContent {
   tagline: string;
   description: string;
@@ -18,6 +32,7 @@ interface ToolContent {
   // they're being upgraded one by one. See ToolPage for rendering rules.
   whatItSolves?: string; // what the tool does & what problem it solves
   useCases?: string[]; // practical applications for work/life
+  features?: FeatureHighlight[]; // key capabilities, each backed by a real screenshot
   whoItsFor?: string; // target audience + any prerequisite skills
   tips?: string[]; // usage tips — prompting, saving credits/tokens, etc.
   howToUse?: string[]; // short numbered getting-started steps
@@ -26,6 +41,7 @@ interface ToolContent {
   pricing: string; // short summary — shown on cards and the sidebar header
   pros: string[];
   cons: string[];
+  faq?: FaqItem[]; // rendered with FAQPage schema — see FaqSchema component
 }
 
 export interface Tool {
@@ -148,7 +164,7 @@ export const tools: Tool[] = [
     website: "https://claude.ai",
     affiliateUrl: "https://claude.ai",
     rating: 4.7,
-    lastUpdated: "2026-08-01",
+    lastUpdated: "2026-09-05",
     featured: true,
     image: "/tools-images/claude.png",
     content: {
@@ -165,6 +181,15 @@ export const tools: Tool[] = [
           "Analyzing spreadsheets, PDFs, and multi-file projects at once",
           "Structuring and thinking through business or strategy decisions",
           "Building small apps, scripts, or automations from a plain-language description",
+        ],
+        features: [
+          {
+            title: "Long-form writing that reads like it was drafted by a person",
+            description:
+              "Give Claude the actual product, audience, and tone you're writing for and it drafts copy that needs light editing rather than a rewrite — the example below is a real product description generated from a short brief, not a cherry-picked demo.",
+            image: "/tools-images/claude-ai-writing-a-product-description-example.webp",
+            imageAlt: "Claude AI chat interface generating a long-form product description from a short brief",
+          },
         ],
         whoItsFor:
           "Strong fit for writers, analysts, consultants, and developers who work with long or complex material and want output they can trust without heavy editing. Beginners can use the free chat with no setup; developers get significantly more value by learning Claude Code and Projects, which do take a bit of ramp-up.",
@@ -206,6 +231,15 @@ export const tools: Tool[] = [
           "Analyser tableurs, PDF et projets multi-fichiers en une fois",
           "Structurer et réfléchir à des décisions business ou stratégiques",
           "Créer de petites applications, scripts ou automatisations à partir d'une description en langage courant",
+        ],
+        features: [
+          {
+            title: "Une rédaction longue qui sonne comme écrite par une personne",
+            description:
+              "Donnez à Claude le produit, l'audience et le ton réels et il rédige un texte qui demande une légère relecture plutôt qu'une réécriture complète — l'exemple ci-dessous est une vraie description produit générée à partir d'un court brief, pas une démo triée sur le volet.",
+            image: "/tools-images/claude-ai-writing-a-product-description-example.webp",
+            imageAlt: "Interface de chat Claude AI générant une description produit longue à partir d'un court brief",
+          },
         ],
         whoItsFor:
           "Bien adapté aux rédacteurs, analystes, consultants et développeurs qui travaillent sur des contenus longs ou complexes et veulent un résultat fiable sans grosse relecture. Les débutants peuvent utiliser le chat gratuit sans aucune configuration ; les développeurs en tirent bien plus en apprenant Claude Code et les Projets, ce qui demande un peu de prise en main.",
@@ -5701,6 +5735,170 @@ export const tools: Tool[] = [
         pricing: "Gratuit (50 crédits/mois) ; forfaits payants de 34–49 $/mois à 209–299 $/mois pour les équipes à fort volume",
         pros: ["Précision de recherche d'emails nettement supérieure aux alternatives tout-en-un groupées", "Flux simple et ciblé, rapide à prendre en main", "Utilisateurs illimités sur chaque forfait payant, pas de tarification par siège"],
         cons: ["Pas de CRM, séquences ou automatisation LinkedIn intégrés — nécessite des outils séparés", "Plus cher par crédit que les plateformes groupées plus larges sur le palier d'entrée"],
+      },
+    },
+  },
+  {
+    slug: "nano-banana-pro",
+    name: "Nano Banana Pro",
+    category: "image",
+    website: "https://gemini.google.com",
+    affiliateUrl: "https://gemini.google.com",
+    rating: 4.6,
+    lastUpdated: "2026-09-05",
+    image: "/tools-images/nano-banana-pro/nano-banana-pro-gemini-interface-live-generation.webp",
+    content: {
+      en: {
+        tagline: "Google's most instruction-accurate image model — correct in-image text, consistent edits, built on Gemini 3 Pro.",
+        description:
+          "Nano Banana Pro is Google's latest image generation and editing model, built on Gemini 3 Pro. It runs inside the Gemini app and API rather than as a standalone product — there's no separate dashboard to learn, but you're also inside Gemini's broader interface rather than a purpose-built image studio.",
+        whatItSolves:
+          "Nano Banana Pro solves the two failure points that make most AI image tools unreliable for real work: text rendered inside an image coming out garbled, and edits to an existing photo changing things you wanted left alone (the subject's face, pose, or background details). If you need an AI tool that follows detailed instructions precisely, it's currently one of the most accurate options available — though it's stricter and slower than pure speed-focused generators like Midjourney.",
+        useCases: [
+          "Generating marketing assets with correctly spelled text baked into the image — menus, posters, UI mockups",
+          "Editing an existing photo while keeping the subject's face and pose consistent",
+          "Following multi-part instructions in a single prompt (e.g., change the background, keep the shirt color, add morning light)",
+          "Producing quick product mockups with pricing or label text for small businesses without a designer",
+          "Iterating on a single image across several edits without it drifting from the original",
+        ],
+        features: [
+          {
+            title: "Text-in-image accuracy",
+            description:
+              "This is Nano Banana Pro's headline strength. Our own test prompt — \"generate a small coffee shop chalkboard menu with the text 'Cold Brew - $4.50' and 'Iced Latte - $5.25' clearly and correctly spelled in neat chalk lettering\" — came out correct on the first try, zero retries needed. Ask it for a birthday card with a specific name and message, or a product mockup with pricing text, and it renders the words correctly far more often than most competing models.",
+            image: "/tools-images/nano-banana-pro/nano-banana-pro-own-test-chalkboard-menu-text-example.webp",
+            imageAlt: "A real Nano Banana Pro generation of a rustic coffee shop chalkboard menu reading 'Cold Brew - $4.50' and 'Iced Latte - $5.25' in correctly spelled chalk lettering",
+          },
+          {
+            title: "Consistent photo editing and multi-step instructions",
+            description:
+              "Upload a photo and ask for a targeted change — remove an object, swap the outfit, relight the scene — and Nano Banana Pro tends to preserve the rest of the image rather than regenerating it from scratch. Because it's built on Gemini 3 Pro, it can also parse compound prompts with several conditions at once instead of only capturing the last instruction, which cuts down on regeneration attempts needed to get a usable result.",
+            image: "/tools-images/nano-banana-pro/nano-banana-pro-text-rendering-input-output-example.webp",
+            imageAlt: "Input and output example from Google's official Nano Banana Pro announcement showing accurate text rendering",
+          },
+        ],
+        whoItsFor:
+          "Fits marketers, small business owners, and content creators who need quick, accurate visual assets (social posts, product mockups, presentation graphics) and who already work inside Google's ecosystem. It's a weaker fit for illustrators and designers chasing a specific artistic style, or anyone needing the fastest possible turnaround on bulk image generation — Midjourney and Ideogram are both faster per image.",
+        tips: [
+          "Spell out every word you want rendered exactly as it should appear in the prompt — it follows literal text instructions more reliably than it infers intent.",
+          "Give compound instructions in one prompt (background, subject, lighting) rather than one change at a time — it handles multi-part conditions well and this saves regeneration attempts.",
+          "For photo edits, describe what should stay the same, not just what should change, if a specific detail (a logo, a expression) matters.",
+          "Expect it to be slower per image than Midjourney or Ideogram — plan for that if you're generating in bulk.",
+        ],
+        howToUse: [
+          "Open the Gemini app or API — there's no separate Nano Banana Pro dashboard.",
+          "Write a detailed prompt, spelling out any text that needs to appear in the image exactly as it should render.",
+          "For photo edits, upload the source image and describe the specific change to make.",
+          "Review the output; for multi-part prompts, check that every condition was followed before regenerating.",
+          "Upgrade to Google AI Pro or Ultra if you need higher daily limits or watermark-free output.",
+        ],
+        freeTier:
+          "Limited daily generations with a visible watermark and standard resolution — enough to test accuracy on your own prompts before paying.",
+        paidPlans: [
+          { name: "Google AI Pro", price: "$19.99/month", details: "Higher daily generation limits, no watermark, priority processing." },
+          { name: "Google AI Ultra", price: "$249.99/month", details: "Highest limits, earliest access to new model versions, higher-resolution output." },
+        ],
+        pricing: "Free (limited, watermarked); Google AI Pro $19.99/month; Google AI Ultra $249.99/month",
+        pros: ["Renders legible, correctly spelled text inside generated images — a common failure point for older models", "Preserves faces, poses, and background details on iterative photo edits", "Follows multi-part compound instructions in a single prompt reliably"],
+        cons: ["Outputs lean photorealistic/generic rather than a distinctive artistic style", "Noticeably slower per generation than Midjourney or Ideogram", "Free tier adds a visible watermark and caps daily generations"],
+        faq: [
+          {
+            question: "Is Nano Banana Pro free to use?",
+            answer: "Yes, there's a free tier with daily generation limits and a visible watermark. Removing the watermark and raising the limits requires a Google AI Pro or Ultra subscription.",
+          },
+          {
+            question: "Is Nano Banana Pro the same as Gemini's image generation?",
+            answer: "Nano Banana Pro is the name of the image generation/editing model that powers image features inside the Gemini app and API — it's Google's current top-tier image model, distinct from earlier, lower-tier versions.",
+          },
+          {
+            question: "Can Nano Banana Pro edit photos of real people?",
+            answer: "Yes, it supports photo editing while preserving facial identity and pose better than most competing models, though Google applies content policy restrictions on certain edits.",
+          },
+          {
+            question: "Does Nano Banana Pro add a watermark?",
+            answer: "Free-tier generations include a visible watermark; paid Google AI plans remove it.",
+          },
+          {
+            question: "How does Nano Banana Pro compare to Midjourney for beginners?",
+            answer: "Midjourney has a steeper prompt-learning curve but more stylistic range; Nano Banana Pro is more forgiving for literal, instruction-based prompts, which makes it easier for first-time users to get a usable result quickly.",
+          },
+        ],
+      },
+      fr: {
+        tagline: "Le modèle IA le plus précis de Google pour suivre des instructions — texte correct dans l'image, retouches cohérentes, basé sur Gemini 3 Pro.",
+        description:
+          "Nano Banana Pro est le dernier modèle de génération et retouche d'image de Google, basé sur Gemini 3 Pro. Il fonctionne dans l'application et l'API Gemini plutôt que comme produit autonome — pas de tableau de bord séparé à apprendre, mais on reste dans l'interface générale de Gemini plutôt que dans un studio image dédié.",
+        whatItSolves:
+          "Nano Banana Pro résout les deux points faibles qui rendent la plupart des outils IA d'image peu fiables pour un usage réel : le texte dans une image qui ressort mal orthographié, et les retouches d'une photo existante qui changent des éléments qu'on voulait garder (visage, pose, arrière-plan). Si vous avez besoin d'un outil IA qui suit des instructions détaillées avec précision, c'est actuellement l'une des options les plus fiables — bien que plus strict et plus lent que des générateurs orientés vitesse comme Midjourney.",
+        useCases: [
+          "Générer des visuels marketing avec du texte correctement orthographié intégré à l'image — menus, affiches, maquettes d'interface",
+          "Retoucher une photo existante en gardant le visage et la pose du sujet cohérents",
+          "Suivre des instructions en plusieurs parties dans une seule consigne (changer l'arrière-plan, garder la couleur du t-shirt, ajouter une lumière du matin)",
+          "Produire rapidement des maquettes produit avec texte de prix ou d'étiquette pour les petites entreprises sans designer",
+          "Itérer sur une même image à travers plusieurs retouches sans qu'elle ne s'éloigne de l'originale",
+        ],
+        features: [
+          {
+            title: "Précision du texte dans l'image",
+            description:
+              "C'est la force phare de Nano Banana Pro. Notre propre test — « générer un petit menu de tableau noir de café avec le texte 'Cold Brew - 4,50 $' et 'Iced Latte - 5,25 $' clairement et correctement orthographié en belle écriture à la craie » — a été correct du premier coup, sans aucune retentative. Demandez-lui une carte d'anniversaire avec un nom et un message précis, ou une maquette produit avec un prix, et il rend le texte correctement bien plus souvent que la plupart des modèles concurrents.",
+            image: "/tools-images/nano-banana-pro/nano-banana-pro-own-test-chalkboard-menu-text-example.webp",
+            imageAlt: "Une vraie génération Nano Banana Pro d'un menu de tableau noir de café artisanal indiquant « Cold Brew - 4,50 $ » et « Iced Latte - 5,25 $ » en écriture à la craie correctement orthographiée",
+          },
+          {
+            title: "Retouche photo cohérente et instructions en plusieurs étapes",
+            description:
+              "Importez une photo et demandez une modification ciblée — retirer un objet, changer la tenue, réajuster la lumière — et Nano Banana Pro a tendance à préserver le reste de l'image plutôt que de tout régénérer depuis zéro. Basé sur Gemini 3 Pro, il peut aussi analyser des consignes composées avec plusieurs conditions à la fois plutôt que de ne retenir que la dernière instruction, ce qui réduit le nombre de tentatives nécessaires pour obtenir un résultat exploitable.",
+            image: "/tools-images/nano-banana-pro/nano-banana-pro-text-rendering-input-output-example.webp",
+            imageAlt: "Exemple d'entrée et de sortie de l'annonce officielle Nano Banana Pro de Google montrant un rendu de texte précis",
+          },
+        ],
+        whoItsFor:
+          "Convient aux marketeurs, petites entreprises et créateurs de contenu qui ont besoin de visuels rapides et précis (posts réseaux sociaux, maquettes produit, graphiques de présentation) et qui travaillent déjà dans l'écosystème Google. Moins adapté aux illustrateurs et designers qui recherchent un style artistique précis, ou à quiconque a besoin du délai le plus rapide possible pour de la génération en masse — Midjourney et Ideogram sont tous deux plus rapides par image.",
+        tips: [
+          "Épelez chaque mot que vous voulez voir apparaître exactement tel quel dans la consigne — il suit les instructions de texte littérales plus fidèlement qu'il ne devine l'intention.",
+          "Donnez des instructions composées en une seule consigne (arrière-plan, sujet, lumière) plutôt qu'un changement à la fois — il gère bien les conditions multiples et cela évite des tentatives de régénération.",
+          "Pour les retouches photo, décrivez ce qui doit rester identique, pas seulement ce qui doit changer, si un détail précis (un logo, une expression) compte.",
+          "Attendez-vous à ce qu'il soit plus lent par image que Midjourney ou Ideogram — à prévoir si vous générez en masse.",
+        ],
+        howToUse: [
+          "Ouvrez l'application ou l'API Gemini — il n'y a pas de tableau de bord Nano Banana Pro séparé.",
+          "Rédigez une consigne détaillée, en épelant tout texte devant apparaître exactement tel quel dans l'image.",
+          "Pour les retouches photo, importez l'image source et décrivez la modification précise à apporter.",
+          "Vérifiez le résultat ; pour les consignes en plusieurs parties, assurez-vous que chaque condition a été respectée avant de régénérer.",
+          "Passez à Google AI Pro ou Ultra si vous avez besoin de limites quotidiennes plus élevées ou d'un résultat sans filigrane.",
+        ],
+        freeTier:
+          "Générations quotidiennes limitées avec filigrane visible et résolution standard — suffisant pour tester la précision sur vos propres consignes avant de payer.",
+        paidPlans: [
+          { name: "Google AI Pro", price: "19,99 $/mois", details: "Limites quotidiennes plus élevées, sans filigrane, traitement prioritaire." },
+          { name: "Google AI Ultra", price: "249,99 $/mois", details: "Limites maximales, accès anticipé aux nouvelles versions du modèle, résolution de sortie plus élevée." },
+        ],
+        pricing: "Gratuit (limité, avec filigrane) ; Google AI Pro 19,99 $/mois ; Google AI Ultra 249,99 $/mois",
+        pros: ["Rend un texte lisible et correctement orthographié dans les images générées — un point faible courant des anciens modèles", "Préserve visages, poses et détails d'arrière-plan lors de retouches photo successives", "Suit de manière fiable des instructions composées en plusieurs parties dans une seule consigne"],
+        cons: ["Le rendu penche vers le photoréaliste/générique plutôt qu'un style artistique distinctif", "Nettement plus lent par génération que Midjourney ou Ideogram", "L'offre gratuite ajoute un filigrane visible et plafonne les générations quotidiennes"],
+        faq: [
+          {
+            question: "Nano Banana Pro est-il gratuit ?",
+            answer: "Oui, une offre gratuite existe avec des limites de génération quotidiennes et un filigrane visible. Retirer le filigrane et augmenter les limites nécessite un abonnement Google AI Pro ou Ultra.",
+          },
+          {
+            question: "Nano Banana Pro est-il la même chose que la génération d'images de Gemini ?",
+            answer: "Nano Banana Pro est le nom du modèle de génération/retouche d'image qui alimente les fonctions image de l'application et de l'API Gemini — c'est le modèle image haut de gamme actuel de Google, distinct des versions antérieures.",
+          },
+          {
+            question: "Nano Banana Pro peut-il retoucher des photos de vraies personnes ?",
+            answer: "Oui, il permet de retoucher des photos en préservant mieux l'identité faciale et la pose que la plupart des modèles concurrents, bien que Google applique des restrictions de politique de contenu sur certaines retouches.",
+          },
+          {
+            question: "Nano Banana Pro ajoute-t-il un filigrane ?",
+            answer: "Les générations de l'offre gratuite incluent un filigrane visible ; les forfaits payants Google AI le retirent.",
+          },
+          {
+            question: "Comment Nano Banana Pro se compare-t-il à Midjourney pour les débutants ?",
+            answer: "Midjourney a une courbe d'apprentissage des consignes plus raide mais plus de diversité stylistique ; Nano Banana Pro est plus indulgent pour les consignes littérales et basées sur des instructions, ce qui facilite l'obtention d'un résultat exploitable pour un premier usage.",
+          },
+        ],
       },
     },
   },

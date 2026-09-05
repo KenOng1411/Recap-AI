@@ -144,14 +144,14 @@ export const roundups: Roundup[] = [
   },
   {
     slug: "best-ai-image-generators-for-designers",
-    updatedAt: "2026-09-02",
+    updatedAt: "2026-09-05",
     content: {
       en: {
         title: "Best AI image generators for designers",
         description:
           "Comparing the AI image tools most worth using for designers, from artistic quality to precise text rendering.",
         intro: [
-          "For raw artistic quality, Midjourney is still the tool most designers reach for first — it's the one that consistently produces images that don't need much fixing after the fact. If the image needs readable text or a logo baked in, Ideogram handles that far more reliably than most generators. And if you just need something fast without leaving your design file, Canva's built-in AI tools skip the export-import step entirely.",
+          "Google's Nano Banana Pro is the newest serious contender here, and it's currently the most accurate at following detailed, multi-part instructions and rendering correct text inside an image. For raw artistic quality, Midjourney is still the tool most designers reach for first — it's the one that consistently produces images that don't need much fixing after the fact. If the image needs readable text or a logo baked in and you're not already in Google's ecosystem, Ideogram is the dedicated specialist. And if you just need something fast without leaving your design file, Canva's built-in AI tools skip the export-import step entirely.",
         ],
       },
       fr: {
@@ -159,11 +159,29 @@ export const roundups: Roundup[] = [
         description:
           "Comparatif des outils IA d'images les plus intéressants pour les designers, entre qualité artistique et rendu de texte précis.",
         intro: [
-          "Pour la qualité artistique brute, Midjourney reste l'outil vers lequel la plupart des designers se tournent en premier — celui qui produit le plus souvent des images qui n'ont pas besoin de retouches derrière. Si l'image doit contenir du texte lisible ou un logo, Ideogram gère cela bien plus fiablement que la plupart des générateurs. Et pour aller vite sans quitter son fichier de design, les outils IA intégrés à Canva évitent l'étape d'export-import.",
+          "Nano Banana Pro de Google est le nouveau prétendant sérieux ici, et c'est actuellement le plus précis pour suivre des instructions détaillées en plusieurs parties et rendre du texte correct dans une image. Pour la qualité artistique brute, Midjourney reste l'outil vers lequel la plupart des designers se tournent en premier — celui qui produit le plus souvent des images qui n'ont pas besoin de retouches derrière. Si l'image doit contenir du texte lisible ou un logo et que vous n'êtes pas déjà dans l'écosystème Google, Ideogram est le spécialiste dédié. Et pour aller vite sans quitter son fichier de design, les outils IA intégrés à Canva évitent l'étape d'export-import.",
         ],
       },
     },
     items: [
+      {
+        slug: "nano-banana-pro",
+        blurb: {
+          en: "Google's most instruction-accurate image model — best for correct in-image text and consistent photo edits.",
+          fr: "Le modèle image le plus précis de Google pour suivre des instructions — idéal pour le texte dans l'image et les retouches photo cohérentes.",
+        },
+        bestFor: { en: "Best for instruction accuracy and in-image text", fr: "Meilleur pour la précision d'instructions et le texte dans l'image" },
+        body: {
+          en: [
+            "Built on Gemini 3 Pro, Nano Banana Pro is currently the most reliable model we've tested for rendering correctly spelled text inside an image and following multi-part instructions in a single prompt — strong for marketing assets, product mockups, and iterative photo edits that need to preserve a subject's face and pose.",
+            "It runs inside the Gemini app and API rather than as a standalone studio. Free tier available (watermarked); Google AI Pro from $19.99/month removes it.",
+          ],
+          fr: [
+            "Basé sur Gemini 3 Pro, Nano Banana Pro est actuellement le modèle le plus fiable que nous ayons testé pour rendre du texte correctement orthographié dans une image et suivre des instructions en plusieurs parties dans une seule consigne — solide pour les visuels marketing, maquettes produit et retouches photo successives qui doivent préserver le visage et la pose du sujet.",
+            "Il fonctionne dans l'application et l'API Gemini plutôt que comme studio autonome. Offre gratuite disponible (avec filigrane) ; Google AI Pro à partir de 19,99 $/mois le retire.",
+          ],
+        },
+      },
       {
         slug: "midjourney",
         blurb: {
