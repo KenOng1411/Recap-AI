@@ -4,6 +4,11 @@ import type { Locale } from "@/i18n/config";
 // Distinct from the tools.ts review page (structured spec sheet) and roundups.ts
 // (multi-tool lists): this is the long-form, opinionated "should you pay for this"
 // format that ranks well for AI-tool review search intent.
+interface GuideFaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface GuideContent {
   title: string;
   metaDescription: string;
@@ -12,6 +17,7 @@ export interface GuideContent {
   drawbacks: string[];
   notForYouIf: string[];
   verdict: string;
+  faq?: GuideFaqItem[]; // rendered with FAQPage schema — see FaqSchema component
 }
 
 export interface Guide {
@@ -25,7 +31,7 @@ export const guides: Guide[] = [
   {
     slug: "is-fliki-worth-it",
     toolSlug: "fliki",
-    updatedAt: "2026-09-03",
+    updatedAt: "2026-09-07",
     content: {
       en: {
         title: "Is Fliki Worth It in 2026?",
@@ -52,6 +58,24 @@ export const guides: Guide[] = [
         ],
         verdict:
           "For the specific job Fliki is built for — fast, narrated video from text, in a lot of languages — it's worth the $21–28/month Standard plan. It isn't trying to be a cinematic video editor, and compared against one it'll lose. Compared against the actual alternative most solo creators face — not publishing video at all, or spending hours filming and editing by hand — the value is clear.",
+        faq: [
+          {
+            question: "How much does Fliki cost per month?",
+            answer: "Plans start free (watermarked, 5 minutes/month) and range from $21–28/month on Standard to $66–88/month on Premium, with a custom Enterprise tier for teams.",
+          },
+          {
+            question: "Is Fliki better than HeyGen?",
+            answer: "Fliki is stronger for text-to-video with large volumes of narration across many languages; HeyGen focuses on realistic AI avatars for presenter-style videos. See our Fliki vs HeyGen comparison for the full breakdown.",
+          },
+          {
+            question: "Can I cancel Fliki anytime?",
+            answer: "Yes — Fliki's paid plans are billed monthly or annually with no long-term contract; canceling simply stops the next billing cycle.",
+          },
+          {
+            question: "Does Fliki work well for non-English content?",
+            answer: "Yes — with 2,000+ voices across 80+ languages, it's one of the stronger options specifically for multilingual video production, though non-English voices are somewhat less consistent than the English catalog.",
+          },
+        ],
       },
       fr: {
         title: "Fliki vaut-il le coup en 2026 ?",
@@ -78,6 +102,24 @@ export const guides: Guide[] = [
         ],
         verdict:
           "Pour la mission précise de Fliki — une vidéo narrée rapide à partir d'un texte, en de nombreuses langues — le forfait Standard à 21–28 $/mois en vaut la peine. Ce n'est pas un monteur vidéo cinématographique, et comparé à un tel outil il perdra. Comparé à l'alternative réelle de la plupart des créateurs solos — ne pas publier de vidéo du tout, ou passer des heures à filmer et monter à la main — l'intérêt est clair.",
+        faq: [
+          {
+            question: "Combien coûte Fliki par mois ?",
+            answer: "Les forfaits démarrent gratuits (avec filigrane, 5 minutes/mois) et vont de 21–28 $/mois pour Standard à 66–88 $/mois pour Premium, avec un palier Entreprise sur devis pour les équipes.",
+          },
+          {
+            question: "Fliki est-il meilleur que HeyGen ?",
+            answer: "Fliki est plus fort pour du texte-vers-vidéo avec un gros volume de narration en plusieurs langues ; HeyGen se concentre sur des avatars IA réalistes pour des vidéos façon présentateur. Voir notre comparatif Fliki vs HeyGen pour le détail complet.",
+          },
+          {
+            question: "Puis-je annuler Fliki à tout moment ?",
+            answer: "Oui — les forfaits payants de Fliki sont facturés mensuellement ou annuellement sans engagement de durée ; annuler arrête simplement le prochain prélèvement.",
+          },
+          {
+            question: "Fliki fonctionne-t-il bien pour du contenu non anglophone ?",
+            answer: "Oui — avec plus de 2 000 voix en 80+ langues, c'est l'une des options les plus solides spécifiquement pour la production vidéo multilingue, même si les voix non anglaises sont un peu moins régulières que le catalogue anglais.",
+          },
+        ],
       },
     },
   },

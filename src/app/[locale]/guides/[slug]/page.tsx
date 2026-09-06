@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { CaretLeft, Check, X as XIcon, SealWarning } from "@phosphor-icons/react/dist/ssr";
+import { CaretLeft, Check, X as XIcon, SealWarning, CreditCard, Question } from "@phosphor-icons/react/dist/ssr";
 import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { guides, getGuideBySlug } from "@/data/guides";
@@ -12,6 +12,7 @@ import { StarRating } from "@/components/StarRating";
 import { ReviewByline } from "@/components/ReviewByline";
 import { AffiliateCta } from "@/components/AffiliateCta";
 import { AffiliateDisclosureLine } from "@/components/AffiliateDisclosureLine";
+import { FaqSchema } from "@/components/FaqSchema";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => guides.map((guide) => ({ locale, slug: guide.slug })));
@@ -46,10 +47,13 @@ export default async function GuideDetailPage({
   if (!content) notFound();
 
   const tool = getToolBySlug(guide.toolSlug);
+  const toolContent = tool ? withLocaleFallback(tool.content, locale) : undefined;
   const dict = getDictionary(locale);
 
   return (
     <div className="container-page max-w-3xl py-12">
+      {content.faq && content.faq.length > 0 && <FaqSchema items={content.faq} />}
+
       <Link
         href={`/${locale}/guides`}
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent"
@@ -137,6 +141,56 @@ export default async function GuideDetailPage({
           ))}
         </ul>
       </section>
+
+      {toolContent && (toolContent.freeTier || (toolContent.paidPlans?.length ?? 0) > 0) && (
+        <section className="mt-10">
+          <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
+            <CreditCard size={20} weight="bold" className="text-accent" aria-hidden="true" />
+            {dict.toolPage.pricingDetail}
+          </h2>
+          {toolContent.freeTier && (
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-foreground">{dict.toolPage.freeTier}: </span>
+              {toolContent.freeTier}
+            </p>
+          )}
+          {toolContent.paidPlans && toolContent.paidPlans.length > 0 && (
+            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {toolContent.paidPlans.map((plan) => (
+                <div key={plan.name} className="rounded-2xl border border-border bg-surface p-4">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <p className="font-semibold text-foreground">{plan.name}</p>
+                    <p className="text-sm font-bold text-accent">{plan.price}</p>
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{plan.details}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+      {content.faq && content.faq.length > 0 && (
+        <section className="mt-10">
+          <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
+            <Question size={20} weight="bold" className="text-accent" aria-hidden="true" />
+            {dict.toolPage.faq}
+          </h2>
+          <div className="mt-4 flex flex-col gap-3">
+            {content.faq.map((item) => (
+              <details
+                key={item.question}
+                className="group rounded-xl border border-border bg-surface p-4 open:bg-surface-muted"
+              >
+                <summary className="cursor-pointer list-none font-medium text-foreground marker:content-none">
+                  {item.question}
+                </summary>
+                <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mt-10 rounded-2xl border border-accent/30 bg-accent-soft p-6">
         <h2 className="text-lg font-semibold text-accent-strong">{dict.guidesPost.verdictTitle}</h2>
