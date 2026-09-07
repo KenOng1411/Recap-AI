@@ -1,4 +1,4 @@
-import { locales, type Locale } from "@/i18n/config";
+import { locales, defaultLocale, type Locale } from "@/i18n/config";
 
 // Every route must call this in its own generateMetadata — Next.js does NOT
 // deep-merge `alternates` from a parent layout, so any page that omits this
@@ -9,6 +9,11 @@ export function buildAlternates(locale: Locale, subpath: string) {
   const suffix = subpath === "" ? "/" : subpath;
   return {
     canonical: `/${locale}${suffix}`,
-    languages: Object.fromEntries(locales.map((l) => [l, `/${l}${suffix}`])),
+    languages: {
+      ...Object.fromEntries(locales.map((l) => [l, `/${l}${suffix}`])),
+      // Fallback for users whose browser locale doesn't match any of the
+      // 6 above — points at the default (English) version of this page.
+      "x-default": `/${defaultLocale}${suffix}`,
+    },
   };
 }

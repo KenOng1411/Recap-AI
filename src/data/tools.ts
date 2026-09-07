@@ -5180,8 +5180,8 @@ export const tools: Tool[] = [
     website: "https://fliki.ai",
     affiliateUrl: "https://fliki.ai/?via=recapai",
     rating: 4.4,
-    lastUpdated: "2026-09-05",
-    image: "/tools-images/fliki.png",
+    lastUpdated: "2026-09-07",
+    image: "/tools-images/fliki-real/fliki-dashboard-video-workflows.webp",
     content: {
       en: {
         tagline: "Turn text, scripts, or blog URLs into narrated videos with 2,000+ AI voices in 80+ languages.",
@@ -5204,6 +5204,20 @@ export const tools: Tool[] = [
               "Paste a script, blog post, or one-line prompt and Fliki writes the script, picks visuals, adds AI voiceover, music, and subtitles — producing a publish-ready vertical video formatted for TikTok/Reels/Shorts without opening a separate editor.",
             image: "/tools-images/fliki-real/fliki-creators-workspace-preview.webp",
             imageAlt: "Fliki's idea-to-video workflow showing a text prompt turned into a finished vertical Shorts-style video with captions and trending sound",
+          },
+          {
+            title: "Script-to-video setup with real format and template controls",
+            description:
+              "Paste in a full script and Fliki shows exactly what it will do with it before generating — aspect ratio (portrait, square, landscape), template, scene media source, narrator voice, and subtitle style are all visible and editable up front, not hidden behind a single 'generate' button.",
+            image: "/tools-images/fliki-real/fliki-script-to-video-config.webp",
+            imageAlt: "Fliki's script-to-video setup screen showing the pasted script alongside format, template, narrator voice, and subtitle controls",
+          },
+          {
+            title: "A real scene-by-scene editor, not a black box",
+            description:
+              "Once generated, the video opens in a full editor — scenes as a timeline strip, a layers panel for voiceover/text/media on each scene, and the script broken out line by line on the left so you can jump straight to the part that needs a fix, instead of regenerating the whole video.",
+            image: "/tools-images/fliki-real/fliki-editor-real-generated-video.webp",
+            imageAlt: "Fliki's video editor showing a real generated video with a scene timeline, layers panel, and the source script broken out by line",
           },
         ],
         whoItsFor:
@@ -5271,6 +5285,20 @@ export const tools: Tool[] = [
               "Collez un script, un article de blog ou une consigne en une ligne, et Fliki rédige le script, choisit les visuels, ajoute voix off, musique et sous-titres — produisant une vidéo verticale prête à publier au format TikTok/Reels/Shorts sans ouvrir d'éditeur séparé.",
             image: "/tools-images/fliki-real/fliki-creators-workspace-preview.webp",
             imageAlt: "Le flux idée-vers-vidéo de Fliki montrant une consigne texte transformée en vidéo verticale finie façon Shorts avec sous-titres et son tendance",
+          },
+          {
+            title: "Configuration script-vers-vidéo avec de vrais contrôles de format et modèle",
+            description:
+              "Collez un script complet et Fliki montre exactement ce qu'il va en faire avant de générer — format (portrait, carré, paysage), modèle, source des visuels de scène, voix du narrateur et style de sous-titres sont tous visibles et modifiables à l'avance, pas cachés derrière un simple bouton « générer ».",
+            image: "/tools-images/fliki-real/fliki-script-to-video-config.webp",
+            imageAlt: "L'écran de configuration script-vers-vidéo de Fliki montrant le script collé à côté des contrôles de format, modèle, voix du narrateur et sous-titres",
+          },
+          {
+            title: "Un vrai éditeur scène par scène, pas une boîte noire",
+            description:
+              "Une fois générée, la vidéo s'ouvre dans un éditeur complet — les scènes en bande de montage, un panneau de calques pour la voix off/texte/média de chaque scène, et le script détaillé ligne par ligne à gauche pour aller directement corriger la partie qui pose problème, plutôt que de tout régénérer.",
+            image: "/tools-images/fliki-real/fliki-editor-real-generated-video.webp",
+            imageAlt: "L'éditeur vidéo de Fliki montrant une vraie vidéo générée avec une bande de montage par scène, un panneau de calques et le script source détaillé ligne par ligne",
           },
         ],
         whoItsFor:
