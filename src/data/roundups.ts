@@ -844,6 +844,120 @@ export const roundups: Roundup[] = [
       },
     ],
   },
+  {
+    slug: "fliki-alternatives",
+    updatedAt: "2026-09-07",
+    content: {
+      en: {
+        title: "5 best Fliki alternatives in 2026 (and when you don't actually need one)",
+        description:
+          "Before switching away from Fliki, check whether the issue is actually solvable inside it — here's exactly which alternative fixes which specific gap.",
+        intro: [
+          "Most people searching for a Fliki alternative are running into one of four specific limits: needing a talking avatar instead of narration over visuals, wanting cinematic AI-generated scenes instead of stock footage, hitting the free tier's watermark and 5-minute cap, or wanting more hands-on editing control. It's worth checking which one applies before switching — for three of those four, staying on Fliki and picking the right plan or workflow solves it. The fourth (a talking avatar) genuinely needs a different tool.",
+        ],
+      },
+      fr: {
+        title: "5 meilleures alternatives à Fliki en 2026 (et quand vous n'en avez pas vraiment besoin)",
+        description:
+          "Avant de quitter Fliki, vérifiez si le problème est en fait résoluble à l'intérieur de l'outil — voici exactement quelle alternative corrige quel manque précis.",
+        intro: [
+          "La plupart des personnes qui cherchent une alternative à Fliki butent sur l'une de ces quatre limites précises : besoin d'un avatar qui parle plutôt qu'une narration sur des visuels, envie de scènes générées par IA façon cinéma plutôt que des images d'archives, plafond gratuit avec filigrane et 5 minutes atteint, ou besoin de plus de contrôle de montage manuel. Autant vérifier laquelle s'applique avant de changer d'outil — pour trois de ces quatre cas, rester sur Fliki en choisissant le bon forfait ou flux de travail résout le problème. Le quatrième (un avatar qui parle) nécessite vraiment un autre outil.",
+        ],
+      },
+    },
+    items: [
+      {
+        slug: "fliki",
+        blurb: {
+          en: "Still the right call if your gap is the free tier's cap, not a missing feature — the Standard plan removes both the watermark and the 5-minute limit.",
+          fr: "Reste le bon choix si votre limite est le plafond gratuit, pas une fonctionnalité manquante — le forfait Standard retire à la fois le filigrane et la limite de 5 minutes.",
+        },
+        bestFor: { en: "Stick with Fliki if the free tier is the only problem", fr: "Restez sur Fliki si l'offre gratuite est le seul problème" },
+        body: {
+          en: [
+            "If the reason you're looking around is the watermark or the 5-minute monthly cap, that's not a Fliki limitation — it's the free tier specifically. The Standard plan ($21–28/month) removes the watermark, raises the limit to 120 minutes, and unlocks the full 900+ voice library, which is usually cheaper than re-learning a new tool from scratch.",
+            "The one thing upgrading won't fix is stock-footage visuals or a talking avatar — if either of those is the actual gap, see the alternatives below instead of upgrading first.",
+          ],
+          fr: [
+            "Si la raison pour laquelle vous cherchez ailleurs est le filigrane ou le plafond mensuel de 5 minutes, ce n'est pas une limite de Fliki — c'est spécifiquement l'offre gratuite. Le forfait Standard (21–28 $/mois) retire le filigrane, monte la limite à 120 minutes, et débloque la bibliothèque complète de 900+ voix, ce qui revient généralement moins cher que de réapprendre un nouvel outil.",
+            "La seule chose que la mise à niveau ne résout pas, ce sont les visuels d'archives ou un avatar qui parle — si l'un de ces deux points est le vrai manque, voir les alternatives ci-dessous plutôt que de mettre à niveau en premier.",
+          ],
+        },
+      },
+      {
+        slug: "heygen",
+        blurb: {
+          en: "Switch here if what you actually need is a talking AI avatar on screen — Fliki doesn't do this at all.",
+          fr: "Passez à cet outil si vous avez vraiment besoin d'un avatar IA qui parle à l'écran — Fliki ne le fait pas du tout.",
+        },
+        bestFor: { en: "Best if you need a talking avatar, not narration", fr: "Meilleur si vous avez besoin d'un avatar qui parle, pas d'une narration" },
+        body: {
+          en: [
+            "This is the one gap Fliki genuinely can't close, upgrade or not: it narrates over visuals, it doesn't put a face on screen. If your video needs to feel presented — a training module, an onboarding video, a demo where someone appears to walk through the product — HeyGen's avatars (stock or cloned) are built for exactly that.",
+            "Free to start (watermarked, ~3 videos/month), paid plans from about $29/month — a real switch, not a Fliki plan upgrade, but the right one if a face on screen is non-negotiable.",
+          ],
+          fr: [
+            "C'est le seul manque que Fliki ne peut vraiment pas combler, mise à niveau ou non : il narre sur des visuels, il ne met pas un visage à l'écran. Si votre vidéo doit sembler présentée — un module de formation, une vidéo d'intégration, une démo où quelqu'un semble guider le produit — les avatars de HeyGen (standards ou clonés) sont faits exactement pour ça.",
+            "Gratuit pour démarrer (avec filigrane, ~3 vidéos/mois), forfaits payants à partir d'environ 29 $/mois — un vrai changement d'outil, pas une mise à niveau de forfait Fliki, mais le bon choix si un visage à l'écran est non négociable.",
+          ],
+        },
+      },
+      {
+        slug: "runway",
+        blurb: {
+          en: "Switch here if the gap is stock-footage visuals that look generic — Runway generates the scenes instead of pulling from a stock library.",
+          fr: "Passez à cet outil si le manque, ce sont des visuels d'archives qui font générique — Runway génère les scènes au lieu de piocher dans une banque d'images.",
+        },
+        bestFor: { en: "Best for AI-generated scenes instead of stock footage", fr: "Meilleur pour des scènes générées par IA plutôt que des images d'archives" },
+        body: {
+          en: [
+            "Fliki's biggest recurring complaint is visuals that lean on stock footage, which can feel generic for a specific product or message. Runway's Gen-4.5 model generates the actual scene from a text or image prompt instead, plus tools like Aleph for restyling or extending existing footage — genuinely different visuals, not a bigger stock library.",
+            "This is a trade, not a straight upgrade: Runway doesn't narrate a script into a finished video the way Fliki does — you're generating clips, not an end-to-end narrated video. It's the right swap specifically for the visual-quality complaint, not a general Fliki replacement.",
+          ],
+          fr: [
+            "La plainte la plus fréquente sur Fliki concerne des visuels qui s'appuient sur des images d'archives, ce qui peut sembler générique pour un message précis. Le modèle Gen-4.5 de Runway génère la scène elle-même à partir d'un texte ou d'une image, avec des outils comme Aleph pour retoucher ou prolonger des images existantes — des visuels vraiment différents, pas juste une banque d'images plus grande.",
+            "C'est un échange, pas une simple mise à niveau : Runway ne transforme pas un script en vidéo narrée de bout en bout comme le fait Fliki — vous générez des clips, pas une vidéo narrée complète. C'est le bon changement spécifiquement pour le problème de qualité visuelle, pas un remplacement général de Fliki.",
+          ],
+        },
+      },
+      {
+        slug: "invideo-ai",
+        blurb: {
+          en: "Switch here if you want more hands-on template and timeline control than Fliki's mostly automated flow gives you.",
+          fr: "Passez à cet outil si vous voulez plus de contrôle manuel sur les modèles et le montage que ne l'offre le flux surtout automatisé de Fliki.",
+        },
+        bestFor: { en: "Best for manual editing control within a template", fr: "Meilleur pour un contrôle de montage manuel dans un modèle" },
+        body: {
+          en: [
+            "Fliki's whole pitch is minimal manual editing — good for speed, limiting if you want to fine-tune pacing, swap specific clips, or work from a marketing-style template rather than a narrated-article structure. InVideo AI leans template-first, which trades some of Fliki's one-click automation for more direct control over layout and timing.",
+            "Reach for this specifically if you've found Fliki's automated scene-matching too hands-off for your workflow, not because of price or visual quality — those are better solved by an upgrade or Runway respectively.",
+          ],
+          fr: [
+            "L'argument principal de Fliki est un montage manuel minimal — bon pour la vitesse, limitant si vous voulez ajuster le rythme, changer des clips précis, ou partir d'un modèle façon marketing plutôt que d'une structure d'article narré. InVideo AI mise sur des modèles prêts à l'emploi, ce qui échange une partie de l'automatisation en un clic de Fliki contre plus de contrôle direct sur la mise en page et le minutage.",
+            "Tournez-vous vers cet outil spécifiquement si l'association automatique de scènes de Fliki vous semble trop peu contrôlable pour votre flux de travail, pas pour une question de prix ou de qualité visuelle — ces points-là se résolvent mieux avec une mise à niveau ou avec Runway.",
+          ],
+        },
+      },
+      {
+        slug: "synthesia",
+        blurb: {
+          en: "Switch here if you're producing training or L&D video at team scale — Synthesia is built specifically for that, not general content.",
+          fr: "Passez à cet outil si vous produisez des vidéos de formation à l'échelle d'une équipe — Synthesia est conçu spécifiquement pour ça, pas pour du contenu généraliste.",
+        },
+        bestFor: { en: "Best for corporate training and L&D at scale", fr: "Meilleur pour la formation en entreprise à grande échelle" },
+        body: {
+          en: [
+            "If Fliki feels like the wrong shape for what you're making — dozens of internal training videos with consistent branding, multiple presenter avatars, and team review workflows — that's a sign you need Synthesia specifically, not just a Fliki plan upgrade. It's built for corporate L&D content, not general social or blog-to-video use.",
+            "It's a narrower tool than Fliki for everyday content, so this swap only makes sense if training/L&D at scale is actually the use case, not a nice-to-have.",
+          ],
+          fr: [
+            "Si Fliki semble mal adapté à ce que vous produisez — des dizaines de vidéos de formation interne avec une image de marque cohérente, plusieurs avatars présentateurs et des flux de validation en équipe — c'est le signe qu'il vous faut spécifiquement Synthesia, pas juste une mise à niveau de forfait Fliki. Il est conçu pour la formation en entreprise, pas pour du contenu généraliste ou du blog-vers-vidéo.",
+            "C'est un outil plus étroit que Fliki pour du contenu au quotidien, donc ce changement n'a de sens que si la formation à grande échelle est vraiment le cas d'usage, pas juste un plus agréable à avoir.",
+          ],
+        },
+      },
+    ],
+  },
 ];
 
 export function getRoundupBySlug(slug: string): Roundup | undefined {
