@@ -53,7 +53,11 @@ function BusinessToolSchema({
     operatingSystem: "Web",
     description: content.tagline,
     url: tool.website,
-    offers: { "@type": "Offer", price: "97", priceCurrency: "USD" },
+    // Omit `offers` entirely when priceUSD isn't set — an unverified
+    // third-party price in structured data is worse than no price at all.
+    ...(tool.priceUSD
+      ? { offers: { "@type": "Offer", price: tool.priceUSD, priceCurrency: "USD" } }
+      : {}),
     review: {
       "@type": "Review",
       author: { "@type": "Organization", name: "RecapAI" },

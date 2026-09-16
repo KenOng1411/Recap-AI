@@ -47,6 +47,7 @@ export interface BusinessTool {
   lastUpdated: string;
   image?: string;
   imageAlt?: string; // describes what the image actually shows — never duplicate the page title here
+  priceUSD?: string; // for schema.org Offer.price — omit when the real price isn't verified from an official source
   content: Partial<Record<Locale, BusinessToolContent>>;
 }
 
@@ -66,6 +67,7 @@ export const businessTools: BusinessTool[] = [
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
     imageAlt: "ClickFunnels funnel editor and stats dashboard",
+    priceUSD: "97",
     content: {
       en: {
         title: "ClickFunnels Review 2026: Is It Still Worth $97/Month?",
@@ -206,6 +208,7 @@ export const businessTools: BusinessTool[] = [
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
     imageAlt: "ClickFunnels funnel editor and stats dashboard, the software included with the challenge",
+    priceUSD: "100",
     content: {
       en: {
         title: "One Funnel Away Challenge Review 2026: Is the $100 Worth It?",
@@ -418,6 +421,7 @@ export const businessTools: BusinessTool[] = [
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
     imageAlt: "ClickFunnels funnel editor and stats dashboard, included in the Scale plan bundled with this offer",
+    priceUSD: "1970",
     content: {
       en: {
         title: "Funnel Builder Secrets Review 2026: Is the \"I'm All In\" Bundle Worth $1,970?",
