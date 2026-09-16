@@ -98,7 +98,7 @@ export default async function BusinessToolDetailPage({
         <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-2xl border border-border">
           <Image
             src={tool.image}
-            alt={content.title}
+            alt={tool.imageAlt ?? content.title}
             fill
             priority
             sizes="(min-width: 1024px) 768px, 100vw"

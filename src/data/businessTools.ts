@@ -46,6 +46,7 @@ export interface BusinessTool {
   rating: number;
   lastUpdated: string;
   image?: string;
+  imageAlt?: string; // describes what the image actually shows — never duplicate the page title here
   content: Partial<Record<Locale, BusinessToolContent>>;
 }
 
@@ -64,6 +65,7 @@ export const businessTools: BusinessTool[] = [
     rating: 4.2,
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
+    imageAlt: "ClickFunnels funnel editor and stats dashboard",
     content: {
       en: {
         title: "ClickFunnels Review 2026: Is It Still Worth $97/Month?",
@@ -203,6 +205,7 @@ export const businessTools: BusinessTool[] = [
     rating: 4.1,
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
+    imageAlt: "ClickFunnels funnel editor and stats dashboard, the software included with the challenge",
     content: {
       en: {
         title: "One Funnel Away Challenge Review 2026: Is the $100 Worth It?",
@@ -319,6 +322,7 @@ export const businessTools: BusinessTool[] = [
     rating: 3.9,
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-workflow-automation-builder.jpg",
+    imageAlt: "ClickFunnels workflow automation builder interface, the platform PLR Funnels deploys into",
     content: {
       en: {
         title: "PLR Funnels Review 2026: 52 Done-For-You Funnels — Worth $797?",
@@ -413,6 +417,7 @@ export const businessTools: BusinessTool[] = [
     rating: 4.0,
     lastUpdated: "2026-09-16",
     image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
+    imageAlt: "ClickFunnels funnel editor and stats dashboard, included in the Scale plan bundled with this offer",
     content: {
       en: {
         title: "Funnel Builder Secrets Review 2026: Is the \"I'm All In\" Bundle Worth $1,970?",
