@@ -141,6 +141,32 @@ export default async function BusinessToolDetailPage({
         </ul>
       )}
 
+      {/* Above-the-fold CTA — this section also serves as an ads landing
+          page, so the primary action shouldn't require scrolling past the
+          full review to find. */}
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <a
+          href={tool.affiliateUrl}
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          className="inline-flex w-fit items-center gap-2 rounded-full bg-accent-strong px-6 py-3 text-sm font-semibold text-on-accent shadow-[0_8px_30px_-8px_var(--color-accent-shadow)] transition-all hover:scale-[1.03] hover:bg-accent-hover active:scale-[0.97]"
+        >
+          Try {tool.name} free
+          <ArrowSquareOut size={18} weight="bold" aria-hidden="true" />
+        </a>
+        {tool.secondaryCta && (
+          <a
+            href={tool.secondaryCta.url}
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-hover"
+          >
+            {tool.secondaryCta.label}
+            <ArrowSquareOut size={14} weight="bold" aria-hidden="true" />
+          </a>
+        )}
+      </div>
+
       {content.sections.map((section, i) => (
         <section key={i} className="mt-10">
           {section.heading && (

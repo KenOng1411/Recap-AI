@@ -188,6 +188,7 @@ export const businessTools: BusinessTool[] = [
         relatedLinks: [
           { slug: "one-funnel-away-challenge-review", label: "One Funnel Away Challenge Review" },
           { slug: "plr-funnels-review", label: "PLR Funnels Review" },
+          { slug: "funnel-builder-secrets-review", label: "Funnel Builder Secrets Review" },
         ],
       },
     },
@@ -304,6 +305,7 @@ export const businessTools: BusinessTool[] = [
         relatedLinks: [
           { slug: "clickfunnels", label: "ClickFunnels Review" },
           { slug: "plr-funnels-review", label: "PLR Funnels Review" },
+          { slug: "funnel-builder-secrets-review", label: "Funnel Builder Secrets Review" },
         ],
       },
     },
@@ -397,6 +399,104 @@ export const businessTools: BusinessTool[] = [
         relatedLinks: [
           { slug: "clickfunnels", label: "ClickFunnels Review" },
           { slug: "one-funnel-away-challenge-review", label: "One Funnel Away Challenge Review" },
+          { slug: "funnel-builder-secrets-review", label: "Funnel Builder Secrets Review" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "funnel-builder-secrets-review",
+    name: "Funnel Builder Secrets",
+    categoryLabel: "Training Bundle",
+    website: "https://www.imallin.com",
+    affiliateUrl: "https://www.imallin.com/?aff=9efe802452050bb3de77c3d58f37b8c91d4c6814ce9a6ac6eb09cf5a2ecae04b",
+    rating: 4.0,
+    lastUpdated: "2026-09-16",
+    image: "/business-tools-images/clickfunnels/clickfunnels-funnel-editor-and-stats.jpg",
+    content: {
+      en: {
+        title: "Funnel Builder Secrets Review 2026: Is the \"I'm All In\" Bundle Worth $1,970?",
+        metaDescription:
+          "$1,970 gets you a year of ClickFunnels Scale, the Funnel Builder Secrets course, Traffic Secrets, and a live traffic community. Here's the real value breakdown.",
+        tagline: "ClickFunnels' highest-commitment bundle — a year of Scale-tier software plus Russell Brunson's funnel and traffic training, for $1,970.",
+        intro: [
+          "Funnel Builder Secrets is the training component of ClickFunnels' \"I'm All In\" bundle — $1,970 for the first year (discounted from a $9,349 list price), which includes 12 months of ClickFunnels' Scale plan, the Funnel Builder Secrets course itself, Traffic Secrets training, a traffic swipe file, and access to a live traffic-focused community. It renews at $1,970/year after that.",
+          "That's the offer in one sentence. Below is what each piece is actually worth on its own, whether the bundled discount holds up, and who this makes sense for versus just paying for ClickFunnels alone.",
+        ],
+        quickSummary: [
+          "Price: $1,970 first year (listed as discounted from $9,349), then $1,970/year on renewal.",
+          "What's bundled: 12 months ClickFunnels Scale plan (~$2,364 value alone), Funnel Builder Secrets course, Traffic Secrets access, a traffic swipe file, and the Conversation Domination live traffic community.",
+          "Guarantee: 30-day money-back guarantee after the trial period ends.",
+          "Compare before buying: ClickFunnels Scale alone runs about $164–197/month ($1,968–2,364/year) — meaning the training and traffic content in this bundle cost roughly nothing extra over just paying for Scale directly, if the stated values are accurate.",
+        ],
+        sections: [
+          {
+            heading: "What's actually in the bundle",
+            table: {
+              headers: ["Component", "Stated value", "What it is"],
+              rows: [
+                ["ClickFunnels Scale Plan (12 months)", "~$2,364", "The same Scale-tier software plan available standalone, bundled in here"],
+                ["Funnel Builder Secrets course", "~$1,997", "Russell Brunson's funnel-strategy training — the \"secrets\" behind the templates"],
+                ["Traffic Secrets Access", "~$1,997", "Training focused specifically on driving traffic into funnels"],
+                ["Traffic Swipe File", "~$997", "Pre-written ad/traffic copy templates"],
+                ["Conversation Domination (live community)", "~$1,497", "Ongoing live traffic-focused community access"],
+              ],
+            },
+            paragraphs: [
+              "Doing the math on the stated values: you're paying $1,970 for components valued at roughly $8,852 combined. Bundle \"value stacks\" like this are a standard sales-page tactic across the industry — treat the individual component values as marketing framing, not appraisals, but the headline comparison still holds: the training and community cost you close to nothing beyond what a standalone Scale plan already costs, which is the actual argument for this bundle over signing up for ClickFunnels alone.",
+            ],
+          },
+          {
+            heading: "Is this actually a good deal?",
+            paragraphs: [
+              "The honest framing: if you were going to get ClickFunnels' Scale plan anyway ($197/month, ~$2,364/year), this bundle adds the entire Funnel Builder Secrets course, Traffic Secrets training, and community access for roughly $400 less than the software alone would cost annually. The catch is the renewal price is fixed at $1,970/year regardless of which ClickFunnels tier you'd have chosen otherwise — if you only needed the $97/month Launch tier, this bundle isn't actually cheaper, it's a different product entirely (Scale-tier software plus a large training library you may or may not use).",
+            ],
+          },
+          {
+            heading: "Who this is for",
+            paragraphs: [
+              "Good fit: someone who's already decided they need ClickFunnels' Scale-tier plan (not the entry Launch tier) and wants structured training and traffic strategy content bundled in rather than sourced separately — the math works best for buyers who were going to pay for Scale anyway.",
+              "Poor fit: anyone still deciding whether ClickFunnels is right for them at all (start with the free trial or the $99/3-month offer first), or anyone who only needs the Launch-tier software — paying for Scale-tier software you don't need just to get the training isn't the efficient path.",
+            ],
+          },
+        ],
+        faq: [
+          {
+            question: "What's the difference between \"Funnel Builder Secrets\" and \"I'm All In\"?",
+            answer:
+              "Funnel Builder Secrets is the training course itself; \"I'm All In\" (imallin.com) is the current checkout page bundling that course together with 12 months of ClickFunnels Scale, Traffic Secrets access, a traffic swipe file, and a live community — they're referred to somewhat interchangeably because the course is the centerpiece of the bundle.",
+          },
+          {
+            question: "How much does the bundle cost?",
+            answer: "$1,970 for the first year, discounted from a listed $9,349 price, renewing at $1,970/year after that.",
+          },
+          {
+            question: "Is there a free trial or refund option?",
+            answer:
+              "Yes — a 30-day money-back guarantee applies after the trial period ends, giving you a window to request a refund if it's not the right fit.",
+          },
+          {
+            question: "Do I need to already be a ClickFunnels user to buy this?",
+            answer:
+              "No — the bundle includes 12 months of ClickFunnels' Scale plan itself, so it works as an entry point, though it's priced around what a Scale-tier buyer would already expect to pay, not as a discount for brand-new low-tier users.",
+          },
+          {
+            question: "Is this cheaper than just buying ClickFunnels Scale directly?",
+            answer:
+              "Based on the stated component values, the training and community are bundled in for close to no added cost over what Scale-tier software already costs standalone — but only if you were going to choose the Scale tier anyway. If the Launch tier ($97/month) would have covered your needs, this bundle isn't the cost-efficient path.",
+          },
+          {
+            question: "What if I only want the Funnel Builder Secrets course without the ClickFunnels software?",
+            answer:
+              "The current offer bundles them together rather than selling the course standalone — confirm with ClickFunnels support directly if a training-only option exists, as bundle structures change periodically.",
+          },
+        ],
+        verdict:
+          "This is the highest-commitment offer in the ClickFunnels ecosystem, and it's priced accordingly — but the value math genuinely works if you'd already decided on the Scale-tier plan: you get a full training and traffic-strategy library bundled in for close to nothing extra over the software cost alone. It's the wrong starting point if you're still validating whether ClickFunnels fits your business at all; start with the free trial or the $99/3-month offer, and consider this bundle once you know you're staying on the Scale tier long-term.",
+        relatedLinks: [
+          { slug: "clickfunnels", label: "ClickFunnels Review" },
+          { slug: "one-funnel-away-challenge-review", label: "One Funnel Away Challenge Review" },
+          { slug: "plr-funnels-review", label: "PLR Funnels Review" },
         ],
       },
     },
