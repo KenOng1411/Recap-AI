@@ -1,0 +1,90 @@
+# RecapAI
+
+> RecapAI is an AI tool review and affiliate site covering AI chatbots, image, video, audio, writing, coding, and productivity tools, available in English, French, Spanish, German, Italian, and Portuguese.
+
+## Tool Reviews
+- ChatGPT: https://recapai.online/en/tools/chatgpt/ — OpenAI's do-everything AI chatbot, the most popular one out there.
+- Claude: https://recapai.online/en/tools/claude/ — Anthropic's AI assistant, strong at writing and reasoning.
+- Gemini: https://recapai.online/en/tools/gemini/ — Google's multimodal AI assistant, deeply tied into Workspace.
+- Midjourney: https://recapai.online/en/tools/midjourney/ — AI image generator with top-tier artistic quality.
+- Ideogram: https://recapai.online/en/tools/ideogram/ — AI image generator excelling at accurate text rendering.
+- Runway: https://recapai.online/en/tools/runway/ — A professional AI video generation and editing toolkit.
+- HeyGen: https://recapai.online/en/tools/heygen/ — Generate talking AI avatar videos in multiple languages.
+- ElevenLabs: https://recapai.online/en/tools/elevenlabs/ — Leading text-to-speech with the most natural AI voices.
+- Suno: https://recapai.online/en/tools/suno/ — Generate full songs — music and lyrics — from one short prompt.
+- Perplexity: https://recapai.online/en/tools/perplexity/ — AI search engine that answers with clear source citations.
+- Notion AI: https://recapai.online/en/tools/notion-ai/ — AI assistant built right into your Notion workspace.
+- Gamma: https://recapai.online/en/tools/gamma/ — Generate polished presentation decks from a few lines of text.
+- GitHub Copilot: https://recapai.online/en/tools/github-copilot/ — AI pair programmer right in your editor, context-aware suggestions.
+- Cursor: https://recapai.online/en/tools/cursor/ — A code editor built from the ground up for AI-assisted coding.
+- Canva AI: https://recapai.online/en/tools/canva-ai/ — AI design toolkit built into Canva (Magic Studio).
+- Jasper: https://recapai.online/en/tools/jasper/ — AI content platform built for marketing teams.
+- Copy.ai: https://recapai.online/en/tools/copy-ai/ — AI writing and workflow automation for marketing and sales.
+- Zapier AI: https://recapai.online/en/tools/zapier-ai/ — Automate your workflows with AI-assisted Zapier.
+- Grok: https://recapai.online/en/tools/grok/ — xAI's chatbot, tightly integrated with X (Twitter) and real-time data.
+- Le Chat by Mistral: https://recapai.online/en/tools/mistral-le-chat/ — European AI chatbot from Mistral, fast and privacy-conscious.
+- Meta AI: https://recapai.online/en/tools/meta-ai/ — Meta's free AI assistant, built into Instagram, WhatsApp and Facebook.
+- Poe: https://recapai.online/en/tools/poe/ — One subscription, access to nearly every major AI chatbot model.
+- Leonardo AI: https://recapai.online/en/tools/leonardo-ai/ — AI image generator popular for game assets and fine-tuned styles.
+- Adobe Firefly: https://recapai.online/en/tools/adobe-firefly/ — Adobe's AI image generator, trained to be commercially safe and integrated into Creative Cloud.
+- Stability AI: https://recapai.online/en/tools/stability-ai/ — Maker of Stable Diffusion, the open-weight image model family.
+- Pika: https://recapai.online/en/tools/pika/ — AI video generator known for playful, easy-to-use effects.
+- Luma Dream Machine: https://recapai.online/en/tools/luma-dream-machine/ — Luma AI's text/image-to-video model, known for smooth camera motion.
+- Synthesia: https://recapai.online/en/tools/synthesia/ — Enterprise-focused AI avatar video for training and corporate content.
+- Descript: https://recapai.online/en/tools/descript/ — Edit audio and video by editing text — plus AI voice cloning.
+- Murf AI: https://recapai.online/en/tools/murf-ai/ — Text-to-speech voiceovers aimed at presentations and e-learning.
+- Udio: https://recapai.online/en/tools/udio/ — AI music generator and Suno's closest direct competitor.
+- Writesonic: https://recapai.online/en/tools/writesonic/ — AI writing platform bundled with SEO tools like Surfer integration.
+- Otter.ai: https://recapai.online/en/tools/otter-ai/ — Live meeting transcription and AI summaries for Zoom, Meet and Teams.
+- Fireflies.ai: https://recapai.online/en/tools/fireflies-ai/ — AI meeting notetaker with searchable transcripts across your team's calls.
+- Replit: https://recapai.online/en/tools/replit/ — Browser-based coding platform with an AI Agent that builds full apps.
+- Windsurf: https://recapai.online/en/tools/windsurf/ — AI-native code editor (formerly Codeium) with agentic coding flows.
+- You.com: https://recapai.online/en/tools/you-com/ — AI search engine with customizable, agent-style research modes.
+- Framer AI: https://recapai.online/en/tools/framer-ai/ — AI website builder that generates a full, editable site from a prompt.
+- Kagi: https://recapai.online/en/tools/kagi/ — A paid, ad-free search engine with built-in AI answer summaries.
+- Andi: https://recapai.online/en/tools/andi-search/ — A conversational search engine that answers in a chat-like feed.
+- Grammarly: https://recapai.online/en/tools/grammarly/ — The long-standing AI writing assistant, now with generative rewriting.
+- Rytr: https://recapai.online/en/tools/rytr/ — A budget-friendly AI writer covering short-form marketing copy.
+- Recraft: https://recapai.online/en/tools/recraft/ — AI design tool built around vector graphics, icons and brand assets.
+- Uizard: https://recapai.online/en/tools/uizard/ — Turn a rough sketch or prompt into an editable app/web mockup.
+- Motion: https://recapai.online/en/tools/motion/ — AI calendar that auto-schedules your tasks around your meetings.
+- Reclaim.ai: https://recapai.online/en/tools/reclaim-ai/ — Smart scheduling that protects focus time and habits on your calendar.
+- Tabnine: https://recapai.online/en/tools/tabnine/ — Privacy-focused AI code completion with self-hosted options.
+- v0 by Vercel: https://recapai.online/en/tools/v0/ — Generate real, editable React/Next.js UI components from a prompt.
+- Character.AI: https://recapai.online/en/tools/character-ai/ — Chat with millions of user-created AI characters and personas.
+- DeepSeek: https://recapai.online/en/tools/deepseek/ — Free, open-weight reasoning chatbot that punches above its cost.
+- Play.ht: https://recapai.online/en/tools/play-ht/ — Realistic text-to-speech with an API built for developers.
+- InVideo AI: https://recapai.online/en/tools/invideo-ai/ — Turn a text prompt into a fully-edited video, scenes and voiceover included.
+- Toolsaday: https://recapai.online/en/tools/toolsaday/ — A free AI writing toolkit — paraphrasing, story generation, and an AI email writer.
+- Fliki: https://recapai.online/en/tools/fliki/ — Turn text, scripts, or blog URLs into narrated videos with 2,000+ AI voices in 80+ languages.
+- PopAI: https://recapai.online/en/tools/popai/ — An AI workspace that turns documents, PDFs, or a prompt into editable presentations, chat, and images.
+- Skool: https://recapai.online/en/tools/skool/ — All-in-one community and course platform for creators and coaches.
+- RunPod: https://recapai.online/en/tools/runpod/ — On-demand GPU cloud for training, fine-tuning, and running AI models.
+- Vid.AI: https://recapai.online/en/tools/vid-ai/ — Fast AI shorts generator for TikTok, Reels, and YouTube Shorts.
+- Snov.io: https://recapai.online/en/tools/snov-io/ — A B2B sales toolkit that bundles email finding, verification, outreach sequences, and a CRM in one platform.
+- Hunter.io: https://recapai.online/en/tools/hunter-io/ — A focused email-finding and verification tool built around domain search and confidence scoring.
+- Nano Banana Pro: https://recapai.online/en/tools/nano-banana-pro/ — Google's most instruction-accurate image model — correct in-image text, consistent edits, built on Gemini 3 Pro.
+
+## Guides
+- Is Fliki Worth It in 2026?: https://recapai.online/en/guides/is-fliki-worth-it/ — An honest look at Fliki's pricing, voice quality, and limits — who it's actually worth paying for in 2026.
+- Is PopAI Worth It? Our Honest Take: https://recapai.online/en/guides/is-popai-worth-it/ — PopAI's real strength, its free-tier limits, and when Gamma is the better pick instead — an honest verdict.
+- Is Toolsaday Really Free? What You Get Without Paying: https://recapai.online/en/guides/is-toolsaday-really-free/ — We checked whether Toolsaday's free AI writing bundle has a hidden paywall — here's exactly what you get for $0.
+- Is Snov.io Worth It in 2026?: https://recapai.online/en/guides/is-snov-io-worth-it/ — Snov.io's real strength, where its email accuracy falls short of specialists like Hunter.io, and who should pay for it.
+
+## Best Of & Comparisons
+- 5 best AI writing tools: https://recapai.online/en/best-of/best-ai-writing-tools/ — A roundup of the highest-rated AI writing tools right now, from blog posts and ads to social media content.
+- Best AI image generators for designers: https://recapai.online/en/best-of/best-ai-image-generators-for-designers/ — Comparing the AI image tools most worth using for designers, from artistic quality to precise text rendering.
+- Best AI coding tools for developers: https://recapai.online/en/best-of/best-ai-coding-tools/ — Reviewing the most popular AI coding assistants, helping developers write code faster with fewer bugs.
+- Best AI text-to-video generators: https://recapai.online/en/best-of/best-ai-text-to-video-generators/ — Comparing the top tools for turning a script, topic, or blog post into a fully narrated, ready-to-publish video.
+- Best AI presentation tools: https://recapai.online/en/best-of/best-ai-presentation-tools/ — Comparing AI tools that turn a prompt, PDF, or existing document into an editable slide deck.
+- Best free AI writing tools: https://recapai.online/en/best-of/best-free-ai-writing-tools/ — AI writing tools worth using without paying anything first — for quick emails, paraphrasing, and everyday drafts.
+- Fliki vs HeyGen: which AI video tool should you use in 2026?: https://recapai.online/en/best-of/fliki-vs-heygen/ — Both turn text into video fast, but they solve different problems — here's how to pick between Fliki and HeyGen.
+- PopAI vs Gamma: which AI presentation tool is worth it?: https://recapai.online/en/best-of/popai-vs-gamma/ — Both build slide decks with AI, but they start from different places — here's how PopAI and Gamma actually compare.
+- Toolsaday vs Copy.ai: best free AI writing tool?: https://recapai.online/en/best-of/toolsaday-vs-copy-ai/ — One is fully free with no paywall, the other has a limited free tier backed by a bigger paid platform — here's the real difference.
+- Snov.io vs Hunter.io: which B2B email tool should you use?: https://recapai.online/en/best-of/snov-io-vs-hunter-io/ — One is a focused email finder and verifier, the other bundles in a full outbound toolkit — here's how Snov.io and Hunter.io actually compare.
+- 5 best Fliki alternatives in 2026 (and when you don't actually need one): https://recapai.online/en/best-of/fliki-alternatives/ — Before switching away from Fliki, check whether the issue is actually solvable inside it — here's exactly which alternative fixes which specific gap.
+
+## Notes
+- Content is reviewed and updated by the RecapAI editorial team; "Last updated" dates on each page reflect the most recent fact-check.
+- Some links on RecapAI are affiliate links — see /en/disclosure/ for details.
+- AI News section (/en/ai-news/) covers real, sourced industry news and updates frequently; not listed individually here as it is not stable reference content.
