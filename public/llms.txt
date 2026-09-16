@@ -70,6 +70,9 @@
 - Is PopAI Worth It? Our Honest Take: https://recapai.online/en/guides/is-popai-worth-it/ — PopAI's real strength, its free-tier limits, and when Gamma is the better pick instead — an honest verdict.
 - Is Toolsaday Really Free? What You Get Without Paying: https://recapai.online/en/guides/is-toolsaday-really-free/ — We checked whether Toolsaday's free AI writing bundle has a hidden paywall — here's exactly what you get for $0.
 - Is Snov.io Worth It in 2026?: https://recapai.online/en/guides/is-snov-io-worth-it/ — Snov.io's real strength, where its email accuracy falls short of specialists like Hunter.io, and who should pay for it.
+- How to Turn a Blog Post Into a Video With Fliki (Step-by-Step, Tested): https://recapai.online/en/guides/fliki-blog-post-to-video/ — A tested, step-by-step walkthrough of Fliki's blog-to-video tool — paste a URL, get a narrated script-based video in under 5 minutes. Screenshots included.
+- How to Remove the Watermark on Fliki (And What You Actually Get on Each Plan): https://recapai.online/en/guides/fliki-remove-watermark/ — There's no watermark toggle in Fliki — it's tied to your plan. Here's exactly which plan removes it, what else changes, and whether it's worth upgrading.
+- Fliki vs HeyGen: Which AI Video Tool Should You Actually Use? (2026): https://recapai.online/en/guides/fliki-vs-heygen/ — Fliki and HeyGen solve different problems — one turns text into narrated video, the other turns you (or an avatar) into the presenter. Here's the real difference, with pricing.
 
 ## Best Of & Comparisons
 - 5 best AI writing tools: https://recapai.online/en/best-of/best-ai-writing-tools/ — A roundup of the highest-rated AI writing tools right now, from blog posts and ads to social media content.

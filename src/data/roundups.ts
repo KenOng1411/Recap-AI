@@ -614,6 +614,7 @@ export const roundups: Roundup[] = [
           "Both turn text into video fast, but they solve different problems — here's how to pick between Fliki and HeyGen.",
         intro: [
           "Fliki and HeyGen both turn a script into a finished video in minutes, and they get lumped together in a lot of 'best AI video tool' lists — but they're built for different jobs. Fliki narrates over visuals; HeyGen puts a talking avatar on screen. Picking the wrong one for your use case means redoing the video, not just tweaking it.",
+          "This is the quick version — for a full side-by-side (pricing at every tier, resolution, language coverage, and which use cases favor each), see our complete Fliki vs HeyGen comparison guide.",
         ],
       },
       fr: {
@@ -622,6 +623,7 @@ export const roundups: Roundup[] = [
           "Les deux transforment du texte en vidéo rapidement, mais résolvent des problèmes différents — comment choisir entre Fliki et HeyGen.",
         intro: [
           "Fliki et HeyGen transforment tous deux un script en vidéo finie en quelques minutes, et se retrouvent souvent dans les mêmes classements « meilleur outil vidéo IA » — mais ils répondent à des besoins différents. Fliki narre par-dessus des visuels ; HeyGen place un avatar qui parle à l'écran. Se tromper de choix pour votre usage signifie refaire la vidéo, pas juste la retoucher.",
+          "Ceci est la version rapide — pour un comparatif complet (tarifs à chaque palier, résolution, couverture linguistique, et quel cas d'usage favorise chaque outil), voir notre guide de comparaison complet Fliki vs HeyGen.",
         ],
       },
     },

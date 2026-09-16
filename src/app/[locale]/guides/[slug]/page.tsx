@@ -6,6 +6,7 @@ import { CaretLeft, Check, X as XIcon, SealWarning, CreditCard, Question } from 
 import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { guides, getGuideBySlug } from "@/data/guides";
+import { articles, getArticleBySlug } from "@/data/articles";
 import { getToolBySlug } from "@/data/tools";
 import { buildAlternates } from "@/lib/seo";
 import { StarRating } from "@/components/StarRating";
@@ -13,9 +14,13 @@ import { ReviewByline } from "@/components/ReviewByline";
 import { AffiliateCta } from "@/components/AffiliateCta";
 import { AffiliateDisclosureLine } from "@/components/AffiliateDisclosureLine";
 import { FaqSchema } from "@/components/FaqSchema";
+import { ArticleView } from "@/components/ArticleView";
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => guides.map((guide) => ({ locale, slug: guide.slug })));
+  return locales.flatMap((locale) => [
+    ...guides.map((guide) => ({ locale, slug: guide.slug })),
+    ...articles.map((article) => ({ locale, slug: article.slug })),
+  ]);
 }
 
 export async function generateMetadata({
@@ -23,17 +28,32 @@ export async function generateMetadata({
 }: PageProps<"/[locale]/guides/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
-  const guide = getGuideBySlug(slug);
-  if (!guide) return {};
-  const content = withLocaleFallback(guide.content, locale);
-  if (!content) return {};
 
-  return {
-    title: content.title,
-    description: content.metaDescription,
-    alternates: buildAlternates(locale, `/guides/${slug}`),
-    openGraph: { title: content.title, description: content.metaDescription },
-  };
+  const guide = getGuideBySlug(slug);
+  if (guide) {
+    const content = withLocaleFallback(guide.content, locale);
+    if (!content) return {};
+    return {
+      title: content.title,
+      description: content.metaDescription,
+      alternates: buildAlternates(locale, `/guides/${slug}`),
+      openGraph: { title: content.title, description: content.metaDescription },
+    };
+  }
+
+  const article = getArticleBySlug(slug);
+  if (article) {
+    const content = withLocaleFallback(article.content, locale);
+    if (!content) return {};
+    return {
+      title: content.title,
+      description: content.metaDescription,
+      alternates: buildAlternates(locale, `/guides/${slug}`),
+      openGraph: { title: content.title, description: content.metaDescription },
+    };
+  }
+
+  return {};
 }
 
 export default async function GuideDetailPage({
@@ -41,6 +61,12 @@ export default async function GuideDetailPage({
 }: PageProps<"/[locale]/guides/[slug]">) {
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
+
+  const article = getArticleBySlug(slug);
+  if (article) {
+    return <ArticleView article={article} locale={locale} />;
+  }
+
   const guide = getGuideBySlug(slug);
   if (!guide) notFound();
   const content = withLocaleFallback(guide.content, locale);

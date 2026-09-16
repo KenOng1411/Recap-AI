@@ -2,14 +2,18 @@ import type { MetadataRoute } from "next";
 import { tools } from "@/data/tools";
 import { roundups } from "@/data/roundups";
 import { guides } from "@/data/guides";
+import { articles } from "@/data/articles";
 import { newsItems } from "@/data/news";
 import { siteConfig } from "@/data/site";
-import { locales } from "@/i18n/config";
+import { locales, defaultLocale } from "@/i18n/config";
 
 export const dynamic = "force-static";
 
 function withAlternates(path: string) {
-  return Object.fromEntries(locales.map((l) => [l, `${siteConfig.url}/${l}${path}`]));
+  return {
+    ...Object.fromEntries(locales.map((l) => [l, `${siteConfig.url}/${l}${path}`])),
+    "x-default": `${siteConfig.url}/${defaultLocale}${path}`,
+  };
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -59,6 +63,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: { languages: withAlternates(`/guides/${guide.slug}`) },
+      });
+    }
+
+    for (const article of articles) {
+      entries.push({
+        url: `${base}/guides/${article.slug}`,
+        lastModified: article.updatedAt,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: { languages: withAlternates(`/guides/${article.slug}`) },
       });
     }
 

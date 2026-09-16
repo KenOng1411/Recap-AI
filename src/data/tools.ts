@@ -5261,7 +5261,7 @@ export const tools: Tool[] = [
           },
           {
             question: "What's the difference between Fliki and HeyGen?",
-            answer: "Fliki narrates a script over stock or AI-generated visuals with no on-screen presenter, while HeyGen puts a talking AI avatar on screen — pick based on whether your video needs a 'face' presenting it.",
+            answer: "Fliki narrates a script over stock or AI-generated visuals with no on-screen presenter; HeyGen puts a talking AI avatar on screen instead. See our full Fliki vs HeyGen comparison for pricing, resolution, and language coverage side by side.",
           },
         ],
       },
