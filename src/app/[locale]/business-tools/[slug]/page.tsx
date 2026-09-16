@@ -238,6 +238,25 @@ export default async function BusinessToolDetailPage({
         </section>
       )}
 
+      {content.relatedLinks && content.relatedLinks.length > 0 && (
+        <section className="mt-10 border-t border-border pt-8">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Related reviews
+          </h2>
+          <div className="mt-3 flex flex-wrap gap-2.5">
+            {content.relatedLinks.map((link) => (
+              <Link
+                key={link.slug}
+                href={`/${locale}/business-tools/${link.slug}`}
+                className="inline-flex items-center rounded-full border border-border bg-surface px-3.5 py-1.5 text-sm font-medium text-foreground hover:border-accent hover:text-accent"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="mt-10 flex flex-col gap-3 border-t border-border pt-8">
         <AffiliateDisclosureLine locale={locale} />
         <div className="flex flex-wrap items-center gap-3">
