@@ -58,6 +58,7 @@ export const NAV_PATHS = [
   { href: "/guides", key: "guides" },
   { href: "/ai-news", key: "news" },
   { href: "/deals", key: "deals" },
+  { href: "/business-tools", key: "businessTools" },
   { href: "/about", key: "about" },
 ] as const;
 
