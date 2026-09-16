@@ -1,8 +1,8 @@
 # RecapAI
 
-> RecapAI is an AI tool review and affiliate site covering AI chatbots, image, video, audio, writing, coding, and productivity tools, available in English, French, Spanish, German, Italian, and Portuguese.
+> RecapAI reviews AI tools (chatbots, image, video, audio, writing, coding, productivity) and, as a separate track, business/marketing software — available in English, French, Spanish, German, Italian, and Portuguese.
 
-## Tool Reviews
+## AI Tool Reviews
 - ChatGPT: https://recapai.online/en/tools/chatgpt/ — OpenAI's do-everything AI chatbot, the most popular one out there.
 - Claude: https://recapai.online/en/tools/claude/ — Anthropic's AI assistant, strong at writing and reasoning.
 - Gemini: https://recapai.online/en/tools/gemini/ — Google's multimodal AI assistant, deeply tied into Workspace.
@@ -87,7 +87,11 @@
 - Snov.io vs Hunter.io: which B2B email tool should you use?: https://recapai.online/en/best-of/snov-io-vs-hunter-io/ — One is a focused email finder and verifier, the other bundles in a full outbound toolkit — here's how Snov.io and Hunter.io actually compare.
 - 5 best Fliki alternatives in 2026 (and when you don't actually need one): https://recapai.online/en/best-of/fliki-alternatives/ — Before switching away from Fliki, check whether the issue is actually solvable inside it — here's exactly which alternative fixes which specific gap.
 
+## Business & Marketing Software (non-AI, separate track from AI tool reviews)
+- ClickFunnels Review 2026: https://recapai.online/en/business-tools/clickfunnels/ — A drag-and-drop funnel builder for landing pages, checkout, upsells, and email, no developer required.
+
 ## Notes
 - Content is reviewed and updated by the RecapAI editorial team; "Last updated" dates on each page reflect the most recent fact-check.
 - Some links on RecapAI are affiliate links — see /en/disclosure/ for details.
 - AI News section (/en/ai-news/) covers real, sourced industry news and updates frequently; not listed individually here as it is not stable reference content.
+- Business & Marketing Software reviews are intentionally kept separate from AI Tool Reviews above — these products have no AI angle.

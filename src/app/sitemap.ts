@@ -3,6 +3,7 @@ import { tools } from "@/data/tools";
 import { roundups } from "@/data/roundups";
 import { guides } from "@/data/guides";
 import { articles } from "@/data/articles";
+import { businessTools } from "@/data/businessTools";
 import { newsItems } from "@/data/news";
 import { siteConfig } from "@/data/site";
 import { locales, defaultLocale } from "@/i18n/config";
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${base}/tools`, changeFrequency: "weekly", priority: 0.9, alternates: { languages: withAlternates("/tools") } },
       { url: `${base}/best-of`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/best-of") } },
       { url: `${base}/guides`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/guides") } },
+      { url: `${base}/business-tools`, changeFrequency: "weekly", priority: 0.6, alternates: { languages: withAlternates("/business-tools") } },
       { url: `${base}/deals`, changeFrequency: "weekly", priority: 0.7, alternates: { languages: withAlternates("/deals") } },
       { url: `${base}/about`, changeFrequency: "monthly", priority: 0.5, alternates: { languages: withAlternates("/about") } },
       { url: `${base}/ai-news`, changeFrequency: "weekly", priority: 0.8, alternates: { languages: withAlternates("/ai-news") } },
@@ -73,6 +75,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: { languages: withAlternates(`/guides/${article.slug}`) },
+      });
+    }
+
+    for (const bizTool of businessTools) {
+      entries.push({
+        url: `${base}/business-tools/${bizTool.slug}`,
+        lastModified: bizTool.lastUpdated,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: { languages: withAlternates(`/business-tools/${bizTool.slug}`) },
       });
     }
 
