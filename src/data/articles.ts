@@ -418,6 +418,277 @@ export const articles: Article[] = [
       },
     },
   },
+  {
+    slug: "getimg-ai-image-to-prompt",
+    toolSlug: "getimg-ai",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "How to Use getimg.ai's Image-to-Prompt Tool (Step-by-Step)",
+        metaDescription:
+          "Upload any image to getimg.ai and get a detailed, reusable text prompt back in seconds. Here's exactly how the Image-to-Prompt tool works, free or paid.",
+        intro: [
+          "getimg.ai's Image-to-Prompt tool does the reverse of normal AI image generation: upload any image — a photo, a painting, someone else's AI-generated art — and it analyzes the image and returns a detailed text prompt describing it, which you can then reuse, tweak, or feed into an image generator to create something in a similar style or composition. It works with 40 free images per day and no credit card required, separate from getimg.ai's paid generation credits.",
+          "That's the tool in one sentence. Below is exactly how to use it, what it's actually useful for, and where it falls short.",
+        ],
+        quickSummary: [
+          "What it does: analyzes an uploaded image and generates a text description detailed enough to use as a prompt for AI image generation.",
+          "Cost: free — 40 images/day, no account credit card required, separate from getimg.ai's paid subscription credits.",
+          "Speed: a few seconds per image.",
+          "Best use case: reverse-engineering a style, composition, or mood from a reference image you like, rather than starting a prompt from a blank page.",
+        ],
+        sections: [
+          {
+            heading: "How to use it, step by step",
+            steps: [
+              {
+                title: "Go to the Image-to-Prompt tool",
+                body: "On getimg.ai, upload your reference image (a photo, painting, screenshot, or existing AI-generated image).",
+              },
+              {
+                title: "Wait a few seconds",
+                body: "The AI analyzes the image's subject, composition, lighting, color palette, and style, then generates a written prompt describing what it sees.",
+              },
+              {
+                title: "Review the generated prompt",
+                body: "It reads as a normal descriptive prompt — subject, setting, style, lighting — the same format you'd write by hand for an image generator.",
+              },
+              {
+                title: "Copy, edit, and reuse it",
+                body: "Use the prompt as-is in getimg.ai's own generator, tweak specific details (swap the subject, change the color palette, adjust the style descriptor), or use it as a study reference to understand how to write better prompts yourself.",
+              },
+            ],
+          },
+          {
+            heading: "What it's actually useful for",
+            bullets: [
+              "Style matching. You found a reference image with a mood or aesthetic you want to replicate — instead of guessing at the prompt language that produced it, get a working starting point instantly.",
+              "Learning prompt-writing. Running a handful of images you admire through the tool is a fast way to see how professional-sounding prompts are structured (subject → setting → lighting → style → technical modifiers).",
+              "Recovering a lost prompt. If you generated an image somewhere and lost the original prompt, Image-to-Prompt gets you back to something close enough to keep iterating from.",
+              "Adapting someone else's composition ethically. Getting a prompt back doesn't reproduce the original image — it gives you a description you can use as a new starting point, which is meaningfully different from copying the image itself.",
+            ],
+          },
+          {
+            heading: "Limitations worth knowing",
+            bullets: [
+              "It's a description, not a perfect recreation. Feeding the generated prompt back into an image generator will produce something in the same spirit, not a pixel-identical copy — treat it as a strong starting point, not a guaranteed match.",
+              "Complex or unusual images produce vaguer prompts. Straightforward subjects (a portrait, a landscape, a product shot) tend to generate more usable prompts than highly abstract or stylistically unusual images.",
+              "Copyright still applies to the source image. Using Image-to-Prompt on someone else's copyrighted artwork to generate a similar new image sits in a legal and ethical gray area — the tool describes the image, it doesn't grant you rights to it.",
+            ],
+          },
+        ],
+        faq: [
+          {
+            question: "Is getimg.ai's Image-to-Prompt tool free?",
+            answer: "Yes — 40 images per day, no credit card required, and it's separate from getimg.ai's paid generation credit system.",
+          },
+          {
+            question: "Do I need a getimg.ai account to use it?",
+            answer: "The tool is accessible without a full paid subscription; creating a free account is what unlocks the daily 40-image allowance.",
+          },
+          {
+            question: "Can I use the generated prompt in a different AI image generator, not just getimg.ai?",
+            answer: "Yes — the output is a standard text prompt, so it works in Midjourney, Leonardo AI, or any other prompt-based image generator, not just getimg.ai's own tools.",
+          },
+          {
+            question: "Will the regenerated image look exactly like my uploaded image?",
+            answer: "No — the tool generates a text description of what it sees, and running that prompt through an image generator produces something in a similar style and composition, not an identical copy.",
+          },
+          {
+            question: "What image types work with Image-to-Prompt?",
+            answer: "Photographs, digital art, and traditional paintings all work regardless of style or complexity, though simpler, clearer subjects tend to produce more precise and usable prompts.",
+          },
+          {
+            question: "Is it legal to use Image-to-Prompt on someone else's artwork?",
+            answer: "The tool only generates a text description, not a copy of the image itself, but using that description to closely recreate someone else's copyrighted work is still a gray area worth being cautious about — treat it as inspiration and a starting point, not a license to replicate.",
+          },
+        ],
+        verdict:
+          "Image-to-Prompt is a small, free, genuinely useful tool that most competing AI image platforms don't offer as a dedicated feature — it solves the real, common problem of not knowing how to describe a look you want in words. It won't hand you a perfect prompt-to-pixel match, but as a starting point for style-matching or learning to write better prompts, it's worth using even if you're not subscribed to getimg.ai's paid plans yet.",
+        relatedLinks: [
+          { slug: "getimg-ai-pricing", label: "getimg.ai Pricing Guide" },
+          { slug: "getimg-ai-video-generation", label: "Is getimg.ai Good for AI Video?" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "getimg-ai-pricing",
+    toolSlug: "getimg-ai",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "getimg.ai Pricing 2026: Entry vs Core vs Plus vs Ultra — Which Plan Should You Pick?",
+        metaDescription:
+          "Entry, Core, Plus, or Ultra — getimg.ai's four tiers range from $10 to $175/month. Here's exactly which one fits your actual usage.",
+        intro: [
+          "getimg.ai has four paid tiers and no free plan: Entry ($10/month, 3,000 credits), Core ($30/month, 15,000 credits), Plus ($65/month, 35,000 credits, most popular), and Ultra ($175/month, 100,000 credits). All four include commercial usage rights; what changes between them is credit volume, upscaling resolution, concurrent generation limits, and team features — not which models you can access, since all tiers except Entry unlock the full model library.",
+          "That's the summary. Below is exactly what changes tier to tier and which one actually fits different use cases.",
+        ],
+        quickSummary: [
+          "Casual/occasional use: Entry ($10/mo) — enough for testing and light personal projects, though it's the only tier with a limited (11 of the full) model selection.",
+          "Regular individual use: Core ($30/mo) — full model library, 15,000 credits, still single-workspace friendly.",
+          "Most subscribers: Plus ($65/mo) — getimg.ai's own \"most popular\" tier, 35,000 credits, 16K upscaling, supports small teams.",
+          "Heavy/agency use: Ultra ($175/mo) — 100,000 credits, highest concurrency, priority processing.",
+        ],
+        sections: [
+          {
+            heading: "Full tier breakdown",
+            table: {
+              headers: ["Plan", "Price (mo / annual mo)", "Credits/month", "Models", "Upscaling", "Concurrent gens", "Teams"],
+              rows: [
+                ["Entry", "$10 / $8", "3,000", "11 image, 9 video (not full library)", "4K", "2", "—"],
+                ["Core", "$30 / $25", "15,000", "Full library", "8K", "4", "2"],
+                ["Plus", "$65 / $55", "35,000", "Full library", "16K", "8", "5"],
+                ["Ultra", "$175 / $150", "100,000", "Full library", "16K", "10 (priority)", "10"],
+              ],
+            },
+            tableNote:
+              "All tiers bill per seat on team-enabled plans (Core and above), and Plus/Ultra allow purchasing additional top-up credits beyond the monthly allowance if you run out before renewal.",
+          },
+          {
+            heading: "How to estimate which tier you actually need",
+            paragraphs: [
+              "Credit cost isn't flat — it varies by model, resolution, and whether you're generating an image or a video, so \"3,000 credits\" doesn't map to a fixed number of images. As a practical approach:",
+            ],
+            bullets: [
+              "Start with Entry if you're testing the platform or doing occasional personal projects — 3,000 credits is enough to explore multiple models and get a feel for output quality before committing to a higher tier.",
+              "Move to Core once you need the full model library — Entry's 11 image/9 video models exclude some of the newest or most in-demand models (this changes periodically as getimg.ai adds models), so if you find yourself wanting a specific model Entry doesn't include, Core removes that restriction.",
+              "Plus is built for regular, higher-volume use or small teams — the jump to 35,000 credits and 16K upscaling matters most if you're generating daily for client work, content production, or e-commerce assets at scale.",
+              "Ultra is for agencies or high-volume production — the main upgrade over Plus is a much larger credit pool and priority processing (faster queue position during high-traffic periods), which matters when generation speed under load, not just monthly volume, is the bottleneck.",
+            ],
+          },
+          {
+            heading: "Is annual billing worth it?",
+            paragraphs: [
+              "Annual billing saves roughly 15-20% per tier (for example, Entry drops from $10 to $8/month, a 20% saving; Plus drops from $65 to $55/month, about 15%). It's worth committing to annual once you're confident you'll keep using the platform past a couple of months — but given there's no free trial, it's worth running at least one full monthly billing cycle first to confirm your actual credit usage pattern before locking into a year at a specific tier.",
+            ],
+          },
+        ],
+        faq: [
+          {
+            question: "What's the cheapest getimg.ai plan?",
+            answer: "Entry, at $10/month ($8/month billed annually) — 3,000 credits/month, access to 11 image models and 9 video models (not the complete library), 4K upscaling.",
+          },
+          {
+            question: "Which getimg.ai plan is most popular?",
+            answer: "Plus, at $65/month ($55 annually) — getimg.ai markets this as its most popular tier, offering the full model library, 35,000 credits, 16K upscaling, and support for small teams.",
+          },
+          {
+            question: "Do all getimg.ai plans include commercial usage rights?",
+            answer: "Yes — every paid tier, including the cheapest (Entry), includes full commercial usage rights for generated content.",
+          },
+          {
+            question: "What's the difference between Entry and Core?",
+            answer: "The clearest difference is model access — Entry includes only 11 image and 9 video models, while Core (and every tier above it) unlocks the complete model library. Core also raises upscaling to 8K and credits to 15,000/month.",
+          },
+          {
+            question: "Can I switch plans later, or add extra credits without upgrading?",
+            answer: "Plus and Ultra both support purchasing additional top-up credits if you exceed your monthly allowance without needing a full tier upgrade. Standard SaaS practice would also allow upgrading or downgrading tiers at any time — confirm current plan-change policy in your account settings.",
+          },
+          {
+            question: "Is there a discount for paying annually?",
+            answer: "Yes — annual billing saves roughly 15-20% depending on the tier (for example, Entry goes from $10 to $8/month).",
+          },
+        ],
+        verdict:
+          "For most individual creators, Core ($30/month) is the realistic starting point once you've confirmed you'll use the platform regularly — it removes Entry's model restrictions without jumping straight to Plus's team-oriented pricing. If you're just testing the waters, Entry's $10 is a low-risk way to try the platform since there's no free plan at all. Reserve Plus and Ultra for genuinely regular high-volume or team use, where the credit math clearly justifies the jump.",
+        relatedLinks: [
+          { slug: "getimg-ai-image-to-prompt", label: "getimg.ai Image-to-Prompt Tutorial" },
+          { slug: "getimg-ai-video-generation", label: "Is getimg.ai Good for AI Video?" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "getimg-ai-video-generation",
+    toolSlug: "getimg-ai",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "Is getimg.ai Good for AI Video Generation? An Honest Look",
+        metaDescription:
+          "getimg.ai integrates Veo, Kling, and Hailuo for video — but should you subscribe for video alone? Here's what it does well and where it falls short.",
+        intro: [
+          "getimg.ai supports AI video generation through several integrated third-party models — Google Veo 3.1, ByteDance Seedance, Kling, MiniMax Hailuo, and Grok Imagine — covering text-to-video, image-to-video, and start/end-frame control. It's a genuinely useful convenience if you're already on getimg.ai for image generation and want video in the same workspace, but if video is your primary need, dedicated video-first platforms still generally outperform getimg.ai's integration on consistency and output quality.",
+          "That's the honest framing. Below is what getimg.ai's video generation actually offers, where it's genuinely useful, and when you should look elsewhere instead.",
+        ],
+        quickSummary: [
+          "What it supports: text-to-video, image-to-video, and start/end-frame transitions, via multiple integrated models (not one proprietary getimg.ai video model).",
+          "Speed: roughly 3-7 minutes from prompt to finished clip, per getimg.ai's own workflow description.",
+          "Best use case: short social clips, quick concept previews, or extending an already-generated image into motion — not long-form or consistency-critical video work.",
+          "Honest limitation: video quality and consistency still trail dedicated video-first platforms; treat getimg.ai's video feature as a bonus to its image generation, not the main reason to subscribe.",
+        ],
+        sections: [
+          {
+            heading: "What getimg.ai's video tool actually does",
+            paragraphs: [
+              "The workflow is: describe what you want (or upload a source image), generate (typically 3-7 minutes), then download or share. It supports vertical (9:16) format for social media alongside other aspect ratios, batch generation of up to 4 videos at once, and an Auto Mode that picks an appropriate underlying model for your request. Because getimg.ai integrates outside models rather than building its own video model from scratch, output quality depends heavily on which model handles your specific request — Google Veo 3.1 is positioned as the strongest option, specifically noted for generating synced audio alongside video, not just silent clips.",
+            ],
+            image: {
+              src: "/tools-images/getimg-ai/getimg-ai-video-generation-example.webp",
+              alt: "Example AI-generated video clip from getimg.ai",
+            },
+          },
+          {
+            heading: "Where it genuinely works well",
+            bullets: [
+              "Image-to-video for content you already generated. If you made a still image on getimg.ai and want to add subtle motion to it, doing that in the same workspace without exporting to another tool is a real time-saver.",
+              "Quick social clips. Vertical 9:16 output and fast turnaround (3-7 minutes) suit short-form social content where perfect consistency across many seconds of footage matters less.",
+              "Concept previews. Testing whether an idea works as a moving visual before investing time in a more polished production pipeline elsewhere.",
+              "Synced audio via Veo 3.1. Having audio generated alongside video in the same step (rather than as a separate process) is a genuine convenience most competing integrations don't offer as smoothly.",
+            ],
+          },
+          {
+            heading: "Where it falls short",
+            bullets: [
+              "Consistency across longer clips. Like most current AI video tools (not unique to getimg.ai), maintaining a consistent subject, character, or style across more than a few seconds of footage remains a known weak point industry-wide, and getimg.ai is not an exception to that pattern.",
+              "Not a single, purpose-built video model. Because getimg.ai routes video requests to third-party models it integrates rather than one model it trains and tunes specifically for video, output quality varies by which underlying model handles your request — less predictable than a platform built video-first from the ground up.",
+              "Credit cost for video is higher than image generation. Video generation consumes credits faster than still images, so your monthly allowance stretches less far if video becomes your primary use case — factor this into which pricing tier you'd actually need.",
+            ],
+          },
+          {
+            heading: "Should you subscribe to getimg.ai specifically for video?",
+            paragraphs: [
+              "If video is genuinely your primary need — you're producing marketing video, long-form content, or anything where visual consistency across many seconds matters — a dedicated video-first AI platform will likely serve you better than getimg.ai's integration, even though getimg.ai gives you access to some of the same underlying models (like Veo). Where getimg.ai's video feature earns its place is as a bonus on top of an image-generation subscription: if you're already there for images and want occasional video without paying for a second, separate subscription, it's a genuinely useful convenience rather than a reason to sign up on its own.",
+            ],
+          },
+        ],
+        faq: [
+          {
+            question: "Can I generate AI video with getimg.ai?",
+            answer: "Yes — text-to-video, image-to-video, and start/end-frame video, via integrated models including Google Veo 3.1, Kling, MiniMax Hailuo, and Seedance.",
+          },
+          {
+            question: "Is getimg.ai's video generation as good as dedicated video AI platforms?",
+            answer: "Not consistently — getimg.ai integrates strong third-party video models, but output consistency and quality for video specifically still trail platforms built specifically around video generation. It's a solid bonus feature, not a primary reason to subscribe if video is your main need.",
+          },
+          {
+            question: "How long does it take to generate a video on getimg.ai?",
+            answer: "Roughly 3-7 minutes from prompt or source image to a finished clip, per getimg.ai's own described workflow.",
+          },
+          {
+            question: "Does getimg.ai generate audio with video?",
+            answer: "Yes, when using Google Veo 3.1 specifically — it generates synced audio alongside the video in the same step, which is a less common feature among integrated video tools.",
+          },
+          {
+            question: "Do video generations use more credits than image generations?",
+            answer: "Yes — video generation consumes credits faster than still image generation, so plan your tier choice around expected video usage if that's a significant part of your workflow.",
+          },
+          {
+            question: "What video formats does getimg.ai support?",
+            answer: "Vertical (9:16) for social media plus other standard aspect ratios, with batch generation of up to 4 videos simultaneously.",
+          },
+        ],
+        verdict:
+          "getimg.ai's video generation is a genuinely useful add-on if you're already using the platform for image generation and want occasional video without a second subscription — fast turnaround, synced audio via Veo, and a shared workspace make it convenient. But it's honest to say this isn't the platform's strongest feature: if AI video is your primary use case rather than a nice-to-have alongside image work, a dedicated video-first platform will likely give you more consistent results.",
+        relatedLinks: [
+          { slug: "getimg-ai-image-to-prompt", label: "getimg.ai Image-to-Prompt Tutorial" },
+          { slug: "getimg-ai-pricing", label: "getimg.ai Pricing Guide" },
+        ],
+      },
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

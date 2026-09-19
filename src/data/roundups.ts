@@ -4,10 +4,16 @@
 
 import type { Locale } from "@/i18n/config";
 
+interface RoundupFaqItem {
+  question: string;
+  answer: string;
+}
+
 interface RoundupContent {
   title: string;
   description: string;
   intro: string[]; // opening paragraphs — lead with a direct answer, then context
+  faq?: RoundupFaqItem[]; // rendered with FAQPage schema — see FaqSchema component
 }
 
 export interface RoundupItem {
@@ -955,6 +961,144 @@ export const roundups: Roundup[] = [
           fr: [
             "Si Fliki semble mal adapté à ce que vous produisez — des dizaines de vidéos de formation interne avec une image de marque cohérente, plusieurs avatars présentateurs et des flux de validation en équipe — c'est le signe qu'il vous faut spécifiquement Synthesia, pas juste une mise à niveau de forfait Fliki. Il est conçu pour la formation en entreprise, pas pour du contenu généraliste ou du blog-vers-vidéo.",
             "C'est un outil plus étroit que Fliki pour du contenu au quotidien, donc ce changement n'a de sens que si la formation à grande échelle est vraiment le cas d'usage, pas juste un plus agréable à avoir.",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    slug: "getimg-ai-vs-midjourney",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "getimg.ai vs Midjourney 2026: Which AI Image Generator Should You Pick?",
+        description:
+          "getimg.ai starts at $10/month and generates faster; Midjourney starts at $10/month too but leans on a distinct aesthetic and huge community. Here's the real comparison.",
+        intro: [
+          "getimg.ai and Midjourney both start at $10/month, but they solve different problems: getimg.ai gives you access to more than a dozen models (FLUX, GPT Image, Seedream, Grok Imagine, and more) in one fast, workflow-focused workspace with editing and video tools built in, while Midjourney is a single, tightly-tuned model family known for a distinctive artistic look and the largest community of shared prompts and examples in the space.",
+          "That's the short version. Below is the full pricing, speed, and feature comparison, and who each tool actually fits.",
+        ],
+        faq: [
+          {
+            question: "Is getimg.ai cheaper than Midjourney?",
+            answer: "Both start at $10/month, so the entry price is identical — the difference is in what you get for it: getimg.ai gives credits spendable across many models plus editing/video tools, while Midjourney gives fast GPU hours on one model family.",
+          },
+          {
+            question: "Which is faster, getimg.ai or Midjourney?",
+            answer: "getimg.ai — independent estimates put it at roughly 2-3x faster generation speed for comparable requests.",
+          },
+          {
+            question: "Does Midjourney have a free trial?",
+            answer: "No, Midjourney does not currently offer a free trial or free tier; all plans start at $10/month.",
+          },
+          {
+            question: "Can I get the \"Midjourney look\" using getimg.ai?",
+            answer: "Not identically — Midjourney's aesthetic comes from its own trained model, which isn't one of the models getimg.ai integrates. You can get close with careful prompting on FLUX or other models, but if the specific Midjourney style is the priority, Midjourney itself is the more direct route.",
+          },
+          {
+            question: "Which is better for video generation?",
+            answer: "getimg.ai has a real advantage here structurally, since it integrates dedicated video models (Google Veo, Kling, MiniMax Hailuo) alongside image generation. Midjourney's video capability is newer and more limited, mainly available at Pro/Mega tiers via Relax mode for SD video.",
+          },
+          {
+            question: "Do both platforms allow commercial use of generated images?",
+            answer: "Yes, both include commercial usage rights starting from their cheapest paid tier, with some exceptions for large companies under Midjourney's terms — check current terms of service for edge cases if you're a larger business.",
+          },
+        ],
+      },
+    },
+    items: [
+      {
+        slug: "getimg-ai",
+        blurb: {
+          en: "Pick getimg.ai if you want access to multiple frontier models, faster generation, and built-in editing/video tools in one subscription, and you don't need Midjourney's specific aesthetic.",
+        },
+        bestFor: { en: "Best for speed and multi-model flexibility" },
+        body: {
+          en: [
+            "getimg.ai generates roughly 2-3x faster than Midjourney for comparable requests, and gives you a menu of models — FLUX 1 for fidelity, GPT Image and Seedream for different rendering styles, Grok Imagine, and others — rather than one house style. Editing (inpainting, outpainting, upscaling to 16K) and video generation live in the same workspace, so there's no exporting to a different tool for each step.",
+            "$10/month (Entry, $8 annual) with no free plan, but full commercial usage rights from the cheapest tier. The trade-off for that model variety is no single defining aesthetic — output style depends on which model you pick.",
+          ],
+        },
+      },
+      {
+        slug: "midjourney",
+        blurb: {
+          en: "Pick Midjourney if you specifically want Midjourney's house style, plan to lean on its huge community of shared prompts and Discord-based workflow, and don't mind a slower, single-model workflow.",
+        },
+        bestFor: { en: "Best for a distinctive house style and community" },
+        body: {
+          en: [
+            "Midjourney is one continuously-refined model family with a widely recognized visual signature — painterly, often more \"art-directed\" looking by default than raw photorealism — backed by the largest library of shared example prompts in the AI image space.",
+            "$10/month (Basic, ~3.3 fast GPU hours), no free plan. Generation is slower than getimg.ai and its editing/video tools are more limited, but if the Midjourney look specifically is what you're after, nothing else replicates it directly.",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    slug: "getimg-ai-vs-leonardo-ai",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "getimg.ai vs Leonardo AI 2026: Free Tier vs More Models — Which Wins?",
+        description:
+          "Leonardo AI has a real free tier; getimg.ai has no free plan but broader model access and full commercial rights from $10/month. Here's the full comparison.",
+        intro: [
+          "The biggest difference between getimg.ai and Leonardo AI isn't features — it's the free tier. Leonardo AI offers a genuine free plan (150 fast tokens/day, no payment required); getimg.ai has no free plan at all, starting at $10/month. In exchange, getimg.ai gives you broader access to outside frontier models (GPT Image, Seedream, Grok Imagine) and full commercial rights from its cheapest paid tier, while Leonardo AI's strength is deep custom-model training and a token system that rewards long-term subscribers.",
+          "That's the core trade-off. Below is the full pricing and feature comparison.",
+        ],
+        faq: [
+          {
+            question: "Does getimg.ai have a free plan like Leonardo AI?",
+            answer: "No. Leonardo AI offers a real free tier (150 fast tokens/day); getimg.ai has no free plan, with Entry starting at $10/month.",
+          },
+          {
+            question: "Which platform has better commercial usage rights?",
+            answer: "getimg.ai includes full commercial rights from its cheapest paid tier ($10/month). Leonardo AI's free tier grants only a non-exclusive commercial license, with more complete ownership rights available on paid tiers.",
+          },
+          {
+            question: "Can I train a custom AI model on getimg.ai the way I can on Leonardo AI?",
+            answer: "Custom model training isn't a core feature getimg.ai centers its product around, while it's one of Leonardo AI's defining capabilities (available from its paid Essential tier). If custom/personal model training is your priority, Leonardo AI is the more direct fit.",
+          },
+          {
+            question: "Which has more AI models to choose from?",
+            answer: "getimg.ai — it integrates outside frontier models like GPT Image, Seedream, and Grok Imagine alongside its own, while Leonardo AI's ecosystem is built primarily around its own proprietary and fine-tuned models.",
+          },
+          {
+            question: "Is Leonardo AI's free tier actually usable, or just a limited demo?",
+            answer: "It's a real functioning tier (150 fast tokens/day, one personal collection), though outputs are public rather than private, and quality settings are more basic than paid tiers — enough to genuinely evaluate the platform, with real limitations that will push active users toward a paid plan.",
+          },
+          {
+            question: "Which is better for AI video generation?",
+            answer: "getimg.ai has a structural advantage here, integrating multiple dedicated video models (Veo, Kling, Hailuo) — Leonardo AI's video capabilities are more limited by comparison.",
+          },
+        ],
+      },
+    },
+    items: [
+      {
+        slug: "getimg-ai",
+        blurb: {
+          en: "Pick getimg.ai if you want access to several different frontier models (not just one company's own), full commercial rights immediately, and faster generation, and you're comfortable paying from day one.",
+        },
+        bestFor: { en: "Best for model variety and commercial rights from day one" },
+        body: {
+          en: [
+            "getimg.ai wins on breadth of outside frontier models in one place (FLUX, GPT Image, Seedream, Grok Imagine — not locked into one company's proprietary system), video generation options, and generation speed. Full commercial usage rights are included from its cheapest paid tier rather than gated further up.",
+            "$10/month (Entry, $8 annual), no free plan — the honest trade-off for a broader model menu and faster output.",
+          ],
+        },
+      },
+      {
+        slug: "leonardo-ai",
+        blurb: {
+          en: "Pick Leonardo AI if you want to test real output for free before paying, or you specifically need custom AI model training — a genuinely different use case than a one-off image generation.",
+        },
+        bestFor: { en: "Best free tier and custom model training" },
+        body: {
+          en: [
+            "Leonardo AI's free tier (150 fast tokens/day, one personal collection) is a real functioning way to evaluate the platform before paying, which getimg.ai simply doesn't offer. Leonardo AI also centers custom AI model training — training a model on your own product photos, brand style, or a consistent character — as a core, defining capability, not a side feature.",
+            "Essential tier starts at $12/month. If you're still deciding whether to pay for AI image generation at all, or need personal model training specifically, Leonardo AI is the more direct fit.",
           ],
         },
       },

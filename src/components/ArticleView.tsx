@@ -60,6 +60,12 @@ export function ArticleView({ article, locale }: { article: Article; locale: Loc
         </ul>
       )}
 
+      {tool && (
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <AffiliateCta toolName={tool.name} affiliateUrl={tool.affiliateUrl} locale={locale} />
+        </div>
+      )}
+
       {content.sections.map((section, i) => (
         <section key={i} className="mt-10">
           {section.heading && (

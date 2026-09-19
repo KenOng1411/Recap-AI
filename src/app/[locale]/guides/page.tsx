@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { isLocale, withLocaleFallback } from "@/i18n/config";
+import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { guides } from "@/data/guides";
+import { articles } from "@/data/articles";
 import { GuideCard } from "@/components/GuideCard";
 import { buildAlternates } from "@/lib/seo";
 
@@ -24,7 +25,7 @@ export default async function GuidesPage({ params }: PageProps<"/[locale]/guides
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
 
-  const sorted = [...guides].sort(
+  const sorted = [...guides, ...articles].sort(
     (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
   );
 
@@ -35,8 +36,7 @@ export default async function GuidesPage({ params }: PageProps<"/[locale]/guides
 
       <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {sorted.map((guide) => {
-          const content = withLocaleFallback(guide.content, locale);
-          if (!content) return null;
+          if (!guide.content[locale] && !guide.content.en) return null;
           return (
             <GuideCard
               key={guide.slug}

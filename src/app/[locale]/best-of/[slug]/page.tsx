@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { CaretLeft, ArrowRight, ShieldCheck } from "@phosphor-icons/react/dist/ssr";
+import { CaretLeft, ArrowRight, ShieldCheck, Question } from "@phosphor-icons/react/dist/ssr";
 import { locales, isLocale, withLocaleFallback } from "@/i18n/config";
 import { getDictionary, t } from "@/i18n/dictionaries";
 import { roundups, getRoundupBySlug } from "@/data/roundups";
@@ -12,6 +12,7 @@ import { StarRating } from "@/components/StarRating";
 import { ReviewByline } from "@/components/ReviewByline";
 import { AffiliateCta } from "@/components/AffiliateCta";
 import { AffiliateDisclosureLine } from "@/components/AffiliateDisclosureLine";
+import { FaqSchema } from "@/components/FaqSchema";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => roundups.map((roundup) => ({ locale, slug: roundup.slug })));
@@ -51,6 +52,8 @@ export default async function RoundupPage(props: PageProps<"/[locale]/best-of/[s
 
   return (
     <div className="container-page max-w-3xl py-12">
+      {content.faq && content.faq.length > 0 && <FaqSchema items={content.faq} />}
+
       <Link
         href={`/${locale}/best-of`}
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent"
@@ -196,6 +199,28 @@ export default async function RoundupPage(props: PageProps<"/[locale]/best-of/[s
           );
         })}
       </ol>
+
+      {content.faq && content.faq.length > 0 && (
+        <section className="mt-10">
+          <h2 className="flex items-center gap-2 text-lg font-semibold text-foreground">
+            <Question size={20} weight="bold" className="text-accent" aria-hidden="true" />
+            {dict.toolPage.faq}
+          </h2>
+          <div className="mt-4 flex flex-col gap-3">
+            {content.faq.map((item) => (
+              <details
+                key={item.question}
+                className="group rounded-xl border border-border bg-surface p-4 open:bg-surface-muted"
+              >
+                <summary className="cursor-pointer list-none font-medium text-foreground marker:content-none">
+                  {item.question}
+                </summary>
+                <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-8">
         <AffiliateDisclosureLine locale={locale} />

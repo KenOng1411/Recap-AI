@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { withLocaleFallback } from "@/i18n/config";
 import { getToolBySlug } from "@/data/tools";
-import type { Guide } from "@/data/guides";
 import type { Locale } from "@/i18n/config";
 
 const dateLocale: Record<Locale, string> = {
@@ -15,8 +14,18 @@ const dateLocale: Record<Locale, string> = {
   pt: "pt-PT",
 };
 
+// Structural type satisfied by both Guide (guides.ts) and Article
+// (articles.ts) — the listing page renders both content types with the
+// same card, since GuideCard only ever reads these fields.
+interface GuideCardItem {
+  slug: string;
+  toolSlug: string;
+  updatedAt: string;
+  content: Partial<Record<Locale, { title: string; metaDescription: string }>>;
+}
+
 interface GuideCardProps {
-  guide: Guide;
+  guide: GuideCardItem;
   locale: Locale;
   readMoreLabel: string;
 }
