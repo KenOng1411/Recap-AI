@@ -1104,6 +1104,144 @@ export const roundups: Roundup[] = [
       },
     ],
   },
+  {
+    slug: "revid-ai-vs-fliki",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "Revid AI vs Fliki 2026: Which AI Video Tool Should You Pick?",
+        description:
+          "Fliki is cheaper and simpler; Revid AI publishes directly to social and accepts more input types. Here's the full head-to-head for choosing between them.",
+        intro: [
+          "Fliki and Revid AI both turn text and other source material into video with AI voiceover, but they optimize for different things: Fliki is built around script-to-video and blog-to-video conversion at a lower entry price ($21-28/month), while Revid AI accepts a wider range of inputs (including PDFs and product pages), auto-publishes directly to TikTok, YouTube, and Instagram, and adds built-in trend/competitor monitoring — at a higher entry price ($39/month).",
+          "That's the short version. Below is the full pricing, feature, and use-case comparison.",
+        ],
+        faq: [
+          {
+            question: "Is Revid AI cheaper than Fliki?",
+            answer: "No — Fliki's entry tier (roughly $21-28/month) is meaningfully cheaper than Revid AI's entry tier ($39/month for Hobby/Growth).",
+          },
+          {
+            question: "Which tool has a free plan?",
+            answer: "Fliki offers a genuine (limited) free plan. Revid AI does not — it allows one demo video without a credit card, but ongoing use requires a paid subscription.",
+          },
+          {
+            question: "Which tool publishes directly to social media?",
+            answer: "Revid AI does, built in from its Growth tier — auto-publishing to TikTok, YouTube, and Instagram. Fliki requires exporting and publishing manually or through a separate scheduling tool.",
+          },
+          {
+            question: "Can either tool convert a PDF into a video?",
+            answer: "Revid AI can. Fliki's input support is centered on scripts, text, and blog/article URLs, without dedicated PDF conversion.",
+          },
+          {
+            question: "Which is easier to learn?",
+            answer: "Fliki is generally regarded as the simpler, more straightforward tool for its core script-to-video and blog-to-video use case. Revid AI has more surface area (input types, publishing, trend tools), which adds capability but also a steeper initial learning curve.",
+          },
+          {
+            question: "Which tool has better customer support?",
+            answer: "This is a genuine weak spot for Revid AI per user reviews — multiple Trustpilot reviewers cite slow or unhelpful support and a strict no-refund policy. This is a real factor worth weighing alongside the feature comparison, not just price and functionality.",
+          },
+        ],
+      },
+    },
+    items: [
+      {
+        slug: "revid-ai",
+        blurb: {
+          en: "Pick Revid AI if you want direct auto-publishing to TikTok/YouTube/Instagram built in, need to convert a wider range of source material (PDFs, product pages), or want built-in trend and competitor-channel monitoring for content ideas.",
+        },
+        bestFor: { en: "Best for input flexibility and built-in publishing" },
+        body: {
+          en: [
+            "Revid AI wins on input flexibility (scripts, URLs, PDFs, product pages, audio), built-in auto-publishing to three major social platforms without a separate scheduling tool, and trend/competitor-channel monitoring baked into the product.",
+            "$39/month (Hobby/Growth), no free plan. The trade-off is a higher price and a credit system real users describe as consumed quickly — budget conservatively.",
+          ],
+        },
+      },
+      {
+        slug: "fliki",
+        blurb: {
+          en: "Pick Fliki if you mainly need script-to-video or blog-to-video conversion, want a lower entry price, and are comfortable publishing to social platforms manually or through a separate scheduler.",
+        },
+        bestFor: { en: "Best for price and simplicity" },
+        body: {
+          en: [
+            "Fliki wins on price (meaningfully cheaper at entry), simplicity for straightforward script-to-video or blog-to-video work, and a genuine free tier to test before paying.",
+            "Free tier available, paid plans from $21-28/month. No built-in auto-publishing or PDF/product-page input — a real gap if that's specifically what you need, but not a factor if your workflow is scripts and blog posts.",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    slug: "revid-ai-vs-heygen",
+    updatedAt: "2026-09-19",
+    content: {
+      en: {
+        title: "Revid AI vs HeyGen 2026: Faceless Short-Form vs AI Avatar Video",
+        description:
+          "HeyGen leads on AI avatars and presenter-led video; Revid AI leads on faceless short-form and auto-publishing. Here's the full comparison.",
+        intro: [
+          "Revid AI and HeyGen both use AI to generate video, but they're built for different jobs: HeyGen specializes in AI avatars and presenter-led video (a virtual person speaking to camera, translated into 40+ languages with lip-sync), while Revid AI specializes in faceless, trend-driven short-form content generated from text, URLs, or PDFs, with built-in auto-publishing to TikTok, YouTube, and Instagram.",
+          "That's the core distinction. Below is the full pricing and feature comparison.",
+        ],
+        faq: [
+          {
+            question: "Which is cheaper, Revid AI or HeyGen?",
+            answer: "HeyGen — it has a free tier and a lower entry paid price (around $24-29/month) compared to Revid AI's $39/month entry with no free plan.",
+          },
+          {
+            question: "Can Revid AI create talking AI avatars like HeyGen?",
+            answer: "Revid AI includes basic avatar and face-swap features, but avatar realism and lip-sync quality are HeyGen's specific focus and strength — if a highly realistic talking avatar is the priority, HeyGen is the more purpose-built choice.",
+          },
+          {
+            question: "Does HeyGen auto-publish to social media like Revid AI?",
+            answer: "No — auto-publishing directly to TikTok, YouTube, and Instagram is a Revid AI feature (from the Growth tier up), not a core HeyGen capability.",
+          },
+          {
+            question: "Which tool is better for multilingual video?",
+            answer: "Both support multiple languages, but they solve it differently — HeyGen focuses on lip-synced avatar translation across 40+ languages (useful for corporate/training video), while Revid AI offers voiceover in 70+ languages for its faceless format.",
+          },
+          {
+            question: "Which tool is better for faceless TikTok/YouTube Shorts content?",
+            answer: "Revid AI — it's built specifically around faceless, trend-driven short-form content with direct publishing, which isn't HeyGen's focus.",
+          },
+          {
+            question: "Which tool is better for corporate training or explainer videos?",
+            answer: "HeyGen — its avatar-led, presenter-style format is the more natural fit for training content, sales videos, and multilingual corporate explainers than Revid AI's faceless short-form approach.",
+          },
+        ],
+      },
+    },
+    items: [
+      {
+        slug: "revid-ai",
+        blurb: {
+          en: "Pick Revid AI if you want faceless short-form content (TikTok/Reels/Shorts style) generated from blogs, scripts, or PDFs, with direct auto-publishing and trend monitoring built in.",
+        },
+        bestFor: { en: "Best for faceless short-form and auto-publishing" },
+        body: {
+          en: [
+            "Revid AI wins on breadth of source input (scripts, URLs, PDFs, product pages), built-in auto-publishing to three social platforms, and trend/competitor-channel monitoring for content ideas — none of which are HeyGen's focus.",
+            "$39/month, no free tier. Its default output format is faceless short-form content optimized for TikTok/Reels/Shorts, built to auto-publish there directly.",
+          ],
+        },
+      },
+      {
+        slug: "heygen",
+        blurb: {
+          en: "Pick HeyGen if you want a talking AI avatar or presenter for training videos, product explainers, multilingual corporate content, or anything where a 'person on screen' is the format.",
+        },
+        bestFor: { en: "Best for AI avatars and presenter-led video" },
+        body: {
+          en: [
+            "HeyGen wins on avatar realism and lip-sync quality specifically — if the format is a person talking to camera (training content, explainer videos, multilingual corporate video), HeyGen's avatar technology is the more purpose-built tool. It also has a genuine free tier and a lower entry price.",
+            "Free tier available, paid plans from around $24-29/month. Its default output format is a presenter-style video — an AI avatar speaking directly to camera — rather than faceless trend-driven social content.",
+          ],
+        },
+      },
+    ],
+  },
 ];
 
 export function getRoundupBySlug(slug: string): Roundup | undefined {

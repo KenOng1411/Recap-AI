@@ -65,6 +65,7 @@
 - Hunter.io: https://recapai.online/en/tools/hunter-io/ — A focused email-finding and verification tool built around domain search and confidence scoring.
 - Nano Banana Pro: https://recapai.online/en/tools/nano-banana-pro/ — Google's most instruction-accurate image model — correct in-image text, consistent edits, built on Gemini 3 Pro.
 - getimg.ai: https://recapai.online/en/tools/getimg-ai/ — One fast workspace for AI image generation, editing, and video — FLUX, GPT Image, Seedream, and more, no free plan.
+- Revid AI: https://recapai.online/en/tools/revid-ai/ — Turns prompts, blogs, PDFs, and product pages into auto-published social video — but the credit system draws real complaints.
 
 ## Guides
 - Is Fliki Worth It in 2026?: https://recapai.online/en/guides/is-fliki-worth-it/ — An honest look at Fliki's pricing, voice quality, and limits — who it's actually worth paying for in 2026.
@@ -77,6 +78,9 @@
 - How to Use getimg.ai's Image-to-Prompt Tool (Step-by-Step): https://recapai.online/en/guides/getimg-ai-image-to-prompt/ — Upload any image to getimg.ai and get a detailed, reusable text prompt back in seconds — free, 40 images/day.
 - getimg.ai Pricing 2026: Entry vs Core vs Plus vs Ultra: https://recapai.online/en/guides/getimg-ai-pricing/ — Entry, Core, Plus, or Ultra — getimg.ai's four tiers range from $10 to $175/month. Here's exactly which one fits your actual usage.
 - Is getimg.ai Good for AI Video Generation? An Honest Look: https://recapai.online/en/guides/getimg-ai-video-generation/ — getimg.ai integrates Veo, Kling, and Hailuo for video — here's what it does well and where it falls short.
+- How to Turn a Blog Post Into a Video With Revid AI: https://recapai.online/en/guides/revid-ai-blog-to-video/ — Paste a blog URL into Revid AI and get a captioned, voiced, ready-to-publish video in minutes.
+- Is Revid AI Good for Automating a Faceless TikTok or YouTube Channel?: https://recapai.online/en/guides/revid-ai-faceless-automation/ — Revid AI's Auto-Mode workers and trend-monitoring tools promise hands-off faceless content — what actually gets automated and what still needs you.
+- Revid AI Pricing 2026: Hobby vs Growth vs Ultra: https://recapai.online/en/guides/revid-ai-pricing/ — Revid AI's plans range from $39 to $199/month, and two of them currently cost the same. Here's exactly which one to pick.
 
 ## Best Of & Comparisons
 - 5 best AI writing tools: https://recapai.online/en/best-of/best-ai-writing-tools/ — A roundup of the highest-rated AI writing tools right now, from blog posts and ads to social media content.
@@ -92,6 +96,8 @@
 - 5 best Fliki alternatives in 2026 (and when you don't actually need one): https://recapai.online/en/best-of/fliki-alternatives/ — Before switching away from Fliki, check whether the issue is actually solvable inside it — here's exactly which alternative fixes which specific gap.
 - getimg.ai vs Midjourney 2026: Which AI Image Generator Should You Pick?: https://recapai.online/en/best-of/getimg-ai-vs-midjourney/ — Both start at $10/month, but getimg.ai is faster and multi-model while Midjourney leans on a distinct aesthetic and huge community.
 - getimg.ai vs Leonardo AI 2026: Free Tier vs More Models: https://recapai.online/en/best-of/getimg-ai-vs-leonardo-ai/ — Leonardo AI has a real free tier; getimg.ai has no free plan but broader model access and full commercial rights from $10/month.
+- Revid AI vs Fliki 2026: Which AI Video Tool Should You Pick?: https://recapai.online/en/best-of/revid-ai-vs-fliki/ — Fliki is cheaper and simpler; Revid AI publishes directly to social and accepts more input types.
+- Revid AI vs HeyGen 2026: Faceless Short-Form vs AI Avatar Video: https://recapai.online/en/best-of/revid-ai-vs-heygen/ — HeyGen leads on AI avatars and presenter-led video; Revid AI leads on faceless short-form and auto-publishing.
 
 ## Business & Marketing Software (non-AI, separate track from AI tool reviews)
 - ClickFunnels Review 2026: https://recapai.online/en/business-tools/clickfunnels/ — A drag-and-drop funnel builder for landing pages, checkout, upsells, and email, no developer required.
