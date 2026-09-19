@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Tag, ArrowSquareOut } from "@phosphor-icons/react/dist/ssr";
 import { isLocale, withLocaleFallback } from "@/i18n/config";
-import { getDictionary } from "@/i18n/dictionaries";
+import { getDictionary, t } from "@/i18n/dictionaries";
 import { deals } from "@/data/deals";
 import { buildAlternates } from "@/lib/seo";
 
@@ -56,14 +56,19 @@ export default async function DealsPage({ params }: PageProps<"/[locale]/deals">
                     {deal.code}
                   </p>
                 )}
-                <Link
-                  href={deal.affiliateUrl}
-                  target="_blank"
-                  rel="sponsored noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-hover"
-                >
-                  {dict.deals.getDeal} <ArrowSquareOut size={14} weight="bold" aria-hidden="true" />
-                </Link>
+                <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+                  <Link
+                    href={deal.affiliateUrl}
+                    target="_blank"
+                    rel="sponsored noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-accent-hover"
+                  >
+                    {dict.deals.getDeal} <ArrowSquareOut size={14} weight="bold" aria-hidden="true" />
+                  </Link>
+                  <time dateTime={deal.verifiedAt} className="text-xs text-muted-foreground">
+                    {t(dict.deals.verified, { date: deal.verifiedAt })}
+                  </time>
+                </div>
               </div>
             );
           })}

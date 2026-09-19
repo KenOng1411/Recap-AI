@@ -135,10 +135,11 @@ export const dictionaries = {
     },
     deals: {
       title: "Deals & Discounts",
-      subtitle: "Coupon codes and lifetime deals for notable AI tools, updated regularly.",
+      subtitle: "Real, verified pricing offers on AI tools we review — mostly annual-billing savings, not coupon codes.",
       emptyTitle: "No deals yet",
       emptyDesc: "The deals list will be updated soon. Check back later!",
       getDeal: "Get deal",
+      verified: "Verified {date}",
     },
     about: {
       title: "About",
@@ -324,10 +325,11 @@ export const dictionaries = {
     },
     deals: {
       title: "Bons plans & Réductions",
-      subtitle: "Codes promo et offres à vie pour des outils IA notables, mis à jour régulièrement.",
+      subtitle: "Offres de prix réelles et vérifiées sur les outils IA que nous testons — surtout des remises sur facturation annuelle, pas des codes promo.",
       emptyTitle: "Aucun bon plan pour le moment",
       emptyDesc: "La liste des bons plans sera bientôt mise à jour. Revenez plus tard !",
       getDeal: "Profiter de l'offre",
+      verified: "Vérifié le {date}",
     },
     about: {
       title: "À propos",
